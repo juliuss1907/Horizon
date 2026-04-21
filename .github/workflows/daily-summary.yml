@@ -1,50 +1,100 @@
-name: Daily Horizon Summary
+name: Horizon Daily News Digest
 
 on:
-  # schedule:
-  #   - cron: '0 0 */2 * *'  # Runs every 2 days at 00:00 UTC
-  workflow_dispatch:      # Allow manual trigger
+  schedule:
+    # All times in UTC (UTC+7 = -7 hours)
+    - cron: '30 23 * * *'   # 06:30 VN — World + AI
+    - cron: '30 1 * * *'    # 08:30 VN — Crypto + Fundraising
+    - cron: '30 5 * * *'    # 12:30 VN — Tech + Startup + GitHub
+    - cron: '30 9 * * *'    # 16:30 VN — F1
+    - cron: '30 13 * * *'   # 20:30 VN — Evening Articles
+  workflow_dispatch:        # Cho phép chạy thủ công
+    inputs:
+      batch:
+        description: 'Batch to run'
+        required: true
+        default: 'morning'
+        type: choice
+        options:
+          - morning
+          - crypto
+          - tech
+          - f1
+          - evening
 
 jobs:
-  daily-summary:
+  generate-digest:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Needed to commit changes
+      contents: write
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.11'
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v3
+        run: pip install uv
 
-      - name: Install dependencies
+      - name: Install Horizon dependencies
         run: uv sync
+
+      - name: Detect batch by current hour (UTC)
+        id: detect_batch
+        run: |
+          HOUR=$(date -u +"%H%M")
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
+          elif [ "$HOUR" -ge "2315" ] || [ "$HOUR" -le "0015" ]; then
+            echo "batch=morning" >> $GITHUB_OUTPUT
+          elif [ "$HOUR" -ge "0115" ] && [ "$HOUR" -le "0215" ]; then
+            echo "batch=crypto" >> $GITHUB_OUTPUT
+          elif [ "$HOUR" -ge "0515" ] && [ "$HOUR" -le "0615" ]; then
+            echo "batch=tech" >> $GITHUB_OUTPUT
+          elif [ "$HOUR" -ge "0915" ] && [ "$HOUR" -le "1015" ]; then
+            echo "batch=f1" >> $GITHUB_OUTPUT
+          else
+            echo "batch=evening" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set config for batch
+        run: |
+          cp data/configs/config-${{ steps.detect_batch.outputs.batch }}.json data/config.json
 
       - name: Run Horizon
         env:
-          # Map secrets to environment variables expected by config.json
-          # Modify these based on your config.json provider settings
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          LWN_KEY: ${{ secrets.LWN_KEY }}
-        run: uv run horizon --hours 48
-
-      - name: Set current date as environment variable
-        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+        run: |
+          uv run horizon --hours 8
+          TODAY=$(date +%Y-%m-%d)
+          BATCH=${{ steps.detect_batch.outputs.batch }}
+          cp data/summaries/latest.md data/summaries/${TODAY}-${BATCH}.md
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          keep_files: true  # Keep existing summaries on gh-pages branch
-          commit_message: "📝 Daily Summary: ${{ env.DATE }}"
-          publish_branch: gh-pages
-          enable_jekyll: true
+          publish_dir: ./data/summaries
+          keep_files: true
+
+      - name: Notify OpenClaw via webhook
+        env:
+          OPENCLAW_WEBHOOK_SECRET: ${{ secrets.OPENCLAW_WEBHOOK_SECRET }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          BATCH=${{ steps.detect_batch.outputs.batch }}
+          REPORT_URL="https://juliuss1907.github.io/Horizon/${TODAY}-${BATCH}.md"
+
+          curl -X POST https://171.232.75.216:3000/webhook/horizon \
+            -H "Content-Type: application/json" \
+            -H "X-Secret: ${OPENCLAW_WEBHOOK_SECRET}" \
+            -d "{
+              \"event\": \"horizon_digest_ready\",
+              \"batch\": \"${BATCH}\",
+              \"report_url\": \"${REPORT_URL}\",
+              \"date\": \"${TODAY}\"
+            }"
