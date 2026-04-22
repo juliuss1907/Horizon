@@ -72,13 +72,16 @@ jobs:
         run: |
           TODAY=$(date +%Y-%m-%d)
           BATCH=${{ steps.detect_batch.outputs.batch }}
+          PREFIX="horizon-${TODAY}-"
 
-          for f in data/summaries/horizon-${TODAY}-*.md; do
+          for f in data/summaries/${PREFIX}*.md; do
             if [ -f "$f" ]; then
-              LANG=$(echo "$f" | sed "s/.*horizon-${TODAY}-$.*$\.md/\1/")
+              BASENAME=$(basename "$f")
+              LANG=${BASENAME#$PREFIX}
+              LANG=${LANG%.md}
               NEW="horizon-${TODAY}-${BATCH}-${LANG}.md"
               mv "$f" "data/summaries/${NEW}"
-              echo "Renamed: $(basename $f) -> ${NEW}"
+              echo "Renamed: ${BASENAME} -> ${NEW}"
             fi
           done
 
