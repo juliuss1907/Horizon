@@ -74,7 +74,7 @@ jobs:
           uv run horizon --hours 8
           TODAY=$(date +%Y-%m-%d)
           BATCH=${{ steps.detect_batch.outputs.batch }}
-          cp data/summaries/${TODAY}-${BATCH}.md
+          cp data/summaries/${TODAY}-${BATCH}.md data/summaries/${TODAY}-${BATCH}.md.backup
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
