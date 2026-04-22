@@ -1,0 +1,43 @@
+{
+  "ai": {
+    "provider": "minimax",
+    "model": "minimax/minimax-2.7",
+    "api_key_env": "MINIMAX_API_KEY",
+    "languages": ["en", "vi"]
+  },
+  "sources": {
+    "hackernews": {
+      "enabled": true,
+      "fetch_top_stories": 20,
+      "min_score": 100,
+      "topics": ["AI", "machine learning", "LLM", "world news"]
+    },
+    "rss": [
+      { "name": "BBC World",        "url": "http://feeds.bbci.co.uk/news/world/rss.xml" },
+      { "name": "Reuters World",    "url": "https://feeds.reuters.com/reuters/worldNews" },
+      { "name": "TechCrunch AI",    "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+      { "name": "The Verge AI",     "url": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml" },
+      { "name": "MIT Tech Review",  "url": "https://www.technologyreview.com/feed/" },
+      { "name": "VnExpress TG",     "url": "https://vnexpress.net/rss/the-gioi.rss" }
+    ],
+    "reddit": {
+      "subreddits": [
+        { "subreddit": "worldnews",        "sort": "hot" },
+        { "subreddit": "MachineLearning",  "sort": "hot" },
+        { "subreddit": "artificial",       "sort": "hot" },
+        { "subreddit": "LocalLLaMA",       "sort": "hot" },
+        { "subreddit": "singularity",      "sort": "hot" }
+      ],
+      "fetch_comments": 3
+    }
+  },
+  "filtering": {
+    "ai_score_threshold": 6.5,
+    "time_window_hours": 10,
+    "max_items": 10
+  },
+  "output": {
+    "batch_name": "morning",
+    "batch_label": "🌅 MORNING BRIEF — Thế Giới & AI"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "ai": {
+    "provider": "minimax",
+    "model": "minimax/minimax-2.7",
+    "api_key_env": "MINIMAX_API_KEY",
+    "languages": ["en", "vi"]
+  },
+  "sources": {
+    "hackernews": {
+      "enabled": true,
+      "fetch_top_stories": 20,
+      "min_score": 150,
+      "topics": ["startup", "technology", "product launch", "funding"]
+    },
+    "rss": [
+      { "name": "TechCrunch",      "url": "https://techcrunch.com/feed/" },
+      { "name": "Wired",           "url": "https://www.wired.com/feed/rss" },
+      { "name": "Product Hunt",    "url": "https://www.producthunt.com/feed" },
+      { "name": "VnExpress Tech",  "url": "https://vnexpress.net/rss/khoa-hoc-cong-nghe.rss" }
+    ],
+    "github": {
+      "enabled": true,
+      "trending": {
+        "enabled": true,
+        "languages": ["python", "typescript", "rust", "go"],
+        "since": "daily"
+      }
+    },
+    "reddit": {
+      "subreddits": [
+        { "subreddit": "startups",      "sort": "hot" },
+        { "subreddit": "technology",    "sort": "hot" },
+        { "subreddit": "programming",   "sort": "hot" }
+      ],
+      "fetch_comments": 3
+    }
+  },
+  "filtering": {
+    "ai_score_threshold": 6.5,
+    "time_window_hours": 12,
+    "max_items": 12
+  },
+  "output": {
+    "batch_name": "tech",
+    "batch_label": "💻 TECH BRIEF — Công Nghệ, Startup & GitHub"
+  }
+}

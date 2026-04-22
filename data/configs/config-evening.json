@@ -1,0 +1,44 @@
+{
+  "ai": {
+    "provider": "minimax",
+    "model": "minimax/minimax-2.7",
+    "api_key_env": "MINIMAX_API_KEY",
+    "languages": ["en", "vi"]
+  },
+  "sources": {
+    "hackernews": {
+      "enabled": true,
+      "fetch_top_stories": 30,
+      "min_score": 200,
+      "topics": ["essay", "article", "deep dive", "opinion", "story"]
+    },
+    "rss": [
+      { "name": "Wait But Why",     "url": "https://waitbutwhy.com/feed" },
+      { "name": "Ness Labs",        "url": "https://nesslabs.com/feed" },
+      { "name": "MIT Tech Review",  "url": "https://www.technologyreview.com/feed/" },
+      { "name": "Stratechery",      "url": "https://stratechery.com/feed/" },
+      { "name": "The Marginalian",  "url": "https://www.themarginalian.org/feed/" },
+      { "name": "CoinDesk Opinion", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/category/opinion/" }
+    ],
+    "reddit": {
+      "subreddits": [
+        { "subreddit": "slatestarcodex",  "sort": "top", "time": "day" },
+        { "subreddit": "philosophy",      "sort": "top", "time": "day" },
+        { "subreddit": "Meditation",      "sort": "top", "time": "day" },
+        { "subreddit": "getdisciplined",  "sort": "top", "time": "day" }
+      ],
+      "fetch_comments": 3
+    }
+  },
+  "filtering": {
+    "ai_score_threshold": 7.5,
+    "time_window_hours": 24,
+    "max_items": 7,
+    "prefer_long_form": true,
+    "topics": ["AI", "crypto", "technology", "lifestyle", "mindfulness", "productivity", "healing", "philosophy"]
+  },
+  "output": {
+    "batch_name": "evening",
+    "batch_label": "🌙 EVENING READS — Bài Hay Cuối Ngày"
+  }
+}

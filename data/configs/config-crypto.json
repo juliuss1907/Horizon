@@ -1,0 +1,38 @@
+{
+  "ai": {
+    "provider": "minimax",
+    "model": "minimax/minimax-2.7",
+    "api_key_env": "MINIMAX_API_KEY",
+    "languages": ["en", "vi"]
+  },
+  "sources": {
+    "hackernews": { "enabled": false },
+    "rss": [
+      { "name": "CoinDesk",       "url": "https://www.coindesk.com/arc/outboundfeeds/rss/" },
+      { "name": "CoinTelegraph",  "url": "https://cointelegraph.com/rss" },
+      { "name": "The Block",      "url": "https://www.theblock.co/rss.xml" },
+      { "name": "Decrypt",        "url": "https://decrypt.co/feed" },
+      { "name": "DLNews",         "url": "https://www.dlnews.com/arc/outboundfeeds/rss/" }
+    ],
+    "reddit": {
+      "subreddits": [
+        { "subreddit": "CryptoCurrency",  "sort": "hot" },
+        { "subreddit": "CryptoMarkets",   "sort": "hot" },
+        { "subreddit": "ethereum",        "sort": "hot" },
+        { "subreddit": "bitcoin",         "sort": "hot" },
+        { "subreddit": "web3",            "sort": "hot" }
+      ],
+      "fetch_comments": 3
+    }
+  },
+  "filtering": {
+    "ai_score_threshold": 6.0,
+    "time_window_hours": 10,
+    "max_items": 10,
+    "highlight_keywords": ["fundraising", "funding", "raise", "series", "gọi vốn", "drama", "hack", "exploit"]
+  },
+  "output": {
+    "batch_name": "crypto",
+    "batch_label": "💰 CRYPTO BRIEF — Tin Tức & Gọi Vốn"
+  }
+}

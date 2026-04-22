@@ -1,0 +1,34 @@
+{
+  "ai": {
+    "provider": "minimax",
+    "model": "minimax/minimax-2.7",
+    "api_key_env": "MINIMAX_API_KEY",
+    "languages": ["en", "vi"]
+  },
+  "sources": {
+    "hackernews": { "enabled": false },
+    "rss": [
+      { "name": "F1 Official",      "url": "https://www.formula1.com/content/fom-website/en/latest/all.xml" },
+      { "name": "Autosport F1",     "url": "https://www.autosport.com/rss/f1/news/" },
+      { "name": "RaceFans",         "url": "https://www.racefans.net/feed/" },
+      { "name": "The Race F1",      "url": "https://the-race.com/feed/" },
+      { "name": "Motorsport F1",    "url": "https://www.motorsport.com/rss/f1/news/" }
+    ],
+    "reddit": {
+      "subreddits": [
+        { "subreddit": "formula1",  "sort": "hot" },
+        { "subreddit": "F1Technical", "sort": "hot" }
+      ],
+      "fetch_comments": 5
+    }
+  },
+  "filtering": {
+    "ai_score_threshold": 5.5,
+    "time_window_hours": 24,
+    "max_items": 8
+  },
+  "output": {
+    "batch_name": "f1",
+    "batch_label": "🏎️ F1 BRIEF — Formula 1 News"
+  }
+}
