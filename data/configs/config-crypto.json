@@ -1,7 +1,7 @@
 {
   "ai": {
     "provider": "minimax",
-    "model": "minimax/minimax-2.7",
+    "model": "MiniMax-Text-01",
     "api_key_env": "MINIMAX_API_KEY",
     "languages": ["en", "vi"]
   },
