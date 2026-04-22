@@ -25,6 +25,8 @@ on:
 jobs:
   generate-digest:
     runs-on: ubuntu-latest
+    env:
+      MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
     permissions:
       contents: write
 
@@ -67,7 +69,7 @@ jobs:
 
       - name: Run Horizon
         env:
-         GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+         GOOGLE_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         run: |
           uv run horizon --hours 8
           TODAY=$(date +%Y-%m-%d)
