@@ -1,8 +1,9 @@
 {
   "ai": {
-    "provider": "gemini",
-    "model": "gemma-4-31b-it",
-    "api_key_env": "GOOGLE_API_KEY",
+    "provider": "anthropic",
+    "model": "MiniMax-M2.7",
+    "api_key_env": "MINIMAX_API_KEY",
+    "base_url": "https://api.minimax.io/anthropic",
     "languages": ["en", "vi"]
   },
   "sources": {
@@ -41,6 +42,13 @@
     "batch_label": "🌅 MORNING BRIEF — Thế Giới & AI"
   }
 }
+
+
+
+
+
+
+
 
 
 
