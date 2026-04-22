@@ -1,60 +1,74 @@
-{
+﻿{
   "ai": {
     "provider": "minimax",
     "model": "MiniMax-M2.7",
     "api_key_env": "MINIMAX_API_KEY",
-    "base_url": "https://api.minimax.io/",
     "languages": ["en", "vi"]
   },
   "sources": {
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 20,
-      "min_score": 150,
-      "topics": ["startup", "technology", "product launch", "funding"]
+      "fetch_top_stories": 30,
+      "min_score": 50,
+      "topics": ["startup", "technology", "product launch", "open source", "programming", "developer tools", "Show HN"]
     },
     "rss": [
-      { "name": "TechCrunch",      "url": "https://techcrunch.com/feed/" },
-      { "name": "Wired",           "url": "https://www.wired.com/feed/rss" },
-      { "name": "Product Hunt",    "url": "https://www.producthunt.com/feed" },
-      { "name": "VnExpress Tech",  "url": "https://vnexpress.net/rss/khoa-hoc-cong-nghe.rss" }
+      { "name": "TechCrunch",            "url": "https://techcrunch.com/feed/" },
+      { "name": "TechCrunch Startups",   "url": "https://techcrunch.com/category/startups/feed/" },
+      { "name": "TechCrunch AI",         "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+      { "name": "The Verge",             "url": "https://www.theverge.com/rss/index.xml" },
+      { "name": "Ars Technica",          "url": "https://feeds.arstechnica.com/arstechnica/index" },
+      { "name": "Wired",                 "url": "https://www.wired.com/feed/rss" },
+      { "name": "MIT Tech Review",       "url": "https://www.technologyreview.com/feed/" },
+      { "name": "Product Hunt",          "url": "https://www.producthunt.com/feed" },
+      { "name": "Hacker Noon",           "url": "https://hackernoon.com/feed" },
+      { "name": "Dev.to",                "url": "https://dev.to/feed" },
+      { "name": "InfoQ",                 "url": "https://feed.infoq.com/infoq/infoq" },
+      { "name": "The New Stack",         "url": "https://thenewstack.io/feed" },
+      { "name": "GitHub Blog",           "url": "https://github.blog/feed/" },
+      { "name": "Changelog",             "url": "https://changelog.com/feed" }
     ],
     "github": {
       "enabled": true,
       "trending": {
         "enabled": true,
-        "languages": ["python", "typescript", "rust", "go"],
+        "languages": ["python", "typescript", "rust", "go", "javascript"],
         "since": "daily"
       }
     },
-    "reddit": {
-      "subreddits": [
-        { "subreddit": "startups",      "sort": "hot" },
-        { "subreddit": "technology",    "sort": "hot" },
-        { "subreddit": "programming",   "sort": "hot" }
-      ],
-      "fetch_comments": 3
+    "telegram": {
+      "channels": [
+        { "channel": "producthuntdaily", "fetch_limit": 15 },
+        { "channel": "ahboyashreads",    "fetch_limit": 15 }
+      ]
     }
   },
   "filtering": {
-    "ai_score_threshold": 6.5,
-    "time_window_hours": 12,
-    "max_items": 12
+    "ai_score_threshold": 4.0,
+    "time_window_hours": 14,
+    "max_items": 15,
+    "highlight_keywords": [
+      "startup", "launch", "funding", "seed", "series A", "YC", "Y Combinator",
+      "product launch", "Product Hunt", "Show HN", "new release",
+      "open source", "GitHub", "trending", "stars", "repository",
+      "developer tools", "devtools", "SDK", "API", "framework", "library",
+      "AI agent", "LLM", "RAG", "vector database", "fine-tuning",
+      "Rust", "Go", "Python", "TypeScript", "JavaScript",
+      "Docker", "Kubernetes", "serverless", "edge computing",
+      "VS Code", "Neovim", "terminal", "CLI",
+      "database", "PostgreSQL", "SQLite", "Redis",
+      "SaaS", "B2B", "indie hacker", "solo founder",
+      "acquisition", "IPO", "unicorn", "valuation",
+      "Apple", "Google", "Microsoft", "Meta", "OpenAI", "Anthropic"
+    ],
+    "topics": [
+      "startup", "technology", "open source",
+      "developer tools", "product launch",
+      "programming", "AI", "software engineering"
+    ]
   },
   "output": {
     "batch_name": "tech",
-    "batch_label": "💻 TECH BRIEF — Công Nghệ, Startup & GitHub"
+    "batch_label": "💻 TECH BRIEF — Startup, Sản Phẩm & GitHub Trending"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
