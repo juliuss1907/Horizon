@@ -1,8 +1,8 @@
 {
   "ai": {
-    "provider": "minimax",
-    "model": "MiniMax-Text-01",
-    "api_key_env": "MINIMAX_API_KEY",
+    "provider": "google",
+    "model": "gemma-4-31b-it",
+    "api_key_env": "GOOGLE_API_KEY",
     "languages": ["en", "vi"]
   },
   "sources": {
@@ -36,3 +36,7 @@
     "batch_label": "💰 CRYPTO BRIEF — Tin Tức & Gọi Vốn"
   }
 }
+
+
+
+
