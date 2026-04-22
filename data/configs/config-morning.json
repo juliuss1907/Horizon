@@ -3,39 +3,110 @@
     "provider": "minimax",
     "model": "minimax/minimax-2.7",
     "api_key_env": "MINIMAX_API_KEY",
-    "languages": ["en", "vi"]
+    "languages": [
+      "en",
+      "vi"
+    ]
   },
   "sources": {
     "hackernews": {
       "enabled": true,
       "fetch_top_stories": 30,
       "min_score": 50,
-      "topics": ["AI", "machine learning", "LLM", "world news", "politics", "geopolitics", "military"]
+      "topics": [
+        "AI",
+        "machine learning",
+        "LLM",
+        "world news",
+        "politics",
+        "geopolitics",
+        "military"
+      ]
     },
     "rss": [
-      { "name": "BBC World",            "url": "http://feeds.bbci.co.uk/news/world/rss.xml" },
-      { "name": "BBC Politics",         "url": "http://feeds.bbci.co.uk/news/politics/rss.xml" },
-      { "name": "Al Jazeera",           "url": "https://www.aljazeera.com/xml/rss/all.xml" },
-      { "name": "AP News",              "url": "https://apnews.com/index.rss" },
-      { "name": "NPR World",            "url": "https://feeds.npr.org/1004/rss.xml" },
-      { "name": "Foreign Affairs",      "url": "https://www.foreignaffairs.com/rss.xml" },
-      { "name": "Foreign Policy",       "url": "https://foreignpolicy.com/feed/" },
-      { "name": "The Diplomat",         "url": "https://thediplomat.com/feed/" },
-      { "name": "Politico",             "url": "https://rss.politico.com/politics-news.xml" },
-      { "name": "Defense One",          "url": "https://www.defenseone.com/rss/" },
-      { "name": "War on the Rocks",     "url": "https://warontherocks.com/feed/" },
-      { "name": "The Drive Warzone",    "url": "https://www.thedrive.com/the-war-zone/feed" },
-      { "name": "TechCrunch AI",        "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
-      { "name": "The Verge AI",         "url": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml" },
-      { "name": "MIT Tech Review",      "url": "https://www.technologyreview.com/feed/" },
-      { "name": "Ars Technica",         "url": "https://feeds.arstechnica.com/arstechnica/index" },
-      { "name": "Wired",                "url": "https://www.wired.com/feed/rss" }
+      {
+        "name": "BBC World",
+        "url": "http://feeds.bbci.co.uk/news/world/rss.xml"
+      },
+      {
+        "name": "BBC Politics",
+        "url": "http://feeds.bbci.co.uk/news/politics/rss.xml"
+      },
+      {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/xml/rss/all.xml"
+      },
+      {
+        "name": "AP News",
+        "url": "https://apnews.com/index.rss"
+      },
+      {
+        "name": "NPR World",
+        "url": "https://feeds.npr.org/1004/rss.xml"
+      },
+      {
+        "name": "Foreign Affairs",
+        "url": "https://www.foreignaffairs.com/rss.xml"
+      },
+      {
+        "name": "Foreign Policy",
+        "url": "https://foreignpolicy.com/feed/"
+      },
+      {
+        "name": "The Diplomat",
+        "url": "https://thediplomat.com/feed/"
+      },
+      {
+        "name": "Politico",
+        "url": "https://rss.politico.com/politics-news.xml"
+      },
+      {
+        "name": "Defense One",
+        "url": "https://www.defenseone.com/rss/"
+      },
+      {
+        "name": "War on the Rocks",
+        "url": "https://warontherocks.com/feed/"
+      },
+      {
+        "name": "The Drive Warzone",
+        "url": "https://www.thedrive.com/the-war-zone/feed"
+      },
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+      },
+      {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"
+      },
+      {
+        "name": "MIT Tech Review",
+        "url": "https://www.technologyreview.com/feed/"
+      },
+      {
+        "name": "Ars Technica",
+        "url": "https://feeds.arstechnica.com/arstechnica/index"
+      },
+      {
+        "name": "Wired",
+        "url": "https://www.wired.com/feed/rss"
+      }
     ],
     "telegram": {
       "channels": [
-        { "channel": "quantin_vic",     "fetch_limit": 20 },
-        { "channel": "ahboyashreads",   "fetch_limit": 20 },
-        { "channel": "CoinBureau",      "fetch_limit": 15 }
+        {
+          "channel": "quantin_vic",
+          "fetch_limit": 20
+        },
+        {
+          "channel": "ahboyashreads",
+          "fetch_limit": 20
+        },
+        {
+          "channel": "CoinBureau",
+          "fetch_limit": 15
+        }
       ]
     }
   },
@@ -44,21 +115,73 @@
     "time_window_hours": 24,
     "max_items": 15,
     "highlight_keywords": [
-      "AI", "artificial intelligence", "LLM", "GPT", "Claude", "OpenAI",
-      "geopolitics", "sanctions", "war", "election", "diplomacy", "summit",
-      "coup", "nuclear", "missile", "invasion", "ceasefire", "peace talks",
-      "Trump", "Biden", "Xi Jinping", "Putin", "Zelensky", "Kim Jong Un",
-      "NATO", "BRICS", "G7", "UN", "EU", "Pentagon", "CIA",
-      "South China Sea", "Taiwan", "Ukraine", "Russia", "Iran", "Israel",
-      "Gaza", "North Korea", "Syria", "Yemen", "AUKUS",
-      "ASEAN", "Vietnam", "trade war", "tariff", "arms deal",
-      "military", "defense", "navy", "air force", "drone", "hypersonic",
-      "cyber attack", "espionage", "intelligence"
+      "AI",
+      "artificial intelligence",
+      "LLM",
+      "GPT",
+      "Claude",
+      "OpenAI",
+      "geopolitics",
+      "sanctions",
+      "war",
+      "election",
+      "diplomacy",
+      "summit",
+      "coup",
+      "nuclear",
+      "missile",
+      "invasion",
+      "ceasefire",
+      "peace talks",
+      "Trump",
+      "Biden",
+      "Xi Jinping",
+      "Putin",
+      "Zelensky",
+      "Kim Jong Un",
+      "NATO",
+      "BRICS",
+      "G7",
+      "UN",
+      "EU",
+      "Pentagon",
+      "CIA",
+      "South China Sea",
+      "Taiwan",
+      "Ukraine",
+      "Russia",
+      "Iran",
+      "Israel",
+      "Gaza",
+      "North Korea",
+      "Syria",
+      "Yemen",
+      "AUKUS",
+      "ASEAN",
+      "Vietnam",
+      "trade war",
+      "tariff",
+      "arms deal",
+      "military",
+      "defense",
+      "navy",
+      "air force",
+      "drone",
+      "hypersonic",
+      "cyber attack",
+      "espionage",
+      "intelligence"
     ],
     "topics": [
-      "politics", "geopolitics", "AI",
-      "world news", "technology", "military",
-      "diplomacy", "defense", "intelligence"
+      "politics",
+      "geopolitics",
+      "AI",
+      "world news",
+      "technology",
+      "military",
+      "diplomacy",
+      "defense",
+      "intelligence"
     ]
   },
   "output": {
@@ -66,15 +189,3 @@
     "batch_label": "🌅 TIN SÁNG — Thế Giới, AI, Chính Trị & Quân Sự"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
