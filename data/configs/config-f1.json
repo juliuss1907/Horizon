@@ -1,6 +1,6 @@
 {
   "ai": {
-    "provider": "google",
+    "provider": "gemini",
     "model": "gemma-4-31b-it",
     "api_key_env": "GOOGLE_API_KEY",
     "languages": ["en", "vi"]
@@ -32,6 +32,7 @@
     "batch_label": "🏎️ F1 BRIEF — Formula 1 News"
   }
 }
+
 
 
 
