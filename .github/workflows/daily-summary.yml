@@ -71,10 +71,17 @@ jobs:
         env:
          GOOGLE_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         run: |
+          mkdir -p data/summaries
           uv run horizon --hours 8
           TODAY=$(date +%Y-%m-%d)
           BATCH=${{ steps.detect_batch.outputs.batch }}
           cp data/summaries/latest.md data/summaries/${TODAY}-${BATCH}.md
+          if [ -f data/summaries/latest.md ]; then
+            cp data/summaries/latest.md data/summaries/${TODAY}-${BATCH}.md
+          else
+            echo "Warning: latest.md not found. Horizon may not have generated output."
+            exit 1
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
