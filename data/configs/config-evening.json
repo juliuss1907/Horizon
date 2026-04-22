@@ -1,57 +1,71 @@
-{
+﻿{
   "ai": {
     "provider": "minimax",
     "model": "MiniMax-M2.7",
     "api_key_env": "MINIMAX_API_KEY",
-    "base_url": "https://api.minimax.io/",
     "languages": ["en", "vi"]
   },
   "sources": {
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 30,
-      "min_score": 200,
-      "topics": ["essay", "article", "deep dive", "opinion", "story"]
+      "fetch_top_stories": 20,
+      "min_score": 50,
+      "topics": ["culture", "society", "life", "entertainment", "music", "film", "essay"]
     },
     "rss": [
-      { "name": "Wait But Why",     "url": "https://waitbutwhy.com/feed" },
-      { "name": "Ness Labs",        "url": "https://nesslabs.com/feed" },
-      { "name": "MIT Tech Review",  "url": "https://www.technologyreview.com/feed/" },
-      { "name": "Stratechery",      "url": "https://stratechery.com/feed/" },
-      { "name": "The Marginalian",  "url": "https://www.themarginalian.org/feed/" },
-      { "name": "CoinDesk Opinion", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/category/opinion/" }
+      { "name": "BBC Culture",          "url": "http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml" },
+      { "name": "The Guardian Film",    "url": "https://www.theguardian.com/film/rss" },
+      { "name": "The Guardian Music",   "url": "https://www.theguardian.com/music/rss" },
+      { "name": "The Guardian Culture", "url": "https://www.theguardian.com/culture/rss" },
+      { "name": "The Guardian Life",    "url": "https://www.theguardian.com/lifeandstyle/rss" },
+      { "name": "Variety",              "url": "https://variety.com/feed/" },
+      { "name": "The Hollywood Reporter","url": "https://www.hollywoodreporter.com/feed/" },
+      { "name": "IndieWire",            "url": "https://www.indiewire.com/feed/" },
+      { "name": "Pitchfork",            "url": "https://pitchfork.com/feed/feed-news/rss" },
+      { "name": "Rolling Stone",        "url": "https://www.rollingstone.com/feed/" },
+      { "name": "Vulture",              "url": "https://www.vulture.com/feed/rss/index.xml" },
+      { "name": "The Marginalian",      "url": "https://www.themarginalian.org/feed/" },
+      { "name": "Aeon",                 "url": "https://aeon.co/feed.rss" },
+      { "name": "Longreads",            "url": "https://longreads.com/feed/" },
+      { "name": "Ness Labs",            "url": "https://nesslabs.com/feed" },
+      { "name": "VnExpress Giai Tri",   "url": "https://vnexpress.net/rss/giai-tri.rss" },
+      { "name": "VnExpress Doi Song",   "url": "https://vnexpress.net/rss/doi-song.rss" },
+      { "name": "Kenh14",               "url": "https://kenh14.vn/rss/home.rss" }
     ],
-    "reddit": {
-      "subreddits": [
-        { "subreddit": "slatestarcodex",  "sort": "top", "time": "day" },
-        { "subreddit": "philosophy",      "sort": "top", "time": "day" },
-        { "subreddit": "Meditation",      "sort": "top", "time": "day" },
-        { "subreddit": "getdisciplined",  "sort": "top", "time": "day" }
-      ],
-      "fetch_comments": 3
+    "telegram": {
+      "channels": [
+        { "channel": "ahboyashreads",    "fetch_limit": 15 }
+      ]
     }
   },
   "filtering": {
-    "ai_score_threshold": 7.5,
+    "ai_score_threshold": 4.0,
     "time_window_hours": 24,
-    "max_items": 7,
-    "prefer_long_form": true,
-    "topics": ["AI", "crypto", "technology", "lifestyle", "mindfulness", "productivity", "healing", "philosophy"]
+    "max_items": 12,
+    "highlight_keywords": [
+      "movie", "film", "cinema", "Netflix", "Disney", "HBO", "streaming",
+      "Oscar", "Emmy", "Golden Globe", "Cannes", "Venice",
+      "trailer", "premiere", "box office", "blockbuster", "series",
+      "music", "album", "concert", "tour", "Grammy", "Billboard",
+      "Spotify", "Apple Music", "vinyl", "playlist",
+      "K-pop", "BTS", "BLACKPINK", "Taylor Swift", "Beyonce",
+      "anime", "manga", "gaming", "PlayStation", "Nintendo",
+      "celebrity", "interview", "documentary", "podcast",
+      "lifestyle", "travel", "food", "recipe", "restaurant",
+      "fashion", "design", "architecture", "photography",
+      "mental health", "wellness", "mindfulness", "meditation",
+      "book", "novel", "author", "bestseller",
+      "viral", "trend", "meme", "TikTok", "YouTube",
+      "society", "culture", "community", "generation Z", "millennial"
+    ],
+    "topics": [
+      "entertainment", "film", "music", "culture",
+      "lifestyle", "society", "wellness",
+      "gaming", "books", "food", "travel"
+    ]
   },
   "output": {
     "batch_name": "evening",
-    "batch_label": "🌙 EVENING READS — Bài Hay Cuối Ngày"
+    "batch_label": "🌙 TIN TỐI — Xã Hội, Đời Sống & Giải Trí"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
