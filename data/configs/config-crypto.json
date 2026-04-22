@@ -1,51 +1,67 @@
-{
+﻿{
   "ai": {
     "provider": "minimax",
     "model": "MiniMax-M2.7",
     "api_key_env": "MINIMAX_API_KEY",
-    "base_url": "https://api.minimax.io/",
     "languages": ["en", "vi"]
   },
   "sources": {
-    "hackernews": { "enabled": false },
+    "hackernews": {
+      "enabled": true,
+      "fetch_top_stories": 20,
+      "min_score": 50,
+      "topics": ["crypto", "bitcoin", "ethereum", "blockchain", "DeFi", "web3"]
+    },
     "rss": [
-      { "name": "CoinDesk",       "url": "https://www.coindesk.com/arc/outboundfeeds/rss/" },
-      { "name": "CoinTelegraph",  "url": "https://cointelegraph.com/rss" },
-      { "name": "The Block",      "url": "https://www.theblock.co/rss.xml" },
-      { "name": "Decrypt",        "url": "https://decrypt.co/feed" },
-      { "name": "DLNews",         "url": "https://www.dlnews.com/arc/outboundfeeds/rss/" }
+      { "name": "CoinTelegraph",       "url": "https://cointelegraph.com/rss" },
+      { "name": "CoinTelegraph BTC",   "url": "https://cointelegraph.com/rss/tag/bitcoin" },
+      { "name": "CoinTelegraph DeFi",  "url": "https://cointelegraph.com/rss/tag/defi" },
+      { "name": "The Block",           "url": "https://www.theblock.co/rss.xml" },
+      { "name": "Decrypt",             "url": "https://decrypt.co/feed" },
+      { "name": "Blockworks",          "url": "https://blockworks.co/feed" },
+      { "name": "CryptoSlate",         "url": "https://cryptoslate.com/feed/" },
+      { "name": "Bitcoinist",          "url": "https://bitcoinist.com/feed/" },
+      { "name": "BeInCrypto",          "url": "https://beincrypto.com/feed/" },
+      { "name": "The Defiant",         "url": "https://thedefiant.io/feed" },
+      { "name": "Unchained",           "url": "https://unchainedcrypto.com/feed/" }
     ],
-    "reddit": {
-      "subreddits": [
-        { "subreddit": "CryptoCurrency",  "sort": "hot" },
-        { "subreddit": "CryptoMarkets",   "sort": "hot" },
-        { "subreddit": "ethereum",        "sort": "hot" },
-        { "subreddit": "bitcoin",         "sort": "hot" },
-        { "subreddit": "web3",            "sort": "hot" }
-      ],
-      "fetch_comments": 3
+    "telegram": {
+      "channels": [
+        { "channel": "shoalresearch",          "fetch_limit": 15 },
+        { "channel": "crypto_fundraising",     "fetch_limit": 15 },
+        { "channel": "cryptorank_fundraising", "fetch_limit": 15 },
+        { "channel": "DegenerateNews",         "fetch_limit": 15 },
+        { "channel": "CoinBureau",             "fetch_limit": 15 },
+        { "channel": "ahboyashreads",          "fetch_limit": 15 }
+      ]
     }
   },
   "filtering": {
-    "ai_score_threshold": 6.0,
-    "time_window_hours": 10,
-    "max_items": 10,
-    "highlight_keywords": ["fundraising", "funding", "raise", "series", "gọi vốn", "drama", "hack", "exploit"]
+    "ai_score_threshold": 4.0,
+    "time_window_hours": 12,
+    "max_items": 15,
+    "highlight_keywords": [
+      "bitcoin", "BTC", "ethereum", "ETH", "solana", "SOL",
+      "DeFi", "DEX", "NFT", "Layer 2", "L2", "rollup", "zk",
+      "fundraising", "funding", "raise", "series A", "series B", "seed round",
+      "ICO", "IDO", "IEO", "airdrop", "token launch",
+      "ETF", "spot ETF", "SEC", "regulation", "compliance",
+      "hack", "exploit", "rug pull", "scam", "vulnerability",
+      "whale", "liquidation", "short squeeze", "pump", "dump",
+      "stablecoin", "USDT", "USDC", "DAI",
+      "Binance", "Coinbase", "Kraken", "OKX",
+      "Vitalik", "CZ", "SBF", "Gary Gensler",
+      "bull run", "bear market", "halving", "ATH", "all time high",
+      "memecoin", "DOGE", "PEPE", "SHIB"
+    ],
+    "topics": [
+      "crypto", "bitcoin", "ethereum", "DeFi",
+      "blockchain", "web3", "fundraising",
+      "regulation", "trading", "security"
+    ]
   },
   "output": {
     "batch_name": "crypto",
-    "batch_label": "💰 CRYPTO BRIEF — Tin Tức & Gọi Vốn"
+    "batch_label": "💰 CRYPTO BRIEF — Tin Tức, DeFi & Gọi Vốn"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-

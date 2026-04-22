@@ -85,11 +85,11 @@
       "channels": [
         {
           "channel": "quantin_vic",
-          "fetch_limit": 20
+          "fetch_limit": 15
         },
         {
           "channel": "ahboyashreads",
-          "fetch_limit": 20
+          "fetch_limit": 15
         },
         {
           "channel": "CoinBureau",
