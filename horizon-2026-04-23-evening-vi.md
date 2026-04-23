@@ -1,408 +1,235 @@
 # Horizon Daily - 2026-04-23
 
-> From 125 items, 19 important content pieces were selected
+> From 126 items, 11 important content pieces were selected
 
 ---
 
-1. [https://openai.com/index/introducing-workspace-agents-in-chatgpt/](#item-1) ⭐️ 8.0/10
-2. [Circle's Chief Economist puts up a proposal on AAVE USDC market](#item-2) ⭐️ 7.0/10
-3. [I am building a cloud](#item-3) ⭐️ 6.0/10
-4. [Our newsroom AI policy](#item-4) ⭐️ 6.0/10
-5. [https://www.anthropic.com/research/81k-economics](#item-5) ⭐️ 6.0/10
-6. [Unicorn Market Cap 2026: SF is the GenAI Super Cluster](#item-6) ⭐️ 6.0/10
-7. [Pornhub drops USDT for USDC](#item-7) ⭐️ 6.0/10
-8. [The Human Made Mark, Initiative to Certify AI-Free Film and TV Productions, Launches at Site of Prehistoric Cave Paintings in France (EXCLUSIVE)](#item-8) ⭐️ 5.0/10
-9. [Cảnh báo sớm nguy cơ dịch bệnh mới từ virus corona ở dơi](#item-9) ⭐️ 5.0/10
-10. [Ruth Slenczynska, last surviving pupil of Rachmaninoff, dies aged 101](#item-10) ⭐️ 4.0/10
-11. [Netflix Authorizes $25 Billion Stock Buyback in Bid to Boost Share Price](#item-11) ⭐️ 4.0/10
-12. [Life invisible](#item-12) ⭐️ 4.0/10
-13. ["Digital Trust in Finance 2026” - Kiến tạo niềm tin số tài chính trong kỷ nguyên AI](#item-13) ⭐️ 4.0/10
-14. [Hà Nội sẽ lắp camera tự động nhận diện xe đạt chuẩn ra vào vùng phát thải thấp](#item-14) ⭐️ 4.0/10
-15. [Cathie Wood’s ARK makes its first lead investment in startup Lucra — and it isn’](#item-15) ⭐️ 4.0/10
-16. [https://www.barrons.com/articles/polymarket-prediction-markets-2028-elon-musk-ma](#item-16) ⭐️ 4.0/10
-17. [How someone manipulated weather in Paris to win a bet](#item-17) ⭐️ 4.0/10
-18. [Money & Ideas in Crypto](#item-18) ⭐️ 4.0/10
-19. [Claude users skew towards higher-income households; Meta towards lower-income](#item-19) ⭐️ 4.0/10
+1. [I am building a cloud](#item-1) ⭐️ 8.0/10
+2. [Our newsroom AI policy](#item-2) ⭐️ 6.0/10
+3. [https://www.a16z.news/p/why-we-need-continual-learning](#item-3) ⭐️ 6.0/10
+4. [The Human Made Mark, Initiative to Certify AI-Free Film and TV Productions, Launches at Site of Prehistoric Cave Paintings in France (EXCLUSIVE)](#item-4) ⭐️ 5.0/10
+5. [Life invisible](#item-5) ⭐️ 5.0/10
+6. [Netflix Sets Big $25 Billion Stock Buyback Amid Lagging Share Price](#item-6) ⭐️ 4.0/10
+7. [NBCUniversal’s Peacock Posts $432 Million Loss as Subscribers Rise to 46 Million](#item-7) ⭐️ 4.0/10
+8. [Pornhub drops USDT for USDC](#item-8) ⭐️ 4.0/10
+9. [https://www.bloomberg.com/news/articles/2026-04-22/singapore-hedge-fund-fenghe-a](#item-9) ⭐️ 4.0/10
+10. [https://www.theedgesingapore.com/news/cryptocurrency/robinhood-gets-singapore-re](#item-10) ⭐️ 4.0/10
+11. [Push to Unwind Bitcoin Hoarder Shows Once-Hot Trade Collapsing](#item-11) ⭐️ 4.0/10
 
 ---
 
 <a id="item-1"></a>
-## [https://openai.com/index/introducing-workspace-agents-in-chatgpt/](https://openai.com/index/introducing-workspace-agents-in-chatgpt/) ⭐️ 8.0/10
+## [I am building a cloud](https://crawshaw.io/blog/building-a-cloud) ⭐️ 8.0/10
 
-OpenAI announced workspace agents for ChatGPT, enabling AI agents to work autonomously within business and professional contexts. These agents are designed to help teams reduce coordination overhead and focus more on creative and strategic work. This launch marks OpenAI's significant expansion into autonomous AI agents for enterprise use, shifting from conversational AI to task-executing assistants. It could fundamentally reshape how businesses integrate AI into daily workflows and team collaboration. Workspace agents are positioned as an early step toward AI that works alongside people in existing tools and workflows. The agents aim to help teams spend less time coordinating work and more time creating, building, and making business decisions.
-
-telegram · ahboyashreads · Apr 23, 03:35
-
-**Background**: AI agents are autonomous systems that can think, plan, and act on their own using large language models. Unlike regular chatbots that only respond to questions, AI agents can break down complex tasks into smaller steps and execute them independently. The concept has gained significant attention as businesses seek to automate workflows beyond simple Q&A interactions.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.linkedin.com/pulse/what-autonomous-agent-ai-beginners-guide-mani-bhushan-shukla-9ltbc">What Is Autonomous Agent AI ? A Beginner's Guide</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#openai`, `#chatgpt`, `#ai-agents`, `#workspace`, `#product-launch`
-
----
-
-<a id="item-2"></a>
-## [Circle's Chief Economist puts up a proposal on AAVE USDC market](https://governance.aave.com/t/arfc-improve-liquidity-buffer-for-usdc-on-aave-v3-ethereum-core-raise-slope-2-lower-optimal-utilization/24684) ⭐️ 7.0/10
-
-Circle's Chief Economist has submitted an ARFC (Aave Request for Comments) proposal to dramatically increase USDC borrowing rates on Aave V3 Ethereum, raising the maximum rate from approximately 14% to 48% to resolve a 4-day liquidity crisis where borrowers have completely drained the pool. This proposal represents one of the most significant interest rate adjustments ever suggested for a major DeFi lending market and signals how major stablecoin issuers are now directly engaging with decentralized governance to protect their token's utility and ecosystem health. The proposal specifically targets Slope 2 of the interest rate model, making borrowing costs spike much more aggressively when pool utilization exceeds optimal levels. This would theoretically attract fresh lender deposits by offering higher yields, thereby refilling the depleted pool and normalizing the withdrawal queue.
-
-telegram · ahboyashreads · Apr 23, 03:35
-
-**Background**: Aave V3 uses an interest rate slope model where borrowing costs increase as pool utilization rises, incentivizing deposits when liquidity becomes scarce. The current USDC market has been maxed out for 4 days because borrowers exhausted available liquidity while potential lenders see no incentive to deposit, leaving existing lenders stuck in withdrawal queues with no timeline for execution.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://ethdaily.io/circle-usdc-rate-hike-aave">Circle Pushes USDC Rate Hike On Aave</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The proposal is currently active on Aave's governance forum and appears to be in the early ARFC stage, inviting community feedback before moving to formal voting. Given the substantive technical change and Circle's direct involvement, significant discussion is expected around whether a 48% max rate strikes the right balance between attracting liquidity and avoiding rate shock for existing borrowers.
-
-**Tags**: `#defi`, `#aave`, `#usdc`, `#stablecoin`, `#lending`, `#governance`, `#liquidity`
-
----
-
-<a id="item-3"></a>
-## [I am building a cloud](https://crawshaw.io/blog/building-a-cloud) ⭐️ 6.0/10
-
-A Tailscale cofounder announced work on a new cloud platform that prioritizes sensible default configurations, addressing inefficiencies in traditional cloud infrastructure like subpar IOPS defaults. The project sparked extensive discussion on Hacker News about infrastructure complexity and the future of cloud computing. This project addresses growing frustration with Kubernetes complexity and the operational overhead of modern cloud platforms, potentially making infrastructure more accessible to smaller teams and individual developers. It represents a potential shift toward user-friendly cloud design that could challenge established providers. Traditional Cloud 1.0 companies offer VMs with defaults of 3000 IOPS while modern laptops can achieve 500k IOPS, highlighting significant inefficiency in conventional defaults. Community members debate whether AI agents will lead to more software proliferation (Jevons paradox) rather than better software, and whether Tailscale's track record of simplifying networking translates to cloud infrastructure.
+Tailscale联合创始人David Crawshaw发布了博文，阐述其构建云基础设施的方法，强调应该提供开箱即用的合理默认配置，而非将复杂性留给用户自行解决。该文章探讨了Kubernetes的复杂性、云经济学以及AI辅助软件开发的未来。 这篇博文引发了开发者社区的广泛讨论，因为它挑战了当前云基础设施的复杂性范式，并提出了替代方案。一位经验丰富的技术创始人分享实践经验，这为行业提供了宝贵的洞察，可能影响未来云服务的设计方向。 文章指出传统云厂商提供的默认配置往往性能低下，例如虚拟机默认仅3000 IOPS，而普通笔记本电脑却能达到500k IOPS。作者还讨论了AI代理如何通过降低编程门槛来增加软件产出，引用了经济学中的杰文斯悖论来说明这一现象。
 
 hackernews · bumbledraven · Apr 23, 04:44
 
-**Background**: Tailscale is a Toronto-based company that provides a zero-config VPN service using WireGuard protocol to create peer-to-peer mesh networks. Kubernetes, developed by Google and now a CNCF project, is the leading container orchestration platform but is widely criticized for its steep learning curve and operational complexity. The "defaults matter" philosophy stems from the observation that infrastructure defaults significantly impact developer productivity and cost efficiency.
+**Background**: Tailscale是一家位于多伦多的软件公司，开发基于WireGuard的开源Mesh VPN技术。与传统VPN不同，Mesh VPN采用点对点模型，让节点之间可以直接传输流量。Kubernetes作为容器编排平台，虽然功能强大但配置复杂，常常需要大量运维工作来管理软件定义网络层和其他服务。
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Tailscale">Tailscale - Wikipedia</a></li>
-<li><a href="https://tailscale.com/kb/1151/what-is-tailscale">What is Tailscale? · Tailscale Docs</a></li>
+<li><a href="https://tailscale.com/learn/understanding-mesh-vpns">Understanding mesh network topology (mesh VPNs)</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community shows divided opinions: some celebrate the ambition to simplify cloud infrastructure and improve defaults, while others express skepticism about whether Tailscale can maintain its ideals as the company grows and profit pressures increase. Critics label Kubernetes as "putting lipstick on a pig," while supporters highlight the opportunity in combining LLM development flows with flexible Linux machine access. A notable concern is whether AI agents will create more unused software rather than better software, representing a Jevons paradox in software development.
+**Discussion**: 社区反应呈现两极化。开发者dajonker赞同文章对Kubernetes复杂性的批评，称其为'给猪涂口红'。但stingraycharles表达了对商业模式的担忧，认为成功的云服务最终会为了利润而偏离初衷。clktmr则从经济学角度指出，AI代理降低编程门槛反而可能导致更多未被使用的软件（杰文斯悖论），认为LLM应该用于编写更好的软件而非产出更多代码。
 
-**Tags**: `#cloud-infrastructure`, `#devops`, `#kubernetes`, `#startup`, `#systems-design`
+**Tags**: `#cloud-infrastructure`, `#kubernetes`, `#systems-design`, `#devops`, `#ai-agents`
+
+---
+
+<a id="item-2"></a>
+## [Our newsroom AI policy](https://arstechnica.com/staff/2026/04/our-newsroom-ai-policy/) ⭐️ 6.0/10
+
+Ars Technica has published an official newsroom AI policy outlining permissible uses (research assistance, document summarization, dataset searching) while explicitly prohibiting AI-generated quotes attributed to named sources in any form. As a prominent technology publication, Ars Technica's policy sets a precedent for how mainstream newsrooms can balance AI adoption with editorial integrity, providing a template other media organizations may参考. The policy includes a core principle stating that 'anyone who uses AI tools in our editorial workflow is responsible for the accuracy and integrity of the resulting work.' It specifically restricts AI from generating or extracting quotes, paraphrases, or characterizations attributed to named sources.
+
+hackernews · zdw · Apr 23, 05:14
+
+**Background**: The policy appears to have been drafted in response to a previous incident involving AI-generated fabricated content. Large language models (LLMs) have been criticized for their tendency to 'hallucinate' or generate plausible-sounding but factually incorrect information, making their use in sensitive editorial contexts particularly challenging. The journalism industry has been grappling with finding the right balance between leveraging AI efficiency and maintaining the credibility that traditional reporting provides.
+
+**Discussion**: Commenters have identified the policy as potentially self-contradictory, noting that permitting AI for summarization conflicts with the prohibition on AI-generated quotes, since summaries may inadvertently create paraphrased content. Others point out the irony that AI is 'peeing in its own water source'—its usefulness depends on training data from human-created content, which AI-generated slop threatens to degrade. The simplest counter-argument offered is that the ideal AI policy is simply to not use AI at all.
+
+**Tags**: `#ai-policy`, `#journalism`, `#editorial-guidelines`, `#media-ethics`, `#newsroom`
+
+---
+
+<a id="item-3"></a>
+## [https://www.a16z.news/p/why-we-need-continual-learning](https://www.a16z.news/p/why-we-need-continual-learning) ⭐️ 6.0/10
+
+a16z has published an article examining the importance of continual learning, exploring how both AI systems and human professionals in the technology industry need to continuously update their knowledge and adapt to rapidly changing environments. This matters because understanding continual learning is critical for AI practitioners building adaptive systems and for technology professionals navigating career development in an era of rapid innovation. The article likely provides strategic insights from a leading VC firm's perspective on emerging AI capabilities and workforce trends. The article draws on a16z's unique vantage point at the intersection of AI research and industry application. Continual learning addresses the 'catastrophic forgetting' challenge in neural networks, where models risk losing previously acquired knowledge when learning new tasks, requiring strategies to preserve old capabilities while acquiring new ones.
+
+telegram · ahboyashreads · Apr 23, 11:08
+
+**Background**: Continual learning is an AI approach that enables models to stream training data incrementally and integrate new information while preserving previously learned tasks. Unlike transfer learning, which applies knowledge from source to target only once, continual learning is a continuous process necessary for developing adaptable AI systems. This approach has become increasingly important as AI applications face real-world dynamics requiring systems to evolve over their operational lifetime.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.splunk.com/en_us/blog/learn/continual-learning.html">Continual Learning in AI: How It Works & Why AI Needs It | Splunk</a></li>
+<li><a href="https://www.ibm.com/think/topics/continual-learning">What is Continual Learning? | IBM</a></li>
+<li><a href="https://arxiv.org/abs/2302.00487">[2302.00487] A Comprehensive Survey of Continual Learning: Theory, Method and Application</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#ai-ml`, `#continual-learning`, `#education`, `#software-development`, `#a16z`
 
 ---
 
 <a id="item-4"></a>
-## [Our newsroom AI policy](https://arstechnica.com/staff/2026/04/our-newsroom-ai-policy/) ⭐️ 6.0/10
-
-Ars Technica published their official newsroom AI policy, outlining guidelines for how reporters may use vetted AI tools for research, document summarization, and data searching. The policy has sparked significant debate on Hacker News, with critics arguing it contradicts earlier statements and raises concerns about LLM accuracy in journalism. The policy permits AI-assisted research while Ars Technica recently fired a reporter after an AI controversy involving fabricated quotes. Commenters highlight that LLMs are known to hallucinate and produce inaccurate summaries.
-
-hackernews · zdw · Apr 23, 05:14
-
-**Background**: In early 2025, Ars Technica terminated a reporter for publishing an article containing fabricated quotes that were AI-generated. This incident highlighted the risks of LLM hallucination in journalism, where AI systems produce plausible-sounding but factually incorrect content. LLMs are known to randomly latch onto keywords and construct narratives from them, making them unreliable for accurate summarization.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://originality.ai/blog/what-llm-is-the-most-accurate">What LLM is The Most Accurate ? – Originality.AI</a></li>
-<li><a href="https://www.protecto.ai/blog/understanding-common-issues-in-llm-accuracy/">Common Issues In LLM Accuracy : How To Improve</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Hacker News commenters widely criticized the policy as self-contradictory and performative. Multiple users argued that the policy creates loopholes allowing AI-generated content while maintaining a facade of responsible use. One commenter noted that 'AI policy with AI usage is always difficult to write/read' and suggests simpler policies without AI usage would be more honest. Another expressed disappointment that Ars Technica has become 'just slop now,' citing prior high-profile incidents as evidence of declining standards.
-
-**Tags**: `#AI policy`, `#journalism`, `#media ethics`, `#LLM accuracy`, `#newsroom practices`
-
----
-
-<a id="item-5"></a>
-## [https://www.anthropic.com/research/81k-economics](https://www.anthropic.com/research/81k-economics) ⭐️ 6.0/10
-
-Anthropic released a research report on the economics of AI development, based on a survey of 81,000 Claude users across 159 countries, to connect people's economic concerns with quantified Claude traffic data. This research provides rare empirical data on how users perceive and interact with AI economically, offering valuable insights for AI companies, policymakers, and researchers studying the real-world impact of AI systems. The study is described as Anthropic's largest qualitative research effort, involving 80,508 users, and is part of the Anthropic Economic Index initiative that plans to conduct monthly surveys through Anthropic Interviewer.
-
-telegram · ahboyashreads · Apr 23, 03:35
-
-**Background**: AI development costs have been escalating dramatically, with OpenAI and Anthropic expecting to spend nearly $65 billion combined in 2026 on training and operating AI models. Earlier reports indicated that Claude 3.7 Sonnet cost "a few tens of millions of dollars" to train using less than 10^26 FLOPs of computing power. Understanding the economics behind AI development and usage has become increasingly important as the industry scales.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.anthropic.com/research/81k-economics">What 81,000 people told us about the economics of AI \ Anthropic</a></li>
-<li><a href="https://www.anthropic.com/research/economic-index-survey-announcement">Announcing the Anthropic Economic Index Survey \ Anthropic</a></li>
-<li><a href="https://www.wsj.com/tech/ai/the-spiraling-cost-of-making-ai-0679bcea">The Spiraling Cost of Making AI, Anthropic Means Business and ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI-Research`, `#Economics`, `#Anthropic`, `#AI-Labs`, `#Tech-Research`
-
----
-
-<a id="item-6"></a>
-## [Unicorn Market Cap 2026: SF is the GenAI Super Cluster](https://blog.eladgil.com/p/unicorn-market-cap-2026-sf-is-the) ⭐️ 6.0/10
-
-San Francisco has emerged as the definitive global hub for generative AI, commanding 91% of worldwide GenAI unicorn market capitalization and 39% of total global unicorn value, representing more than 4x the concentration of any other city. Meanwhile, new unicorn creation has declined to approximately 100 per year compared to roughly 300 per year before 2022, though existing unicorn valuations continue climbing rapidly. This extreme geographic concentration has profound implications for venture capital allocation, talent distribution, and the future competitive landscape of AI development. The data suggests that investors are increasingly betting on scale and market dominance rather than funding a diverse ecosystem of AI startups across multiple regions. The generative AI sector's share of total unicorn market cap surged from just 2% in 2024 to 22% in 2026, indicating both rapid value creation and increasing market consolidation around AI-specific companies. This growth occurred despite—or perhaps because of—the slowdown in new unicorn formation, suggesting that investor capital is flowing toward fewer, larger bets.
-
-telegram · ahboyashreads · Apr 23, 03:35
-
-**Background**: A unicorn refers to a privately held startup company valued at over $1 billion USD. San Francisco's Bay Area has historically been the world's leading technology hub, but this data reveals an unprecedented concentration of AI-specific wealth creation in the region. Generative AI companies focus on building AI systems capable of creating content, code, and media—capabilities that have attracted massive investment since the success of models like GPT and other large language models.
-
-**Tags**: `#generative-ai`, `#startups`, `#venture-capital`, `#san-francisco`, `#market-analysis`
-
----
-
-<a id="item-7"></a>
-## [Pornhub drops USDT for USDC](https://protos.com/pornhub-drops-usdt-for-usdc/) ⭐️ 6.0/10
-
-Pornhub, a major online platform, has officially dropped Tether (USDT) as a payment method and switched to Circle's USDC stablecoin for transactions. The switch signals growing platform confidence in regulated stablecoins over non-audited alternatives, potentially influencing how other platforms evaluate their crypto payment strategies amid increasing regulatory scrutiny. USDC is issued by Circle, a regulated fintech company that recently completed a successful IPO on the NYSE under ticker CRCL, tripling its IPO price on its first day of trading in June 2025.
-
-telegram · ahboyashreads · Apr 23, 05:41
-
-**Background**: Stablecoins are cryptocurrencies designed to maintain a fixed value, typically pegged 1:1 to the US dollar. USDT (Tether) and USDC (Circle) are the two largest stablecoins by market capitalization. USDT has faced ongoing controversy over whether it maintains sufficient reserves to back its tokens, while USDC positions itself as a fully-reserved, regulated alternative with transparent audit practices. Circle went public in June 2025 as the first stablecoin issuer to list on a major stock exchange.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.circle.com/usdc">USDC | Powering global finance. Issued by Circle.</a></li>
-<li><a href="https://www.forbes.com/sites/digital-assets/2025/06/05/circle-soars-in-first-ever-stablecoin-ipo-making-ceo-a-billionaire/">Circle Soars In First-Ever Stablecoin IPO, Making CEO A ...</a></li>
-<li><a href="https://www.pymnts.com/cryptocurrency/2025/circle-is-americas-first-publicly-traded-stablecoin-issuer-now-what/">Circle Is America’s First Publicly Traded Stablecoin Issuer ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#stablecoins`, `#USDT`, `#USDC`, `#crypto-adoption`, `#Tether`
-
----
-
-<a id="item-8"></a>
 ## [The Human Made Mark, Initiative to Certify AI-Free Film and TV Productions, Launches at Site of Prehistoric Cave Paintings in France (EXCLUSIVE)](https://variety.com/2026/film/global/the-human-made-mark-ai-free-film-initiative-launches-1236728524/) ⭐️ 5.0/10
 
-The Human Made Mark initiative officially launched at the prehistoric Lascaux cave paintings in France, offering filmmakers a way to certify that their productions were created without AI-generated content or performers. The certification requires filmmakers to submit evidence including call sheets, behind-the-scenes photos, credit lists, private viewing links, and sign a legal declaration for review. As AI-generated content and virtual performers like Tilly Norwood become more prevalent in entertainment, this certification provides a crucial trust mechanism for audiences who want to support genuinely human-created work. It could reshape industry practices by giving viewers a verifiable way to choose AI-free productions, similar to how organic or fair-trade labels influence consumer behavior in other industries. The initiative was first established last year and requires productions to submit multiple forms of documentation for verification. Interestingly, the launch location was chosen for its symbolic resonance—humanity's earliest artistic expression at Lascaux, contrasting with AI's emerging role in creative work. A parallel effort exists in publishing: the Authors Guild launched a "Human Authored" certification in November 2025 with similar principles.
+The Human Made Mark initiative officially launched at the Lascaux caves in France, creating a certification system for AI-free film and TV productions that responds to the rise of AI performers like Tilly Norwood and AI-generated films such as Doug Liman's upcoming feature "Bitcoin: Killing Satoshi." This certification system provides filmmakers with a practical mechanism to distinguish human-created content in an increasingly AI-integrated industry, potentially establishing new industry standards as AI-generated content proliferates and reshaping how audiences perceive authenticity in creative works. To gain certification, producers, directors, or production company representatives must submit evidence including call sheets, behind-the-scenes photos, credit lists, private viewing links, and sign a legal declaration. The initiative had early support from notable creatives including Oscar-winning production designer Tamara Deverell, three-time Oscar-nominated cinematographer Dan Laustsen, and Oscar-winning costume designers Ruth E. Carter and Deborah L. Scott.
 
 rss · Variety · Apr 23, 10:04
 
-**Background**: Certification marks are legal symbols that verify goods or services meet specific standards—such as geographic origin (e.g., Roquefort cheese) or quality benchmarks (e.g., UL safety ratings). The Human Made Mark applies this concept to creative media, responding to growing concerns about AI performers like Tilly Norwood, a virtual actor created by Eline Van der Velden and her company Particle6, and features like Doug Limon's AI-generated "Bitcoin: Killing Satoshi." Tilly Norwood sparked significant backlash in the entertainment industry, with critics arguing that AI actors normalize automation that could displace human performers.
+**Background**: The initiative emerges amid growing tensions in the entertainment industry over AI use, with AI performers like Tilly Norwood causing controversy and studios increasingly adopting AI tools. The symbolic launch location at Lascaux caves—a site featuring prehistoric human artistry—underscores the initiative's mission to preserve and celebrate human creative contributions in the face of advancing AI technology.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://variety.com/2026/film/global/the-human-made-mark-ai-free-film-initiative-launches-1236728524/">The Human Made Mark, Initiative to Certify AI-Free Film and TV Productions, Launches at Site of Prehistoric Cave Paintings in France (EXCLUSIVE)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Tilly_Norwood">Tilly Norwood - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Certification_mark">Certification mark - Wikipedia</a></li>
+<li><a href="https://www.bode-living.com/2026/03/16/the-race-for-an-ai-free-logo-certifying-human-creation-in-a-digital-age/">The Race for an "AI-Free" Logo: Certifying Human Creation in a Digital Age - Bode living</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The initiative has generated mixed reactions. While some industry observers praise it as a necessary response to growing AI involvement in entertainment, others question its feasibility and whether audiences truly demand AI-free content. The comparison to Tilly Norwood, which was created by 18 real humans (including production designers, costume designers, and editors) yet still faced criticism for being an "AI actor," highlights the complexity of defining what constitutes authentic human creativity versus AI-assisted work.
+**Discussion**: Early supporters have voiced strong backing for the initiative. Deverell stated that its "mission to help protect the human village on a film set is vital for the future of our industry," reflecting broader concerns about maintaining human roles in creative production as AI tools become more sophisticated.
 
-**Tags**: `#AI ethics`, `#creative industry`, `#certification`, `#film production`, `#AI-generated content`
-
----
-
-<a id="item-9"></a>
-## [Cảnh báo sớm nguy cơ dịch bệnh mới từ virus corona ở dơi](https://kenh14.vn/canh-bao-som-nguy-co-dich-benh-moi-tu-virus-corona-o-doi-215260423162843692.chn) ⭐️ 5.0/10
-
-International scientists have discovered a coronavirus strain in bats that demonstrates the ability to enter human cells, triggering early warnings about potential future disease outbreaks. This discovery highlights the ongoing risk of zoonotic disease transmission from wildlife to humans, emphasizing the importance of surveillance and preparedness for potential future pandemics. The finding underscores that bat populations continue to serve as reservoirs for viruses with pandemic potential. Research published in Nature indicates that this bat coronavirus can enter human cells through a previously unknown gateway mechanism. The virus employs specific receptor recognition by a subset of alphacoronaviruses to gain cellular entry, similar to how SARS-CoV-2 uses the spike protein to bind to human receptors.
-
-rss · Kenh14 · Apr 23, 17:06
-
-**Background**: Zoonotic diseases are infections that can be naturally transmitted from vertebrate animals to humans, with over 60% of human pathogens being zoonotic in origin. Bats are known reservoirs for numerous coronavirus strains, and understanding how these viruses breach species barriers is critical for pandemic preparedness. Viral entry into host cells is typically mediated by spike proteins that recognize and bind to specific cellular receptors.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.nature.com/articles/d41586-026-00908-y">A bat coronavirus can enter human cells through a previously ...</a></li>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7563794/">Zoonotic Diseases: Etiology, Impact, and Control - PMC</a></li>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8491763/">Mechanisms of SARS-CoV-2 entry into cells - PMC</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#coronavirus`, `#bat-viruses`, `#public-health`, `#pandemic-preparedness`, `#zoonotic-disease`
+**Tags**: `#AI ethics`, `#entertainment industry`, `#certification`, `#creative work`, `#AI-generated content`
 
 ---
 
-<a id="item-10"></a>
-## [Ruth Slenczynska, last surviving pupil of Rachmaninoff, dies aged 101](https://www.bbc.com/news/articles/c62ly04pre3o?at_medium=RSS&at_campaign=rss) ⭐️ 4.0/10
+<a id="item-5"></a>
+## [Life invisible](https://aeon.co/videos/searching-for-superbug-cures-in-the-salt-flats-of-the-atacama-desert?utm_source=rss-feed) ⭐️ 5.0/10
 
-Ruth Slenczynska, renowned child prodigy pianist and the last surviving pupil of Sergei Rachmaninoff, has passed away at age 101. Her remarkable career included performances for five US Presidents and continued recording work well into her 90s. Her death severs one of the last direct artistic connections to Sergei Rachmaninoff, one of the Romantic era's greatest composers and pianists. As someone who received personal instruction from Rachmaninoff himself, Slenczynska represented an unbroken lineage of musical tradition spanning the 20th century. Ruth Slenczynska was born in 1929 and began studying with Rachmaninoff as a young child. She performed for Presidents Eisenhower, Kennedy, Johnson, Nixon, and Reagan. Despite her prodigious early talent, she took a significant break from performing during her young adult years before returning to the stage with renewed vigor.
-
-rss · BBC Culture · Apr 23, 09:44
-
-**Background**: Sergei Rachmaninoff (1873-1943) was a Russian composer, pianist, and conductor who is widely regarded as one of the most brilliant pianists of the 20th century. After emigrating to the United States in 1917, he continued composing and performing until his death. Ruth Slenczynska was among the fortunate few to receive private instruction from him as a child, gaining insight into his distinctive touch and interpretative style that she carried throughout her century-spanning career.
-
-**Tags**: `#obituary`, `#classical-music`, `#piano`, `#historical-figure`, `#Rachmaninoff`
-
----
-
-<a id="item-11"></a>
-## [Netflix Authorizes $25 Billion Stock Buyback in Bid to Boost Share Price](https://variety.com/2026/tv/news/netflix-25-billion-share-repurchase-stock-price-1236728558/) ⭐️ 4.0/10
-
-Netflix's board of directors authorized a $25 billion stock buyback program on April 22, 2026. The streaming giant is redirecting capital following the end of its Warner Bros. content licensing arrangement, using the freed-up funds to repurchase its own shares. This move signals Netflix's strategic shift in capital allocation as it no longer pays licensing fees to Warner Bros. Stock buybacks typically increase earnings per share by reducing outstanding shares, which can boost share prices and provide returns to shareholders. Stock buybacks are considered routine corporate financial actions, though they remain controversial—some critics view them as market manipulation rather than productive investment. SEC Rule 10b-18 governs how companies conduct these repurchases, establishing specific conditions for合规合规.
-
-rss · Variety · Apr 23, 10:27
-
-**Background**: A stock buyback occurs when a company purchases its own shares from the marketplace, reducing the number of outstanding shares. This increases each remaining shareholder's ownership percentage and typically boosts earnings per share. Stock buybacks offer tax efficiency benefits to shareholders compared to dividends, though critics argue companies should instead invest in innovation and workforce development.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.investopedia.com/terms/b/buyback.asp">Understanding Stock Buybacks: Benefits, Drawbacks, and ...</a></li>
-<li><a href="https://www.schwab.com/learn/story/how-stock-buybacks-work-and-why-they-matter">How Stock Buybacks Work | Charles Schwab</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Netflix`, `#Stock Buyback`, `#Corporate Finance`, `#Streaming Industry`, `#Entertainment Tech`
-
----
-
-<a id="item-12"></a>
-## [Life invisible](https://aeon.co/videos/searching-for-superbug-cures-in-the-salt-flats-of-the-atacama-desert?utm_source=rss-feed) ⭐️ 4.0/10
-
-Scientists in Chile's Atacama Desert are conducting urgent research to discover novel antibiotics from extremophilic microorganisms before expanding mining operations destroy these unique microbial ecosystems that could hold solutions to the growing antibiotic resistance crisis. Antibiotic resistance is projected to cause 10 million deaths annually by 2050, making the discovery of novel antibiotics increasingly urgent. The extremophiles found in Atacama's salt flats represent an untapped reservoir of bioactive compounds that could lead to breakthrough treatments against drug-resistant superbugs. The Atacama Desert is one of the driest places on Earth, creating conditions where extremophiles have evolved unique biochemical mechanisms to survive. These organisms produce antimicrobial compounds as a survival strategy against competing microorganisms in their harsh environment, making them promising candidates for drug discovery.
+Aeon Video features scientists in Chile's Atacama Desert racing to discover novel antibiotic compounds from extremophilic microbes. The researchers aim to develop new drugs to combat antibiotic-resistant superbugs as mining expansion increasingly threatens these unique microbial habitats. Antibiotic resistance has become a global health crisis, with existing antibiotics failing against increasingly common superbugs. Extremophiles from extreme environments may produce novel bioactive compounds that could lead to breakthrough antibiotics, but mining expansion poses an urgent threat to these potentially invaluable microbial ecosystems. The Atacama Desert features salt flats with extreme conditions including high salinity, UV radiation, and extreme temperature fluctuations. Microbes adapted to these harsh environments may have evolved unique biochemical pathways to produce novel secondary metabolites with antibiotic properties that have never been encountered in conventional drug discovery.
 
 rss · Aeon · Apr 23, 10:01
 
-**Background**: Extremophiles are microorganisms that thrive in extreme conditions such as extreme salinity, temperature, or acidity. The Atacama Desert, spanning northern Chile, is particularly known for its extreme aridity and salt flats, which have been isolated for millions of years, allowing unique microbial communities to develop. Antibiotic resistance occurs when bacteria evolve mechanisms to survive antibiotic treatments, making infections increasingly difficult to treat with existing drugs.
+**Background**: Extremophiles are microorganisms that thrive in conditions considered hostile to most life forms, such as extreme temperatures, acidity, or high salinity. The Atacama Desert's unique environment, one of the driest places on Earth, creates selective pressure that drives extremophiles to produce novel bioactive compounds. According to scientific literature, extremophiles have evolved biochemical pathways to generate compounds with remarkable stability and bioactivity, making them promising candidates for pharmaceutical research. The growing problem of antibiotic-resistant infections has intensified interest in exploring these extreme environments for new drug candidates.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Extremophile">Extremophile - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Atacama_Desert">Atacama Desert - Wikipedia</a></li>
-<li><a href="https://theconversation.com/extremophiles-resilient-microorganisms-that-help-us-understand-our-past-and-future-165634">Extremophiles : resilient microorganisms that help us understand our...</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7768999/">Antibiotics from Extremophilic Micromycetes - PMC - NIH</a></li>
+<li><a href="https://www.cas.org/resources/cas-insights/extremophiles-biomedical-industrial-innovations">Extremophiles: Unlocking biomedical and industrial innovations from life ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#antibiotic-resistance`, `#extremophiles`, `#drug-discovery`, `#microbiology`, `#environmental-science`
+**Tags**: `#antibiotic resistance`, `#drug discovery`, `#extremophiles`, `#microbiology`, `#Atacama Desert`
 
 ---
 
-<a id="item-13"></a>
-## ["Digital Trust in Finance 2026” - Kiến tạo niềm tin số tài chính trong kỷ nguyên AI](https://kenh14.vn/digital-trust-in-finance-2026-kien-tao-niem-tin-so-tai-chinh-trong-ky-nguyen-ai-215260423171153137.chn) ⭐️ 4.0/10
+<a id="item-6"></a>
+## [Netflix Sets Big $25 Billion Stock Buyback Amid Lagging Share Price](https://www.hollywoodreporter.com/business/business-news/netflix-sets-new-stock-buyback-program-low-share-price-1236572828/) ⭐️ 4.0/10
 
-Vietnamese forum 'Digital Trust in Finance 2026' announced for May 12, 2026, in Hanoi, sponsored by multiple government ministries and organized by the Digital Trust Alliance.
+Netflix has announced a $25 billion stock buyback program, seeking to return capital to shareholders while its stock has declined more than 16 percent over the past six months. This represents one of the largest buyback authorizations in recent corporate history and signals Netflix's confidence in its long-term value despite recent market pressure and increased streaming competition. The $25 billion authorization is substantial compared to typical corporate buybacks, though no specific timeframe for completion has been disclosed. Netflix will purchase shares on the open market over time, which should provide ongoing support for the stock price.
 
-rss · Kenh14 · Apr 23, 17:37
+rss · The Hollywood Reporter · Apr 23, 11:55
 
-**Tags**: `#digital-trust`, `#fintech`, `#AI`, `#cybersecurity`, `#Vietnam`
-
----
-
-<a id="item-14"></a>
-## [Hà Nội sẽ lắp camera tự động nhận diện xe đạt chuẩn ra vào vùng phát thải thấp](https://kenh14.vn/ha-noi-se-lap-camera-tu-dong-nhan-dien-xe-dat-chuan-ra-vao-vung-phat-thai-thap-215260423152924849.chn) ⭐️ 4.0/10
-
-Hanoi authorities announced plans to install Automatic Number Plate Recognition (ANPR) cameras at the boundaries of designated low-emission zones to automatically identify and monitor compliant vehicles entering and exiting these restricted areas. This initiative represents a significant step in Hanoi's smart city strategy, using automated technology to enforce vehicle emission standards without manual checkpoints. If successful, it could serve as a model for other Southeast Asian cities facing similar urban air quality challenges. The ANPR system utilizes optical character recognition (OCR) technology to capture and process license plate images in less than a second, enabling real-time vehicle identification and compliance verification. Resolution 57/2025/NQ-HDND provides the regulatory framework for implementation, with a pilot program planned for Hoan Kiem ward starting July 1, 2026.
-
-rss · Kenh14 · Apr 23, 15:29
-
-**Background**: Low-emission zones (LEZs) are designated urban areas that restrict high-polluting vehicles to improve air quality and public health. ANPR technology uses cameras and OCR algorithms to automatically read vehicle registration plates, creating location data for enforcement purposes. Hanoi passed Resolution 47/2024/NQ-HDND to establish its first low-emission zone within the inner city Ring Road 1, building on global LEZ experiences from cities like London, Amsterdam, and Milan.
+**Background**: Stock buybacks occur when a company purchases its own shares from the market, reducing the number of outstanding shares. This typically increases the stock price proportionally since the company's earnings are distributed across fewer shares. Buybacks are an alternative to dividends for returning capital to shareholders, and they can offer tax advantages as shareholders only incur capital gains taxes when they choose to sell. Share repurchases have become a major driver of equity markets in recent years.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Automatic_number-plate_recognition">Automatic number-plate recognition - Wikipedia</a></li>
-<li><a href="https://www.hikvision.com/en/core-technologies/see-smarter-technology/anpr-automatic-number-plate-recognition/">ANPR (Automatic Number Plate Recognition) - See Smarter Technology - Hikvision Global</a></li>
-<li><a href="https://vanban.hanoi.gov.vn/chi-tiet-van-ban/quy-dinh-thuc-hien-vung-phat-thai-thap-tren-dia-ban-thanh-pho-ha-noi-thuc-hien-diem-a-khoan-2-dieu--228371">Nghị quyết 57/2025/NQ-HĐND Quy định thực hiện vùng phát thải thấp trên địa bàn thành phố Hà Nội (Thực hiện điểm a khoản 2 Điều 28 Luật Thủ đô số 39/2024/QH15)</a></li>
-<li><a href="https://mae.gov.vn/vung-phat-thai-thap-cu-hich-tai-thiet-do-thi-va-khong-khi-ha-noi-17886.htm">Vùng phát thải thấp: Cú hích tái thiết đô thị và không khí Hà Nội</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Share_repurchase">Share repurchase - Wikipedia</a></li>
+<li><a href="https://www.investopedia.com/terms/b/buyback.asp">Understanding Stock Buybacks: Benefits, Drawbacks, and ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#ANPR`, `#smart-city`, `#urban-policy`, `#emission-control`, `#Vietnam`
+**Tags**: `#netflix`, `#stock-buyback`, `#corporate-finance`, `#streaming`, `#investing`
 
 ---
 
-<a id="item-15"></a>
-## [Cathie Wood’s ARK makes its first lead investment in startup Lucra — and it isn’](https://techcrunch.com/2026/04/22/cathie-woods-ark-makes-its-first-lead-investment-in-startup-lucra-and-it-isnt-ai/) ⭐️ 4.0/10
+<a id="item-7"></a>
+## [NBCUniversal’s Peacock Posts $432 Million Loss as Subscribers Rise to 46 Million](https://www.hollywoodreporter.com/business/business-news/peacock-comcast-q1-2026-earnings-report-loss-subscribers-1236572816/) ⭐️ 4.0/10
 
-ARK Invest, led by Cathie Wood, has led a $20 million Series B funding round in Lucra, a B2B platform that transforms corporate loyalty programs into esports-like tournaments. This marks ARK's first-ever lead investment, and notably, it is not in an AI company. This investment breaks ARK Invest's typical pattern of focusing on AI, genomic, robotics, and blockchain innovation companies, signaling a potential diversification strategy. The move also highlights the growing mainstream acceptance of gamification in enterprise software, particularly in transforming traditional loyalty programs into engagement-driven experiences. The $20M Series B round positions ARK Invest as the lead investor in Lucra, a role that typically involves writing checks in the $15-40M range for startups with proven product-market fit and early revenue traction. Lucra differentiates itself by applying esports-style competition mechanics to corporate loyalty programs, targeting B2B customers rather than consumer markets.
+Comcast's Peacock streaming service reported a $432 million loss in Q1 2026, even as subscriber count grew to 46 million. The platform benefited from $2.2 billion in additional revenue driven by Winter Olympics and Super Bowl programming. This financial report highlights the ongoing tension between subscriber growth and profitability in the streaming industry. The substantial revenue boost from live sports events demonstrates how major broadcasting rights can drive platform adoption, raising questions about sustainable streaming economics without event-driven windfalls. The Q1 2026 results were released under Comcast's leadership, with CEO Brian Roberts and CFO Michael Cavanagh presenting the financials. The $2.2 billion in event-related revenue underscores how seasonal programming significantly impacts Peacock's quarterly performance.
 
-telegram · ahboyashreads · Apr 23, 03:35
+rss · The Hollywood Reporter · Apr 23, 11:44
 
-**Background**: Gamification in loyalty programs involves applying game mechanics—such as points, badges, leaderboards, and tournaments—to increase user engagement and retention. In the corporate context, this approach transforms traditional reward systems into more interactive and motivating experiences. Series B funding typically occurs after a startup has demonstrated product-market fit, with the lead investor serving as a strategic partner who helps guide the company's scaling efforts.
+**Background**: Peacock is NBCUniversal's streaming platform, launched by Comcast in 2020 to compete with services like Netflix and Disney+. The streaming industry has seen numerous platforms struggle with profitability despite growing user bases, as content acquisition and original programming costs remain high. Major live events like the Olympics and NFL's Super Bowl have become key differentiators for streaming services seeking to attract subscribers.
+
+**Tags**: `#streaming`, `#peacock`, `#comcast`, `#financial-results`, `#media-industry`
+
+---
+
+<a id="item-8"></a>
+## [Pornhub drops USDT for USDC](https://protos.com/pornhub-drops-usdt-for-usdc/) ⭐️ 4.0/10
+
+Pornhub, a major adult entertainment platform, has switched from Tether (USDT) to Circle's USDC for its cryptocurrency payments. The platform has reportedly removed USDT as a payment option and now only accepts USDC for transactions. This change represents a notable shift in stablecoin preference for a major commercial platform. As a widely-used adult content site with significant traffic and transaction volume, Pornhub's move could signal growing trust in USDC's regulatory compliance and transparency compared to USDT. USDC is a fiat-backed stablecoin launched in 2018 by Circle in partnership with Coinbase. Each USDC is backed 1:1 by U.S. Dollar reserves held in regulated U.S. banks and is fully redeemable for USD. The stablecoin operates primarily as an Ethereum ERC-20 token and is also available on several other blockchain platforms.
+
+telegram · ahboyashreads · Apr 23, 05:41
+
+**Background**: Stablecoins are cryptocurrencies designed to maintain a steady 1:1 value against the U.S. dollar, making them practical for everyday transactions and payments. USDT (Tether) and USDC are the two largest stablecoins by market capitalization, though they differ significantly in their operational transparency and regulatory oversight. Tether (USDT) has historically dominated the market but has faced ongoing questions about reserve backing and regulatory compliance.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.trueloyal.com/research-reports/trend-of-gamification-in-loyalty-program/">The Trend of Gamification in Loyalty Programs : A Comprehensive...</a></li>
-<li><a href="https://fastercapital.com/content/Lead-Investor--The-Role-of-a-Lead-Investor-in-Steering-Your-Series-B-Funding.html">Lead Investor: The Role of a Lead Investor in Steering Your ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/USDC_(cryptocurrency)">USDC (cryptocurrency) - Wikipedia</a></li>
+<li><a href="https://www.usdc.com/">USDC | The world’s largest regulated digital dollar</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#venture-capital`, `#ark-invest`, `#startup-funding`, `#esports`, `#loyalty-programs`
+**Tags**: `#stablecoin`, `#crypto`, `#payments`, `#adoption`, `#Tether`
 
 ---
 
-<a id="item-16"></a>
-## [https://www.barrons.com/articles/polymarket-prediction-markets-2028-elon-musk-ma](https://www.barrons.com/articles/polymarket-prediction-markets-2028-elon-musk-mamdani-06aa7fe2?st=Sk8ndC&reflink=desktopwebshare_permalink) ⭐️ 4.0/10
+<a id="item-9"></a>
+## [https://www.bloomberg.com/news/articles/2026-04-22/singapore-hedge-fund-fenghe-a](https://www.bloomberg.com/news/articles/2026-04-22/singapore-hedge-fund-fenghe-avoids-pod-shop-model-embraces-quirky-work-culture) ⭐️ 4.0/10
 
-A Telegram channel shared a Barron's article link discussing Polymarket prediction market forecasts for 2028, specifically examining predictions involving Elon Musk and political figure Mamdani. The article explores how prediction market participants are trading contracts on outcomes related to these prominent figures. Prediction markets have emerged as influential tools for gauging crowd sentiment on future events, and coverage by mainstream financial outlets like Barron's signals their growing mainstream acceptance. The specific focus on 2028 forecasts regarding high-profile figures like Musk suggests these markets are increasingly used to hedge or speculate on political and technological outcomes. Polymarket is a blockchain-based prediction market built on the Polygon network, founded in 2020 by Shayne Coplan. The platform operates on binary event contracts where traders buy 'yes' or 'no' positions at fractions to full dollars, functioning as live indicators of how informed participants assess future outcomes across sports, politics, and financial markets.
+A Bloomberg article about Singapore hedge fund Fenghe's unconventional work culture and departure from typical pod shop models.
 
-telegram · ahboyashreads · Apr 23, 03:35
+telegram · ahboyashreads · Apr 23, 11:08
 
-**Background**: Prediction markets are financial platforms where participants trade contracts on the outcomes of future events, with prices reflecting collective assessments of probability. Unlike traditional betting, they function as forecasting tools that aggregate dispersed information. Polymarket, one of the largest global platforms, enables trading on virtually any resolvable question, from election outcomes to corporate earnings. While some prediction markets operated in legal gray areas, regulators have recently relaxed their stance, with platforms like Polymarket and Kalshi now legal and growing rapidly in the US.
+**Tags**: `#hedge-fund`, `#corporate-culture`, `#finance`, `#singapore`, `#business`
+
+---
+
+<a id="item-10"></a>
+## [https://www.theedgesingapore.com/news/cryptocurrency/robinhood-gets-singapore-re](https://www.theedgesingapore.com/news/cryptocurrency/robinhood-gets-singapore-regulators-nod-brokerage-offerings) ⭐️ 4.0/10
+
+Robinhood has received approval from Singapore's Monetary Authority of Singapore (MAS) to offer brokerage services in the city-state, marking a significant step in the company's expansion into the Asian market. This approval positions Robinhood to compete in Singapore's growing fintech sector alongside other major platforms like Moomoo that have also secured Major Payment Institution Licenses from MAS. For the broader cryptocurrency ecosystem, Singapore's acceptance of Robinhood signals continued openness to regulated digital asset services in Asia. The approval comes as part of Singapore's regulatory framework that requires firms to obtain licenses such as the Major Payment Institution (MPI) License to operate digital payment token services. The licensing process can take over six months and involves compliance with MAS requirements for consumer protection and financial stability.
+
+telegram · ahboyashreads · Apr 23, 11:08
+
+**Background**: The Monetary Authority of Singapore (MAS) is Singapore's central bank and integrated financial regulator responsible for overseeing all financial institutions and fintech activities in the city-state. Singapore has emerged as a major fintech hub in Asia, with a regulatory sandbox approach that balances innovation with consumer protection. Other crypto-friendly firms like Sygnum have also secured MAS approval for cryptocurrency brokerage services in Singapore.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://polymarket.com/">Polymarket | The World's Largest Prediction Market™</a></li>
-<li><a href="https://www.investopedia.com/terms/p/prediction-market.asp">Prediction Markets Explained: Types, Uses, and Real-World ... Prediction markets: How they work, risks and calculator Top Stories Prediction Markets Guide 2026: How They Work, US Legality ... How Do Prediction Markets Work? Full Explanation & Examples Prediction markets: What they are and how they work What Are Prediction Markets and How Do They Work? Prediction markets : How they work , risks and calculator Prediction markets : How they work , risks and calculator Prediction markets : How they work , risks and calculator Prediction Markets Explained: Types, Uses, and Real-World Examples What Are Prediction Markets and How Do They Work? The ...</a></li>
-<li><a href="https://www.nerdwallet.com/investing/learn/what-are-prediction-markets">Prediction markets: How they work, risks and calculator</a></li>
+<li><a href="https://www.cryptopolitan.com/moomoo-singapore-regulatory-mas-mpi-license/">Moomoo Singapore Achieves Regulatory Milestone... - Cryptopolitan</a></li>
+<li><a href="https://www.hubbis.com/news/sygnum-receives-regulatory-green-light-for-cryptocurrency-brokerage-in-singapore">Sygnum Receives Regulatory Green Light for Cryptocurrency ...</a></li>
+<li><a href="https://legalbison.com/crypto-license/singapore/">Crypto License in Singapore | Expert Legal Consulting... - LegalBison</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#prediction-markets`, `#polymarket`, `#elon-musk`, `#polymarket-2028`, `#news-link`
+**Tags**: `#robinhood`, `#singapore`, `#regulation`, `#cryptocurrency`, `#fintech`
 
 ---
 
-<a id="item-17"></a>
-## [How someone manipulated weather in Paris to win a bet](https://x.com/aaronjmars/status/2047017251270734309?s=20) ⭐️ 4.0/10
+<a id="item-11"></a>
+## [Push to Unwind Bitcoin Hoarder Shows Once-Hot Trade Collapsing](https://www.bloomberg.com/news/articles/2026-04-23/push-to-unwind-bitcoin-hoarder-shows-once-hot-trade-collapsing) ⭐️ 4.0/10
 
-A Polymarket user allegedly heated an unguarded Paris weather sensor with a hair dryer to trigger a brief temperature spike, causing the platform's daily high temperature markets to register the artificial peak and pay out approximately $34,000 on long-shot bets. This incident exposes a critical vulnerability in prediction markets that rely on physical data sources rather than digital oracles. It demonstrates how low-tech physical manipulation can exploit decentralized financial systems, raising questions about data verification mechanisms and the integrity of real-world event markets. The Polymarket charts show sharp late probability shifts toward higher temperature ranges like 22°C, indicating the manipulation occurred near the end of the betting period. The sensor's accessible location enabled the quick manipulation, though temperatures normalized shortly after the artificial spike.
+Bloomberg reports that companies are now unwinding their Bitcoin hoarding positions, illustrating how the once-popular corporate strategy of accumulating cryptocurrency as a treasury reserve has collapsed. Major crypto-hoarding companies like Strategy (formerly MicroStrategy) are facing significant pressure as Bitcoin prices continue to decline. The collapse of this trading strategy marks the end of a popular corporate treasury approach that saw companies borrowing heavily to purchase Bitcoin. The unwinding affects not only these companies but also their shareholders and contributes to broader negative sentiment in the cryptocurrency market. Strategy's average Bitcoin purchase price stands at approximately $75,577. The company relies heavily on leverage to fund its Bitcoin investments, creating significant downside risk. When Bitcoin prices decline, these leveraged positions require margin calls that force further selling, exacerbating the price decline.
 
-telegram · ahboyashreads · Apr 23, 03:35
+telegram · ahboyashreads · Apr 23, 11:08
 
-**Background**: Polymarket is a decentralized prediction market platform built on Ethereum that allows users to speculate on real-world events by purchasing 'Yes' or 'No' shares. Prediction markets derive their forecasting power from financial incentives—by letting users bet on outcomes, they aggregate distributed information into market prices. When markets involve measurable physical phenomena like weather, platforms must source data from real-world oracles, making them potentially vulnerable to physical interference rather than purely digital manipulation.
+**Background**: The crypto-hoarding strategy was pioneered by Michael Saylor, who advocated for companies to hold Bitcoin as a treasury reserve asset. Strategy and other companies borrowed money to buy Bitcoin, betting that its price would continue rising. This strategy became extremely popular during 2020-2024 when Bitcoin prices surged, but it required continued Bitcoin price appreciation to remain viable. The strategy unraveled when Bitcoin prices declined and forced companies to unwind their positions.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://polymarket.com/">Polymarket | The World's Largest Prediction Market™</a></li>
-<li><a href="https://www.coingecko.com/learn/what-is-polymarket-decentralized-prediction-markets-guide">What Is Polymarket? A Guide to Decentralized Prediction ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Prediction_market">Prediction market - Wikipedia</a></li>
+<li><a href="https://www.wsj.com/finance/currencies/the-crypto-hoarding-strategy-is-unraveling-34b720f5">The Crypto-Hoarding Strategy Is Unraveling - WSJ</a></li>
+<li><a href="https://marketwise.com/investing/strategy-1b-bitcoin-buy-risks-saylor-leverage/">Strategy’s $1B Bitcoin Buy: Big Gains or Bigger Risks ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#prediction-markets`, `#polymarket`, `#market-manipulation`, `#crypto`, `#gambling`
-
----
-
-<a id="item-18"></a>
-## [Money & Ideas in Crypto](https://x.com/reganbozman/status/2046970319592710547?s=20) ⭐️ 4.0/10
-
-Crypto VC funding is contracting, pushing investors to either quit, pivot into AI/deep tech, or stay focused on stablecoins and global finance applications. The prevailing bet is that stablecoins and global finance apps still have massive room for growth. This contraction signals a maturation phase in crypto markets, as venture capital becomes more selective and gravitates toward sectors with clearer utility. Stablecoins are emerging as a focal point for growth amid reduced appetite for speculative crypto projects. Data shows that AI projects captured 40 cents of every crypto VC dollar in 2025, more than double the prior year, reflecting the crowding effect of AI on available capital. Stablecoins now represent over $243 billion in circulation worldwide, highlighting their scale and adoption.
-
-telegram · ahboyashreads · Apr 23, 03:35
-
-**Background**: Crypto venture capital funds early-stage blockchain projects and protocols, providing capital for development and infrastructure. Stablecoins are cryptocurrencies designed to maintain a stable value, typically pegged to the US dollar, making them useful for trading, DeFi, and cross-border payments. Crypto VC has historically funded speculative projects, but market cycles and regulatory uncertainty have caused funding fluctuations over time.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.coindesk.com/business/2026/04/18/ai-is-increasingly-eating-into-vc-fundings-and-here-is-how-crypto-firms-are-adapting">Here is how crypto firms are adapting as AI is increasingly eating into...</a></li>
-<li><a href="https://defillama.com/stablecoins">defillama.com/ stablecoins</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#crypto-vc`, `#stablecoins`, `#venture-capital`, `#crypto-markets`, `#investment-trends`
-
----
-
-<a id="item-19"></a>
-## [Claude users skew towards higher-income households; Meta towards lower-income](https://epoch.ai/data-insights/service-by-income) ⭐️ 4.0/10
-
-Research from epoch.ai shows that Claude users predominantly come from higher-income households while Meta users tend to skew towards lower-income households. This income disparity in AI platform usage reveals important patterns about who has access to advanced AI tools. Understanding these demographic splits can help identify digital divide issues and inform strategies for making AI more accessible across socioeconomic groups. The research specifically compares Claude, Anthropic's AI assistant, against Meta's platforms including Facebook and Instagram. The income distribution data provides insights into how different demographic groups engage with various AI-powered services.
-
-telegram · ahboyashreads · Apr 23, 03:35
-
-**Background**: epoch.ai is a research organization focused on tracking AI development trends and adoption patterns. Claude is developed by Anthropic as a next-generation AI assistant, while Meta owns Facebook and Instagram, which have integrated various AI features. Income-based user demographics help researchers and companies understand digital inclusion and technology accessibility across society.
-
-**Tags**: `#AI adoption`, `#market research`, `#demographics`, `#user analysis`, `#social media`
+**Tags**: `#cryptocurrency`, `#bitcoin`, `#trading`, `#markets`, `#finance`
 
 ---
 
