@@ -15,16 +15,9 @@
       { "name": "The Race F1",      "url": "https://the-race.com/feed/" },
       { "name": "Motorsport F1",    "url": "https://www.motorsport.com/rss/f1/news/" }
     ],
-    "reddit": {
-      "subreddits": [
-        { "subreddit": "formula1",  "sort": "hot" },
-        { "subreddit": "F1Technical", "sort": "hot" }
-      ],
-      "fetch_comments": 5
-    }
   },
   "filtering": {
-    "ai_score_threshold": 5.5,
+    "ai_score_threshold": 4,
     "time_window_hours": 24,
     "max_items": 8
   },
