@@ -1,12 +1,12 @@
-﻿name: Horizon Daily News Digest
+name: Horizon Daily News Digest
 
 on:
   schedule:
-    - cron: '30 23 * * *'
-    - cron: '30 1 * * *'
-    - cron: '30 5 * * *'
-    - cron: '30 9 * * *'
-    - cron: '30 13 * * *'
+    - cron: '0 22 * * *'
+    - cron: '0 0 * * *'
+    - cron: '0 4 * * *'
+    - cron: '0 8 * * *'
+    - cron: '0 12 * * *'
   workflow_dispatch:
     inputs:
       batch:
@@ -48,13 +48,13 @@ jobs:
           HOUR=$(date -u +"%H%M")
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "2315" ] || [ "$HOUR" -le "0015" ]; then
+          elif [ "$HOUR" -ge "2145" ] || [ "$HOUR" -le "2215" ]; then
             echo "batch=morning" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "0115" ] && [ "$HOUR" -le "0215" ]; then
+          elif [ "$HOUR" -ge "2345" ] || [ "$HOUR" -le "0030" ]; then
             echo "batch=crypto" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "0515" ] && [ "$HOUR" -le "0615" ]; then
+          elif [ "$HOUR" -ge "0345" ] && [ "$HOUR" -le "0430" ]; then
             echo "batch=tech" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "0915" ] && [ "$HOUR" -le "1015" ]; then
+          elif [ "$HOUR" -ge "0745" ] && [ "$HOUR" -le "0830" ]; then
             echo "batch=f1" >> $GITHUB_OUTPUT
           else
             echo "batch=evening" >> $GITHUB_OUTPUT
