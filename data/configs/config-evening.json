@@ -31,16 +31,11 @@
       { "name": "VnExpress Giai Tri",   "url": "https://vnexpress.net/rss/giai-tri.rss" },
       { "name": "VnExpress Doi Song",   "url": "https://vnexpress.net/rss/doi-song.rss" },
       { "name": "Kenh14",               "url": "https://kenh14.vn/rss/home.rss" }
-    ],
-    "telegram": {
-      "channels": [
-        { "channel": "ahboyashreads",    "fetch_limit": 15 }
-      ]
-    }
+    ]
   },
   "filtering": {
     "ai_score_threshold": 4.0,
-    "time_window_hours": 24,
+    "time_window_hours": 12,
     "max_items": 12,
     "highlight_keywords": [
       "movie", "film", "cinema", "Netflix", "Disney", "HBO", "streaming",
