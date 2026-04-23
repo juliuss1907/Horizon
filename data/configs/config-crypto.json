@@ -32,6 +32,14 @@
         { "channel": "cryptorank_fundraising", "fetch_limit": 15 },
         { "channel": "DegenerateNews",         "fetch_limit": 15 },
         { "channel": "CoinBureau",             "fetch_limit": 15 },
+        { "channel": "wublockchainenglish",    "fetch_limit": 15 },
+        { "channel": "DecryptNews",            "fetch_limit": 15 },
+        { "channel": "CoinDeskGlobal",         "fetch_limit": 15 },
+        { "channel": "CoinDeskGlobal",         "fetch_limit": 15 },
+        { "channel": "CoinDeskGlobal",         "fetch_limit": 15 },
+        { "channel": "dlnewsinfo",             "fetch_limit": 15 },
+        { "channel": "coin68",                 "fetch_limit": 5 },
+        { "channel": "top7ico",                "fetch_limit": 5 },
         { "channel": "ahboyashreads",          "fetch_limit": 15 }
       ]
     }
