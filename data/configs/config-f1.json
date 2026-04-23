@@ -15,7 +15,7 @@
       { "name": "The Race F1",      "url": "https://the-race.com/feed/" },
       { "name": "Motorsport F1",    "url": "https://www.motorsport.com/rss/f1/news/" }
     ],
-  }
+  },
   "filtering": {
     "ai_score_threshold": 4,
     "time_window_hours": 24,
@@ -23,7 +23,7 @@
   },
   "output": {
     "batch_name": "f1",
-    "batch_label": "ðŸŽï¸ F1 BRIEF â€” Formula 1 News"
+    "batch_label": "🎏 F1 BRIEF – Formula 1 New"
   }
 }
 
