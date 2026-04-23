@@ -3,7 +3,6 @@
     "provider": "minimax",
     "model": "MiniMax-M2.7",
     "api_key_env": "MINIMAX_API_KEY",
-    "base_url": "https://api.minimax.io/",
     "languages": ["en", "vi"]
   },
   "sources": {
@@ -23,9 +22,10 @@
   },
   "output": {
     "batch_name": "f1",
-    "batch_label": "🎏 F1 BRIEF – Formula 1 New"
+    "batch_label": "🏎️ F1 BRIEF — Formula 1 News"
   }
 }
+
 
 
 
