@@ -48,16 +48,18 @@ jobs:
           HOUR=$(TZ='Asia/Ho_Chi_Minh' date +"%H%M")
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "2145" ] || [ "$HOUR" -le "2215" ]; then
+          elif [ "$HOUR" -ge "0445" ] && [ "$HOUR" -le "0530" ]; then
             echo "batch=morning" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "2345" ] || [ "$HOUR" -le "0030" ]; then
+          elif [ "$HOUR" -ge "0645" ] && [ "$HOUR" -le "0730" ]; then
             echo "batch=crypto" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "0345" ] && [ "$HOUR" -le "0430" ]; then
+          elif [ "$HOUR" -ge "1045" ] && [ "$HOUR" -le "1130" ]; then
             echo "batch=tech" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "0745" ] && [ "$HOUR" -le "0830" ]; then
+          elif [ "$HOUR" -ge "1445" ] && [ "$HOUR" -le "1530" ]; then
             echo "batch=f1" >> $GITHUB_OUTPUT
-          else
+          elif [ "$HOUR" -ge "1845" ] && [ "$HOUR" -le "1930" ]; then
             echo "batch=evening" >> $GITHUB_OUTPUT
+          else
+            echo "batch=morning" >> $GITHUB_OUTPUT
           fi
 
       - name: Set config for batch
