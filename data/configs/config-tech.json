@@ -30,6 +30,7 @@
     ],
     "github": [
       {
+        "type": "trending",
         "enabled": true,
         "trending": {
           "enabled": true,
