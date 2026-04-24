@@ -45,41 +45,42 @@ jobs:
       - name: Detect batch
         id: detect_batch
         run: |
-          HOUR=$(TZ='Asia/Ho_Chi_Minh' date +"%H%M")
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "0445" ] && [ "$HOUR" -le "0530" ]; then
-            echo "batch=morning" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "0645" ] && [ "$HOUR" -le "0730" ]; then
-            echo "batch=crypto" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "1045" ] && [ "$HOUR" -le "1130" ]; then
-            echo "batch=tech" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "1445" ] && [ "$HOUR" -le "1530" ]; then
-            echo "batch=f1" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" -ge "1845" ] && [ "$HOUR" -le "1930" ]; then
-            echo "batch=evening" >> $GITHUB_OUTPUT
           else
-            echo "batch=morning" >> $GITHUB_OUTPUT
+            HOUR_UTC=$(date -u +"%H")
+            case "$HOUR_UTC" in
+              22) echo "batch=morning"  >> $GITHUB_OUTPUT ;;
+              00) echo "batch=crypto"   >> $GITHUB_OUTPUT ;;
+              04) echo "batch=tech"     >> $GITHUB_OUTPUT ;;
+              08) echo "batch=f1"       >> $GITHUB_OUTPUT ;;
+              12) echo "batch=evening"  >> $GITHUB_OUTPUT ;;
+              *)
+                echo "No matching batch for UTC hour $HOUR_UTC, skipping."
+                echo "batch=skip" >> $GITHUB_OUTPUT
+                ;;
+            esac
           fi
 
       - name: Set config for batch
+        if: steps.detect_batch.outputs.batch != 'skip'
         run: cp data/configs/config-${{ steps.detect_batch.outputs.batch }}.json data/config.json
 
       - name: Run Horizon
+        if: steps.detect_batch.outputs.batch != 'skip'
         env:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         run: uv run horizon --hours 8
 
       - name: Rename output with batch name
+        if: steps.detect_batch.outputs.batch != 'skip'
         run: |
           TODAY=$(TZ='Asia/Ho_Chi_Minh' date +%Y-%m-%d)
           BATCH=${{ steps.detect_batch.outputs.batch }}
-          PREFIX="horizon-${TODAY}-"
 
           for f in data/summaries/horizon-*-*.md; do
             if [ -f "$f" ]; then
               BASENAME=$(basename "$f")
-              # Bỏ prefix "horizon-YYYY-MM-DD-" để lấy lang
               LANG=${BASENAME##horizon-????-??-??-}
               LANG=${LANG%.md}
               NEW="horizon-${TODAY}-${BATCH}-${LANG}.md"
@@ -92,6 +93,7 @@ jobs:
           ls -la data/summaries/
 
       - name: Deploy to GitHub Pages
+        if: steps.detect_batch.outputs.batch != 'skip'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
