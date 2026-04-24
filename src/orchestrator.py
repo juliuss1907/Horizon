@@ -386,18 +386,26 @@ class HorizonOrchestrator:
             if not isinstance(group, list) or len(group) < 2:
                 continue
             primary_idx = group[0]
-        if isinstance(primary_idx, list):
-            primary_idx = primary_idx[0] if primary_idx else 0
-        try:
-            primary_idx = int(primary_idx)
-        except (TypeError, ValueError):
-            primary_idx = 0
 
-        if primary_idx < 0 or primary_idx >= len(items):
+            # Handle case where AI returns list instead of int
+            if isinstance(primary_idx, list):
+                primary_idx = primary_idx[0] if primary_idx else 0
+            try:
+                primary_idx = int(primary_idx)
+            except (TypeError, ValueError):
+                primary_idx = 0
+
+            if primary_idx < 0 or primary_idx >= len(items):
+                continue
 
             primary = items[primary_idx]
             for dup_idx in group[1:]:
-                if not isinstance(dup_idx, int) or dup_idx < 0 or dup_idx >= len(items):
+                if not isinstance(dup_idx, int):
+                    try:
+                        dup_idx = int(dup_idx)
+                    except (TypeError, ValueError):
+                        continue
+                if dup_idx < 0 or dup_idx >= len(items):
                     continue
                 if dup_idx == primary_idx:
                     continue
