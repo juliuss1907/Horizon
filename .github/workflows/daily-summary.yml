@@ -49,17 +49,22 @@ jobs:
             echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
           else
             HOUR_UTC=$(date -u +"%H")
-            case "$HOUR_UTC" in
-              22) echo "batch=morning"  >> $GITHUB_OUTPUT ;;
-              00) echo "batch=crypto"   >> $GITHUB_OUTPUT ;;
-              04) echo "batch=tech"     >> $GITHUB_OUTPUT ;;
-              08) echo "batch=f1"       >> $GITHUB_OUTPUT ;;
-              12) echo "batch=evening"  >> $GITHUB_OUTPUT ;;
-              *)
-                echo "No matching batch for UTC hour $HOUR_UTC, skipping."
-                echo "batch=skip" >> $GITHUB_OUTPUT
-                ;;
-            esac
+            HOUR_UTC=$((10#$HOUR_UTC))  # bỏ leading zero, ép thành số
+            
+            if [ $HOUR_UTC -ge 22 ] || [ $HOUR_UTC -le 23 ]; then
+              echo "batch=morning" >> $GITHUB_OUTPUT
+            elif [ $HOUR_UTC -ge 0 ] && [ $HOUR_UTC -le 1 ]; then
+              echo "batch=crypto" >> $GITHUB_OUTPUT
+            elif [ $HOUR_UTC -ge 4 ] && [ $HOUR_UTC -le 5 ]; then
+              echo "batch=tech" >> $GITHUB_OUTPUT
+            elif [ $HOUR_UTC -ge 8 ] && [ $HOUR_UTC -le 9 ]; then
+              echo "batch=f1" >> $GITHUB_OUTPUT
+            elif [ $HOUR_UTC -ge 12 ] && [ $HOUR_UTC -le 13 ]; then
+              echo "batch=evening" >> $GITHUB_OUTPUT
+            else
+              echo "No matching batch for UTC hour $HOUR_UTC, skipping."
+              echo "batch=skip" >> $GITHUB_OUTPUT
+            fi
           fi
 
       - name: Set config for batch
