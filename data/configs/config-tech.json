@@ -29,11 +29,13 @@
       { "name": "Changelog",             "url": "https://changelog.com/feed" }
     ],
     "github": [
+      {
       "enabled": true,
       "trending": {
         "enabled": true,
         "languages": ["python", "typescript", "rust", "go", "javascript"],
         "since": "daily"
+        }
       }
     ],
     "telegram": {
