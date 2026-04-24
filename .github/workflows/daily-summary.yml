@@ -45,7 +45,7 @@ jobs:
       - name: Detect batch
         id: detect_batch
         run: |
-          HOUR=$(date -u +"%H%M")
+          HOUR=$(TZ='Asia/Ho_Chi_Minh' date +"%H%M")
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
           elif [ "$HOUR" -ge "2145" ] || [ "$HOUR" -le "2215" ]; then
@@ -70,14 +70,15 @@ jobs:
 
       - name: Rename output with batch name
         run: |
-          TODAY=$(date +%Y-%m-%d)
+          TODAY=$(TZ='Asia/Ho_Chi_Minh' date +%Y-%m-%d)
           BATCH=${{ steps.detect_batch.outputs.batch }}
           PREFIX="horizon-${TODAY}-"
 
-          for f in data/summaries/${PREFIX}*.md; do
+          for f in data/summaries/horizon-*-*.md; do
             if [ -f "$f" ]; then
               BASENAME=$(basename "$f")
-              LANG=${BASENAME#$PREFIX}
+              # Bỏ prefix "horizon-YYYY-MM-DD-" để lấy lang
+              LANG=${BASENAME##horizon-????-??-??-}
               LANG=${LANG%.md}
               NEW="horizon-${TODAY}-${BATCH}-${LANG}.md"
               mv "$f" "data/summaries/${NEW}"
