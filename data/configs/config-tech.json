@@ -29,22 +29,21 @@
       { "name": "Changelog",             "url": "https://changelog.com/feed" }
     ],
     "github": [
-      {
+    {
       "enabled": true,
       "trending": {
         "enabled": true,
         "languages": ["python", "typescript", "rust", "go", "javascript"],
         "since": "daily"
-        }
       }
-    ],
-    "telegram": {
-      "channels": [
-        { "channel": "producthuntdaily", "fetch_limit": 15 },
-        { "channel": "ahboyashreads",    "fetch_limit": 15 }
-      ]
     }
-  },
+  ],
+  "telegram": {
+    "channels": [
+      { "channel": "producthuntdaily", "fetch_limit": 15 },
+      { "channel": "ahboyashreads",    "fetch_limit": 15 }
+    ]
+  }
   "filtering": {
     "ai_score_threshold": 4.0,
     "time_window_hours": 14,
