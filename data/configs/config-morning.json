@@ -86,10 +86,6 @@
                                                       {
                                                           "channel":  "quantin_vic",
                                                           "fetch_limit":  10
-                                                      },
-                                                      {
-                                                          "channel":  "ahboyashreads",
-                                                          "fetch_limit":  10
                                                       }
                                                   ]
                                  }
