@@ -1,72 +1,127 @@
 # Horizon Daily - 2026-04-25
 
-> From 32 items, 3 important content pieces were selected
+> From 32 items, 5 important content pieces were selected
 
 ---
 
-1. [OpenAI’s Sam Altman apologises over failure to report Canadian mass shooter](#item-1) ⭐️ 7.0/10
-2. [This is who's developing Golden Dome's orbital interceptors—if they're ever built](#item-2) ⭐️ 6.0/10
-3. [Google will invest as much as $40 billion in Anthropic](#item-3) ⭐️ 6.0/10
+1. [Replace IBM Quantum back end with /dev/urandom](#item-1) ⭐️ 8.0/10
+2. [New 10 GbE USB adapters are cooler, smaller, cheaper](#item-2) ⭐️ 6.0/10
+3. [Turbo Vision 2.0 – a modern port](#item-3) ⭐️ 6.0/10
+4. [OpenAI’s Sam Altman apologises over failure to report Canadian mass shooter](#item-4) ⭐️ 6.0/10
+5. [This is who's developing Golden Dome's orbital interceptors—if they're ever built](#item-5) ⭐️ 6.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI’s Sam Altman apologises over failure to report Canadian mass shooter](https://www.aljazeera.com/economy/2026/4/25/chkopenaissamaltmanapologises-over-failure-to-report-canadian-mass-shooter?traffic_source=rss) ⭐️ 7.0/10
+## [Replace IBM Quantum back end with /dev/urandom](https://github.com/yuvadm/quantumslop/blob/25ad2e76ae58baa96f6219742459407db9dd17f5/URANDOM_DEMO.md) ⭐️ 8.0/10
 
-OpenAI and CEO Sam Altman have issued an apology after the company suspended a Canadian mass shooter's ChatGPT account before the attacks occurred but failed to notify law enforcement authorities about the potential threat. This incident raises critical questions about AI platforms' legal and ethical obligations to report dangerous users to authorities. The case could set precedents for how AI companies should handle potential threats identified through their systems, potentially affecting industry-wide safety protocols and regulatory frameworks. OpenAI had detected concerning behavior and suspended the shooter's account preemptively before the attacks, demonstrating that their monitoring systems were functioning. However, the company did not notify law enforcement, creating a gap between internal content moderation and external threat reporting.
+Developer Yuval Adam demonstrated that recovering a 17-bit ECC key can be achieved using /dev/urandom instead of actual IBM Quantum hardware. The replacement still successfully recovered the key, revealing that small quantum benchmarks can be trivially matched by classical random number generation. This exposes a fundamental flaw in quantum computing benchmarks for small problems. When a problem is small enough, quantum computers can succeed for the wrong reasons, essentially imitating random number generators. This undermines the validity of such benchmarks for measuring actual quantum progress. A 17-bit key has only 131,072 possible values, making it trivially brute-forceable by classical computers. Project Eleven had awarded 1 BTC for this 'largest quantum attack on ECC to date,' but the demonstration proves the solution is purely classical and does not require quantum computation. When quantum circuits are too long for the hardware's error rate, the quantum computer essentially becomes a random number generator.
 
-rss · Al Jazeera · Apr 25, 02:07
+hackernews · pigeons · Apr 25, 00:58
 
-**Background**: AI platforms like ChatGPT accumulate extensive interaction data that can reveal users' intentions and behavioral patterns. When dangerous content is detected, companies face a dilemma between user privacy rights and public safety responsibilities. This incident occurs amid ongoing debates about how tech companies should cooperate with law enforcement while balancing civil liberties concerns.
+**Background**: Elliptic Curve Cryptography (ECC) is a public-key encryption method based on the algebraic structure of elliptic curves over finite fields. Project Eleven is a quantum computing advocacy group that offered Bitcoin rewards for quantum attacks on ECC. This demonstration critiques the validation of quantum computing claims rather than quantum computing technology itself. Modern cryptographic keys typically use 256 bits or larger, providing security against both classical and quantum attacks, in stark contrast to the trivially small 17-bit key used in this benchmark.
 
-**Discussion**: The incident has sparked intense debate about AI company accountability in preventing real-world violence. Critics argue that companies with detection capabilities bear responsibility beyond content removal, while others question whether platforms should be held legally liable for user actions. The case is likely to intensify calls for mandatory threat-reporting protocols in the AI industry.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography">Elliptic-curve cryptography - Wikipedia</a></li>
+<li><a href="https://unix.stackexchange.com/questions/324209/when-to-use-dev-random-vs-dev-urandom">devices - When to use /dev/ random vs / dev / urandom - Unix & Linux...</a></li>
 
-**Tags**: `#AI safety`, `#OpenAI`, `#public safety`, `#corporate responsibility`, `#law enforcement`
+</ul>
+</details>
+
+**Discussion**: The community clarifies this is not an attack on quantum computing itself, but a critique of Project Eleven's validation practices. Strilanc references his April Fool's paper explaining that for small numbers, Shor's algorithm succeeds quickly when fed random samples, and when circuits are too long for the hardware's error rate, quantum computers effectively imitate random number generators. Commenters note that brute-forcing a 17-bit key is not challenging for classical computers, making this a validation failure rather than a quantum breakthrough.
+
+**Tags**: `#quantum-computing`, `#cryptography`, `#benchmarking`, `#ecc`, `#ibm-quantum`
 
 ---
 
 <a id="item-2"></a>
-## [This is who's developing Golden Dome's orbital interceptors—if they're ever built](https://arstechnica.com/space/2026/04/this-is-whos-developing-golden-domes-orbital-interceptors-if-theyre-ever-built/) ⭐️ 6.0/10
+## [New 10 GbE USB adapters are cooler, smaller, cheaper](https://www.jeffgeerling.com/blog/2026/new-10-gbe-usb-adapters-cooler-smaller-cheaper/) ⭐️ 6.0/10
 
-The US Space Force has awarded 20 contracts worth up to $3.2 billion to 12 companies to develop space-based interceptors for the proposed Golden Dome missile defense system. Multiple defense giants and startups are vying to create orbital defenses, even as the program's leadership acknowledges they may be unaffordable. The Golden Dome represents the first U.S. space weapons in orbit and would be a massive expansion of missile defense capabilities beyond regional systems. With cost estimates ranging from $175 billion to $3.6 trillion, the program's viability depends on whether space-based interceptors can actually be produced affordably and at scale. The Space Force emphasized that boost-phase intercept from space will only proceed if it proves affordable and scalable, otherwise the program will not produce it. The system would employ a constellation of thousands of satellites equipped with sensors and interceptors flying just outside the atmosphere.
+Jeff Geerling reviews new USB 10GbE ethernet adapters that offer improved thermal efficiency, reduced physical size, and lower prices compared to previous generations, enabling 10 gigabit per second wired networking over standard USB-C connections. These improvements make 10GbE networking more accessible for users seeking high-speed wired connections without expensive Thunderbolt docks or PCIe cards, particularly benefiting laptop users and compact workstation setups where thermal management and port density matter. Community members report mixed real-world performance, with one user noting a Xikestor 10G adapter with Realtek chipset underperformed their cheaper 5G alternative. Discussion also covers Framework expansion card alternatives, PoE++ power delivery possibilities (up to 100W), and Thunderbolt dock limitations where 2.5GbE remains common.
 
-rss · Ars Technica · Apr 25, 02:52
+hackernews · calcifer · Apr 25, 05:56
 
-**Background**: The Golden Dome is a planned multi-layer missile defense system intended to detect and destroy ballistic, hypersonic, and cruise missiles before launch or during flight. Boost-phase intercept would target missiles during the 3-4 minute period between launch and engine shutdown, when they are most vulnerable but also hardest to reach in time. Critics argue that only a small fraction of space-based interceptors would be available at the right time and place to act on any given threat, making the concept less efficient than traditional regional missile defenses.
+**Background**: 10GbE (10 Gigabit Ethernet) represents a tenfold bandwidth increase over standard 1GbE, enabling faster file transfers, media production workflows, and network-attached storage access. USB-based 10GbE adapters provide a portable and relatively affordable alternative to Thunderbolt docks or PCIe network cards. Power over Ethernet (PoE) technology can deliver up to 100W via PoE++ standard, potentially enough to power laptops through compatible adapters.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.defenseone.com/threats/2026/04/space-force-picks-firms-develop-golden-domes-space-based-interceptors/413118/">Space Force picks firms to develop Golden Dome’s space-based ...</a></li>
-<li><a href="https://www.airandspaceforces.com/space-force-reveals-space-based-interceptor-awards-golden-dome/">USSF Reveals $3.2B for Golden Dome Space-Based Interceptors</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Golden_Dome_(missile_defense_system)">Golden Dome (missile defense system)</a></li>
+<li><a href="https://frame.work/marketplace/expansion-cards">Framework Marketplace | Expansion Cards</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Power_over_Ethernet">Power over Ethernet - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Defense One and Air & Space Forces articles reporting on the $3.2 billion contract awards highlight the program's focus on affordability as a gating factor. The consensus appears to be that while the technology is being developed, the economic viability remains the critical question mark for this ambitious program.
+**Discussion**: Commenters discuss practical alternatives including Framework's announced 10GbE expansion card. Users debate PoE power delivery possibilities and note that Thunderbolt 4/5 docks often still have 2.5GbE limitations, with the premium CalDigit TS5 Plus being one of few 10GbE options at ~$500. One user recommends HP Thunderbolt 4 G4 refurb docks as affordable alternatives with good display outputs.
 
-**Tags**: `#missile-defense`, `#space-defense`, `#golden-dome`, `#orbital-interceptors`, `#space-policy`
+**Tags**: `#networking`, `#hardware`, `#usb`, `#ethernet`, `#10gbe`
 
 ---
 
 <a id="item-3"></a>
-## [Google will invest as much as $40 billion in Anthropic](https://arstechnica.com/ai/2026/04/google-will-invest-as-much-as-40-billion-in-anthropic/) ⭐️ 6.0/10
+## [Turbo Vision 2.0 – a modern port](https://github.com/magiblot/tvision) ⭐️ 6.0/10
 
-Google announced plans to invest up to $40 billion in Anthropic, an AI safety and research company known for its Claude language model series. This substantial investment follows Amazon's similar but smaller investment in Anthropic just days earlier. This investment represents one of the largest AI industry investments to date, signaling major tech companies' commitment to AI development and potentially reshaping the competitive landscape of the AI sector. The timing, following closely on Amazon's investment, highlights the intensifying competition among big tech firms to secure partnerships with leading AI companies. The $40 billion investment is significantly larger than Amazon's recent investment in Anthropic, though the exact breakdown of the investment timeline has not been disclosed. Anthropic, founded in 2021, has positioned itself as a company focused on building reliable, interpretable, and steerable AI systems.
+Turbo Vision 2.0 has been released as a modern, cross-platform C++ port of Borland's classic 1990s text-mode UI framework, featuring full Unicode support and compatibility with code written over three decades ago. This release brings a piece of retro computing history back to life for modern developers, making it useful for building terminal applications with rich text-based user interfaces while preserving compatibility with legacy code. The port maintains the original architecture while adding Unicode support across Windows and other platforms. A .NET wrapper is actively being developed, enabling use from managed code on macOS. Community members note the build complexity (CMake) contrasts sharply with the original "hit F9 to compile" simplicity of Turbo Pascal.
 
-rss · Ars Technica · Apr 24, 22:05
+hackernews · andsoitis · Apr 25, 04:18
 
-**Background**: Anthropic is an AI safety and research company that developed the Claude series of large language models, first released in 2023. The Claude models have become notable competitors in the generative AI space, offering capabilities similar to OpenAI's GPT series. Both Google and Amazon have been aggressively investing in AI companies as the technology becomes increasingly central to tech companies' strategic priorities.
+**Background**: Turbo Vision was a character-mode text user interface framework included with Borland Pascal, Turbo Pascal, and Borland C++ around 1990. Borland itself used Turbo Vision to build the integrated development environments (IDEs) for these programming languages. The framework featured a distinctive bluish TUI aesthetic and an event-driven architecture that made it easy for developers to create text-based applications. Multiple ports of Turbo Vision exist today, including versions in Rust and Pascal.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.anthropic.com/">Home \ Anthropic</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (language model) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Turbo_Vision">Turbo Vision - Wikipedia</a></li>
+<li><a href="https://github.com/magiblot/tvision">GitHub - magiblot/tvision: A modern port of Turbo Vision 2.0, the classical framework for text-based user interfaces. Now cross-platform and with Unicode support. · GitHub</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI investment`, `#Google Anthropic`, `#venture capital`, `#AI industry`, `#big tech`
+**Discussion**: Community response is overwhelmingly positive with strong nostalgic appreciation. Developers share stories of discovering Turbo Vision books in the '90s and falling in love with its bluish TUIs. A .NET wrapper developer reports magical experiences running Turbo Vision under .NET on macOS. However, some comments critique modern build complexity—CMake instructions versus the simple "hit F9" compilation of Turbo Pascal—as demonstrating "our incompetence" with modern tooling. Others note this is one of several existing Turbo Vision ports, including Rust and Pascal implementations.
+
+**Tags**: `#retro-computing`, `#tui`, `#c++`, `#terminal-apps`, `#open-source`
+
+---
+
+<a id="item-4"></a>
+## [OpenAI’s Sam Altman apologises over failure to report Canadian mass shooter](https://www.aljazeera.com/economy/2026/4/25/chkopenaissamaltmanapologises-over-failure-to-report-canadian-mass-shooter?traffic_source=rss) ⭐️ 6.0/10
+
+OpenAI CEO Sam Altman publicly apologized after the company suspended a Canadian mass shooter's ChatGPT account before the attacks occurred but failed to notify law enforcement authorities about the potential threat. The incident has prompted scrutiny over AI companies' obligations when they detect dangerous user behavior on their platforms. This case raises critical questions about the responsibilities AI companies have when threat detection systems flag dangerous users. As AI platforms become increasingly ubiquitous, the incident highlights gaps in corporate safety protocols and legal frameworks governing how technology firms should respond when they identify potential mass violence threats. While OpenAI's systems successfully detected and suspended the individual's account prior to the attacks, the company did not escalate the information to law enforcement, a gap in their threat response protocol. According to corporate compliance research, companies face increasingly complex reporting obligations under evolving AI regulations, but clear guidelines for sharing threat information with authorities remain unclear.
+
+rss · Al Jazeera · Apr 25, 02:07
+
+**Background**: AI content monitoring systems use machine learning algorithms to identify potential threats, including violent content, hate speech, and indicators of planned attacks. Corporate reporting obligations for AI companies have become more complex as regulators worldwide implement new rules requiring disclosure of cybersecurity incidents and AI-related risks. However, existing legal frameworks often lack clear guidance on when companies should proactively notify law enforcement about detected threats versus merely terminating user access.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.corporatecomplianceinsights.com/data-authenticity-accountability-crucial-ai-age/">Data Authenticity & Accountability Crucial in the AI Age | Corporate Compliance Insights</a></li>
+<li><a href="https://law-ai.org/balancing-safety-and-privacy-regulatory-models-for-ai-misuse/">Balancing Safety and Privacy: Regulatory Models for AI Misuse - Institute for Law & AI</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI safety`, `#corporate responsibility`, `#law enforcement`, `#AI policy`, `#accountability`
+
+---
+
+<a id="item-5"></a>
+## [This is who's developing Golden Dome's orbital interceptors—if they're ever built](https://arstechnica.com/space/2026/04/this-is-whos-developing-golden-domes-orbital-interceptors-if-theyre-ever-built/) ⭐️ 6.0/10
+
+Ars Technica报道了正在为金穹（Golden Dome）导弹防御计划开发天基拦截器的承包商名单，同时指出技术界对这些拦截器能否以可承受的成本实现规模化部署持怀疑态度。 如果无法实现可负担且可扩展的天基助推段拦截能力，整个金穹系统的战略价值将大打折扣，这将影响美国应对洲际弹道导弹威胁的国防战略。 助推段拦截是导弹防御中最难实现的方案，因为拦截器必须在导弹发动机工作的短短几分钟内进入攻击范围。据估计，仅应对液体燃料洲际弹道导弹就需要至少700枚大型轨道拦截器。
+
+rss · Ars Technica · Apr 25, 02:52
+
+**Background**: 金穹计划是特朗普总统于2025年1月签署行政命令后启动的多层导弹防御系统，旨在探测并摧毁弹道导弹、高超音速导弹和巡航导弹。该系统计划覆盖美国本土及军事设施，2027财年预算申请据报高达1.5万亿美元。助推段拦截是指在导弹发射后、发动机仍在工作阶段进行拦截，此时导弹飞行速度较慢、飞行高度较低，被认为是理论上最有效的拦截窗口，但实际部署面临极大的技术和成本挑战。
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Golden_Dome_(missile_defense_system)">Golden Dome (missile defense system) - Wikipedia</a></li>
+<li><a href="https://www.axios.com/2026/04/22/trump-guetlein-golden-dome-interceptors">The ups and downs of Trump's Golden Dome gambit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ballistic_missile_flight_phases">Ballistic missile flight phases - Wikipedia</a></li>
+<li><a href="https://www.csis.org/analysis/boost-phase-missile-defense">Boost-Phase Missile Defense | CSIS</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#defense`, `#missile-defense`, `#space`, `#golden-dome`, `#policy`
 
 ---
 
