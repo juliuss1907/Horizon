@@ -1,241 +1,195 @@
-# Horizon Daily - 2026-04-24
+# Horizon Daily - 2026-04-25
 
-> From 98 items, 11 important content pieces were selected
+> From 74 items, 8 important content pieces were selected
 
 ---
 
-1. [Google Plans $40B Investment in Anthropic](#item-1) ⭐️ 8.0/10
-2. [Who's in Control of AI?](#item-2) ⭐️ 7.0/10
-3. [ComfyUI Reaches $500M Valuation with $30M Funding Round](#item-3) ⭐️ 7.0/10
-4. [Apple CEO Transition and Musk's $60B Cursor Bid](#item-4) ⭐️ 7.0/10
-5. [Three reasons why DeepSeek’s new model V4 matters](#item-5) ⭐️ 7.0/10
-6. [University Websites Hijacked for Adult Content via Subdomain Flaws](#item-6) ⭐️ 7.0/10
-7. [AI-Designed Drugs by DeepMind Spinoff Enter Human Trials](#item-7) ⭐️ 7.0/10
-8. [My audio interface has SSH enabled by default](#item-8) ⭐️ 6.0/10
-9. [NASA's Lunar Gateway Modules Reportedly Suffering Corrosion Issues](#item-9) ⭐️ 6.0/10
-10. [Designer Baby Companies Bootstrap Bio and Manhattan Genomics Shut Down](#item-10) ⭐️ 6.0/10
-11. [China Shifts Chip Equipment Imports as US Export Controls Bite](#item-11) ⭐️ 6.0/10
+1. [SSH Enabled by Default on Rodecaster Duo](#item-1) ⭐️ 7.0/10
+2. [Google to Invest Up to $40B in Anthropic](#item-2) ⭐️ 7.0/10
+3. [Apple CEO Succession and Musk's $60B Cursor Acquisition Rumor](#item-3) ⭐️ 7.0/10
+4. [DeepSeek V4 Preview Released with Improved Efficiency](#item-4) ⭐️ 7.0/10
+5. [Europe First to Authorize Moderna's Combo mRNA Flu-COVID Vaccine](#item-5) ⭐️ 7.0/10
+6. [arXiv Paper Surveys Deep Learning Theory Landscape](#item-6) ⭐️ 6.0/10
+7. [AI Security Breach Raises Questions About AI Control](#item-7) ⭐️ 6.0/10
+8. [Hundreds of University Subdomains Hijacked, Redirected to Porn Sites](#item-8) ⭐️ 6.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Google Plans $40B Investment in Anthropic](https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic) ⭐️ 8.0/10
+## [SSH Enabled by Default on Rodecaster Duo](https://hhh.hn/rodecaster-duo-fw/) ⭐️ 7.0/10
 
-Google plans to invest up to $40 billion in Anthropic, following earlier investments. Community discussion suggests Anthropic was experiencing severe capacity constraints and had to sign contracts with both Amazon and Google in quick succession, after which model quality reportedly improved. This represents one of the largest AI investments to date, signaling intensified competition among major tech firms to secure positions in frontier AI. It also reflects how tech giants are treating AI startups as strategic insurance policies against being left behind in the AI race. The $40B commitment follows earlier Google investments in Anthropic and reflects the high stakes in frontier AI development. Community members question whether foundation models will remain commodified and whether this valuation reflects the competitive dynamics of big tech hedging.
+A security researcher discovered that SSH is enabled by default on the Rodecaster Duo audio interface, providing potential remote access to its underlying Linux system. Using AI-assisted firmware analysis tools, the researcher was able to extract and examine the device's firmware, which uses a simple tarball + hash format rather than encrypted or obfuscated packaging. This finding underscores a widespread IoT security issue: network services enabled by default without user knowledge or consent. It also demonstrates how AI-powered analysis tools are democratizing hardware security research, enabling anyone with an AI agent to perform firmware analysis that previously required expert-level Reverse Engineering skills. The Rodecaster Duo is an integrated USB audio interface priced around $448, designed for streamers and content creators. It features dual microphone inputs and operates at 24-bit/48kHz audio quality. The firmware vulnerability exists because SSH runs on the device without requiring any user-configured credentials or interaction to enable it.
 
-hackernews · elffjs · Apr 24, 16:04
+hackernews · hhh · Apr 24, 19:30
 
-**Background**: Anthropic is an AI safety and research company known for Claude, its advanced AI assistant designed to be helpful, honest, and harmless. Google's investment is part of a broader pattern where major tech companies simultaneously compete in AI while investing in rivals as insurance. The AI industry has seen concerns about foundation model commodification, where rapidly improving model quality across providers could erode competitive advantages.
+**Background**: SSH (Secure Shell) is a network protocol typically used for encrypted remote access to computer systems, usually requiring authentication credentials. When enabled by default on consumer devices, it creates a potential attack surface if default credentials are weak or if the service is not properly secured. IoT devices running embedded Linux systems commonly expose such services, often without users being aware. EMBA (Embedded Analyzer) is an open-source firmware security analyzer that recently added AI-assisted capabilities for automated vulnerability detection in embedded device firmware.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic - Wikipedia</a></li>
-<li><a href="https://www.anthropic.com/news/introducing-claude">Introducing Claude \ Anthropic</a></li>
+<li><a href="https://github.com/e-m-b-a/emba/wiki/AI-supported-firmware-analysis/745cf2fd5aff2f3f80d5a6534fc380e8baebeace">AI supported firmware analysis · e-m-b-a/emba Wiki · GitHub</a></li>
+<li><a href="https://www.tomshardware.com/peripherals/rodecaster-duo-review">Rodecaster Duo Review: Streamer Centric | Tom's Hardware</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussed several themes: skepticism about the $40B valuation given foundation model commodification concerns; recognition that Anthropic's capacity constraints explained the rapid contracting with Amazon and Google; and the broader insurance policy dynamic where big tech companies invest in each other's AI rivals to hedge their bets. Developers praised Claude's significant productivity impact in B2B contexts, validating the investment thesis with practical evidence.
+**Discussion**: The community discussion reflects excitement about AI democratizing hardware hacking capabilities, with one commenter noting that 'everyone has a pocket AI-hacker ready to inspect firmware now.' Some members expressed appreciation for Rode's relatively open firmware approach, hoping the company won't 'lock the firmware upgrades down' after disclosure. Others questioned the ethics of responsible disclosure, asking 'why was disclosure the objective?' and suggesting users might prefer keeping such interfaces open.
 
-**Tags**: `#AI investment`, `#Anthropic`, `#Google`, `#AI industry`, `#venture capital`
+**Tags**: `#iot-security`, `#firmware-analysis`, `#hardware-hacking`, `#embedded-systems`, `#security-disclosure`
 
 ---
 
 <a id="item-2"></a>
-## [Who's in Control of AI?](https://www.aljazeera.com/video/inside-story/2026/4/24/whos-in-control-of-ai?traffic_source=rss) ⭐️ 7.0/10
+## [Google to Invest Up to $40B in Anthropic](https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/) ⭐️ 7.0/10
 
-A US tech giant's owner has revealed a major security breach affecting one of the world's most powerful AI models, raising urgent questions about who controls and secures advanced AI technology. This breach highlights critical vulnerabilities in advanced AI systems, where model weights, training data, or safety controls could potentially be exposed. The incident underscores the urgent need for stronger AI governance frameworks as AI systems become increasingly powerful and widely deployed. Model extraction attacks allow adversaries with query access to systematically probe an AI system and build replica models that mimic its behavior. Such attacks can also extract sensitive training data, posing risks to proprietary AI assets and user privacy.
+Google has committed to invest up to $40 billion in Anthropic through a combination of cash and compute resources, as AI companies compete fiercely to secure massive infrastructure capacity. This investment comes alongside Anthropic's limited release of its cybersecurity-focused Mythos model. This represents one of the largest AI investments on record, signaling the intensifying compute arms race among AI giants. Google's continued financial commitment demonstrates the strategic importance of partnerships in the rapidly evolving AI sector. The investment includes both monetary funds and compute resources (such as GPU/TPU capacity) that Anthropic needs to train and run large language models. Anthropic recently announced its Mythos model, designed for cybersecurity applications, which is being rolled out selectively to over 40 technology companies including Apple and Amazon due to concerns about potential cyberattacks.
 
-rss · Al Jazeera · Apr 24, 20:48
+rss · TechCrunch AI · Apr 24, 18:00
 
-**Background**: AI model extraction attacks involve an adversary querying a target model to collect outputs, then using this data to train a surrogate model that replicates the original's functionality. This represents a significant threat as companies invest heavily in developing proprietary AI systems. AI governance frameworks aim to ensure AI systems are ethically aligned, secure, and compliant with regulations, but implementation challenges remain as the technology advances rapidly.
+**Background**: Anthropic was founded in 2021 by former OpenAI members Dario and Daniela Amodei, who serve as CEO and President respectively. The company focuses on AI safety and has developed the Claude series of large language models. Google's investment follows a similar but smaller investment by Amazon just days earlier, highlighting the competitive dynamics in AI infrastructure development. Compute resources—particularly GPUs and TPUs—have become critical bottlenecks in AI development as companies race to build more powerful models.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.praetorian.com/blog/stealing-ai-models-through-the-api-a-practical-model-extraction-attack/">Stealing AI Models Through the API: A Practical Model Extraction Attack | Praetorian</a></li>
-<li><a href="https://www.nightfall.ai/ai-security-101/training-data-extraction-attacks">Training Data Extraction Attacks: The Essential Guide | Nightfall AI Security 101</a></li>
-<li><a href="https://www.ai21.com/knowledge/ai-governance-frameworks/">9 Key AI Governance Frameworks in 2025 | AI21</a></li>
+<li><a href="https://www.nytimes.com/2026/04/07/technology/anthropic-claims-its-new-ai-model-mythos-is-a-cybersecurity-reckoning.html">Anthropic Claims Its New A.I. Model, Mythos, Is a ...</a></li>
+<li><a href="https://www.cnbc.com/2026/04/07/anthropic-claude-mythos-ai-hackers-cyberattacks.html">Anthropic limits rollout of Mythos AI model over cyberattack ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI security`, `#model breach`, `#AI governance`, `#technology regulation`, `#large language models`
+**Tags**: `#AI Investment`, `#Anthropic`, `#Google`, `#AI Infrastructure`, `#Compute Resources`
 
 ---
 
 <a id="item-3"></a>
-## [ComfyUI Reaches $500M Valuation with $30M Funding Round](https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/) ⭐️ 7.0/10
+## [Apple CEO Succession and Musk's $60B Cursor Acquisition Rumor](https://techcrunch.com/podcast/apples-new-ceo-and-why-elon-musk-wants-to-buy-cursor-for-60b/) ⭐️ 7.0/10
 
-ComfyUI, a node-based visual AI engine that gives creators granular control over image, video, and audio generation, has raised $30 million at a $500 million valuation. The funding round signals strong investor confidence in tools that enable creators to design and execute advanced AI pipelines through a graph/node-based interface. This valuation reflects growing market demand for AI generation tools that prioritize creator control over black-box solutions. As creators seek more agency over AI-generated content, ComfyUI's approach of enabling fine-grained workflow customization positions it as a significant player in the evolving creator economy around generative AI. ComfyUI differentiates itself through its node-based interface, which allows users to construct complex AI pipelines by connecting modular components rather than relying on preset configurations. The platform recently introduced Nodes 2.0, a Vue-based rendering system that enables faster development and richer interactions. It operates as an open-source application available on Windows, Linux, and macOS.
-
-rss · TechCrunch AI · Apr 24, 19:49
-
-**Background**: ComfyUI competes with other open-source Stable Diffusion interfaces like Automatic1111 WebUI, which uses a more traditional UI approach. Both platforms enable image generation using diffusion models, but ComfyUI's node-based workflow appeals to users who want to customize every aspect of the generation process. Stable diffusion is a type of generative AI model that creates images by iteratively denoising random noise based on text prompts, and its open-source nature has spawned a vibrant ecosystem of tools and workflows.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://docs.comfy.org/interface/nodes-2">Nodes 2.0 - ComfyUI</a></li>
-<li><a href="https://medium.com/@promptingpixels/comfyui-vs-automatic1111-stable-diffusion-webui-where-to-start-a9e96bc771eb">ComfyUI vs . Automatic 1111 Stable Diffusion WebUI: Where... | Medium</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI creative tools`, `#funding`, `#generative AI`, `#creator economy`, `#image generation`
-
----
-
-<a id="item-4"></a>
-## [Apple CEO Transition and Musk's $60B Cursor Bid](https://techcrunch.com/podcast/apples-new-ceo-and-why-elon-musk-wants-to-buy-cursor-for-60b/) ⭐️ 7.0/10
-
-TechCrunch podcast discusses Tim Cook's planned September departure from Apple, with hardware chief John Ternus set to succeed him as CEO. Additionally, Elon Musk has reportedly expressed interest in acquiring the AI-powered code editor Cursor for $60 billion. This marks the end of an era at Apple, with Cook's decade-long leadership ending as Ternus takes over amid rising AI competition and regulatory scrutiny. Musk's $60B interest signals the growing strategic importance of AI-assisted development tools in the tech industry. John Ternus has served as Apple's Senior Vice President of Hardware Engineering since 2021, overseeing iPhone, Mac, Apple Watch, AirPods, and Vision Pro. Cursor is an AI-assisted IDE forked from Visual Studio Code, developed by San Francisco startup Anysphere founded in 2022, with its latest version being Cursor 0.50.
+Tim Cook announced plans to step down as Apple's CEO in September after 14 years at the helm, passing leadership to John Ternus, Apple's current head of hardware engineering. Separately, reports indicate Elon Musk has expressed interest in acquiring Cursor, the AI-assisted code editor built by Anysphere, for approximately $60 billion. The Apple leadership transition marks a historic moment for one of the world's most valuable companies, as Ternus takes over during an era of intensifying AI competition. A $60B acquisition of Cursor would represent one of the largest-ever purchases of an AI coding startup, potentially reshaping the developer tools landscape and validating the massive valuations being placed on AI-native software companies. John Ternus has led Apple's hardware engineering division since 2012, overseeing iPhone, Mac, and Vision Pro development. Cursor is a fork of Visual Studio Code developed by Anysphere, a San Francisco startup founded in 2022, and has gained significant traction among developers for its AI-powered coding assistance features. Neither Apple nor the involved parties have officially confirmed these developments.
 
 rss · TechCrunch AI · Apr 24, 17:45
 
-**Background**: Tim Cook became Apple CEO in 2011 following Steve Jobs' resignation, guiding the company to become the world's most valuable firm. John Ternus joined Apple in 2001 and has led hardware engineering since 2021. Cursor represents a new generation of AI-assisted IDEs that integrate large language models to help developers write, debug, and refactor code more efficiently, competing with tools like GitHub Copilot.
+**Background**: Tim Cook succeeded Steve Jobs as Apple's CEO in August 2011 and has led the company through massive growth, including its rise to become the world's first $1 trillion company. Cursor is an AI-assisted integrated development environment (IDE) that extends Visual Studio Code with advanced AI features for automated coding tasks. Anysphere raised significant funding as the AI coding tool market has heated up, with competitors like GitHub Copilot and Replit gaining market share.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/John_Ternus">John Ternus - Wikipedia</a></li>
-<li><a href="https://www.techtimes.com/articles/316092/20260423/who-john-ternus-inside-engineer-turned-hardware-chief-now-taking-over-apples-next-ceo.htm">Who Is John Ternus? Inside The Engineer-Turned-Hardware Chief ...</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Cursor_(code_editor)">Cursor (code editor) - Wikipedia</a></li>
 <li><a href="https://cursor.com/">Cursor: The best way to code with AI</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The news has generated substantial discussion given the major leadership transition at Apple and Musk's ambitious acquisition interest. Commentators note that Ternus inherits a hardware-focused company at a critical juncture as AI reshapes the tech landscape. Regarding Musk's Cursor bid, observers see it as part of a broader strategy to control AI development infrastructure, though many question the valuation and Cursor's independence given its open-source VS Code roots.
+**Tags**: `#Apple`, `#Tech Leadership`, `#Elon Musk`, `#CEO Succession`, `#Acquisitions`
 
-**Tags**: `#apple`, `#leadership`, `#ai`, `#cursor`, `#elon-musk`, `#tech-industry`
+---
+
+<a id="item-4"></a>
+## [DeepSeek V4 Preview Released with Improved Efficiency](https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/) ⭐️ 7.0/10
+
+DeepSeek released a preview of V4, its new open-source flagship AI model that can process much longer prompts than its predecessor thanks to architectural improvements for handling large amounts of text more efficiently. This release demonstrates DeepSeek's continued innovation in cost-effective, open-source AI models. The improved efficiency for longer context windows could make advanced AI capabilities more accessible to developers and researchers working with extensive documents or complex tasks. DeepSeek V4 introduces a new optimizer called Muon designed to speed up convergence and improve training stability. According to the company, V4 has nearly 'closed the gap' with current leading models, both open and closed, while maintaining the open-source accessibility that has characterized DeepSeek's previous releases.
+
+rss · MIT Tech Review · Apr 24, 21:40
+
+**Background**: DeepSeek is a Chinese AI firm that has gained attention for releasing high-performance, open-source models at significantly lower costs than competitors. Context window size refers to how much text an AI model can process at once, which is critical for tasks like analyzing lengthy documents or maintaining coherent multi-turn conversations. Longer context capabilities typically require more computational resources, making efficiency improvements particularly valuable.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/">Three reasons why DeepSeek’s new model V4 matters</a></li>
+<li><a href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/">DeepSeek previews new AI model that ‘closes the gap’ with ...</a></li>
+<li><a href="https://www.theregister.com/2026/04/24/deepseek_v4/">DeepSeek's new models offer big inference cost savings</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#DeepSeek`, `#AI Models`, `#Open Source AI`, `#LLM`, `#Chinese AI`
 
 ---
 
 <a id="item-5"></a>
-## [Three reasons why DeepSeek’s new model V4 matters](https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/) ⭐️ 7.0/10
+## [Europe First to Authorize Moderna's Combo mRNA Flu-COVID Vaccine](https://arstechnica.com/health/2026/04/europe-not-us-first-to-authorize-modernas-combo-mrna-flu-covid-vaccine/) ⭐️ 7.0/10
 
-DeepSeek's V4 model brings extended context capabilities and efficient text processing in an open-source release, representing a significant update to their AI model lineup.
+Europe has become the first region to authorize Moderna's mRNA combination flu-COVID vaccine (mRNA-1083), while the United States did not. Moderna withdrew its FDA application last year amid political pressures from the new administration's anti-vaccine stance. This marks a significant divergence in global vaccine regulation, with Europe advancing innovative combination vaccines while US regulatory pathways face political interference. The approval demonstrates the viability of mRNA platform technology for multi-pathogen protection, potentially setting a new standard for seasonal immunization. Moderna's mRNA-1083 combination vaccine showed higher immune responses against both influenza and COVID-19 compared to licensed standalone vaccines in adults 50 years and older during Phase 3 trials. The EU approval comes despite the US FDA not reviewing the application after Moderna withdrew it.
 
-rss · MIT Tech Review · Apr 24, 21:40
+rss · Ars Technica · Apr 24, 21:11
 
-**Tags**: `#deepseek`, `#ai-models`, `#open-source-ai`, `#language-models`, `#llm`
+**Background**: Moderna pioneered mRNA vaccine technology with its standalone COVID-19 vaccine, which received FDA authorization in 2020. Combination vaccines aim to simplify seasonal immunization by delivering protection against multiple pathogens in a single shot. RFK Jr., known for anti-vaccine positions, was confirmed as HHS Secretary in early 2025, overseeing the FDA and other health agencies.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.bloomberg.com/news/articles/2026-02-27/moderna-gets-eu-approval-for-mrna-combination-covid-flu-shot">Moderna Wins EU Nod for Covid - Flu Combo Shot... - Bloomberg</a></li>
+<li><a href="https://www.aol.com/combined-flu-covid-vaccine-moderna-103000612.html">Combined flu and Covid vaccine from Moderna shows positive trial...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#vaccine`, `#moderna`, `#regulatory`, `#public health policy`, `#mRNA`
 
 ---
 
 <a id="item-6"></a>
-## [University Websites Hijacked for Adult Content via Subdomain Flaws](https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/) ⭐️ 7.0/10
+## [arXiv Paper Surveys Deep Learning Theory Landscape](https://arxiv.org/abs/2604.21691) ⭐️ 6.0/10
 
-Ars Technica reports that hundreds of subdomains across dozens of universities have been hijacked by scammers, who exploit abandoned DNS configurations to serve adult content through legitimate educational domains. This widespread subdomain hijacking campaign highlights a critical yet often overlooked attack vector that exploits poor domain hygiene, potentially damaging the reputation of affected institutions and exposing visitors to malicious content. The hijacking occurs when subdomains retain DNS CNAME records pointing to services that have been decommissioned or expired without proper cleanup, leaving them vulnerable to registration by attackers.
+An arXiv paper titled 'There Will Be a Scientific Theory of Deep Learning' has been published, surveying current deep learning theory research directions and open problems. The paper summarizes popular theoretical frameworks while acknowledging the field's current limitations in providing rigorous mathematical mechanisms for optimal network design. This survey matters because it maps the current landscape of deep learning theory and highlights the gap between empirical success and theoretical understanding. The productive debate it generates could influence how the research community approaches the fundamental question of whether deep learning can achieve rigorous scientific foundations comparable to established physics theories. The paper categorizes current research directions and concludes with a set of open problems covering main theoretical research areas in deep learning. Community feedback indicates the paper provides value as a meta-analysis but still lacks concrete mathematical mechanisms to guide optimal network architecture design. The discussion reveals fundamental questions about whether theory development should prioritize architecture or data-driven approaches.
 
-rss · Ars Technica · Apr 24, 19:00
+hackernews · jamie-simon · Apr 24, 18:06
 
-**Background**: Subdomain hijacking, also known as subdomain takeover, occurs when attackers gain control of a subdomain associated with a legitimate domain. This typically happens when a subdomain has a CNAME record pointing to an external service (such as a cloud provider), but the service has been discontinued without removing the DNS configuration. Attackers can then register the abandoned service and host any content they choose, including phishing pages or adult material, while appearing to originate from a trusted domain. Preventing these attacks requires regular audits of DNS records and coordination between IT departments responsible for domain management.
+**Background**: Deep learning theory is an active research area examining the mathematical foundations of neural networks and their learning mechanisms. The field often draws comparisons to established scientific theories in physics, which have achieved rigorous mathematical formalization over centuries. arXiv, founded in 1991, serves as the primary preprint server for researchers to share theoretical work, hosting over 2.4 million articles in fields including computer science and mathematics.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cyberint.com/blog/research/subdomain-hijacking-the-domains-silent-danger/">Subdomain Hijacking: The Domain's Silent Danger</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/Subdomain_takeover">Subdomain takeover - Security - MDN Web Docs</a></li>
-<li><a href="https://www.sectigo.com/blog/what-is-subdomain-hijacking">What is subdomain hijacking? | Sectigo® Official</a></li>
+<li><a href="https://arxiv.org/">arXiv.org e-Print archive</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_preprint_repositories">List of preprint repositories - Wikipedia ArXiv, the pioneering preprint server, declares independence ... Preprint Servers Guide 2025: arXiv, bioRxiv, medRxiv and More What Is Arxiv Preprint + How to Submit There — Otio Blog Open Access Preprints Open Access Preprints What Is Arxiv Preprint + How to Submit There — Otio Blog Open Access Preprints Preprint Servers Guide 2025 : arXiv , bioRxiv, medRxiv and More Preprint Servers: An Introduction | openscience.eu</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#subdomain-hijacking`, `#web-security`, `#universities`, `#domain-management`
+**Discussion**: Community discussion reveals a clear divide between practitioners and skeptics. Supporters appreciate the paper as a valuable meta-analysis that covers main research directions, while skeptics question whether deep learning theory can ever match the rigor of established physics theories like thermodynamics or electromagnetism. The debate highlights fundamental concerns about whether the field's reliance on scraped internet data fundamentally differs from the clean axioms underlying physical theories.
+
+**Tags**: `#deep-learning-theory`, `#machine-learning-research`, `#arXiv`, `#neural-networks`, `#academic-survey`
 
 ---
 
 <a id="item-7"></a>
-## [AI-Designed Drugs by DeepMind Spinoff Enter Human Trials](https://www.wired.com/story/wired-health-2026-how-ai-is-powering-drug-discovery-max-jaderberg/) ⭐️ 7.0/10
+## [AI Security Breach Raises Questions About AI Control](https://www.aljazeera.com/video/inside-story/2026/4/24/whos-in-control-of-ai?traffic_source=rss) ⭐️ 6.0/10
 
-Isomorphic Labs, the Alphabet subsidiary spun out from DeepMind, announced at WIRED Health that its AI-designed drugs have advanced to human trials. Company president Max Jaderberg described the startup as having built a 'broad and exciting pipeline of new medicines.' This milestone represents a significant validation of AI's potential to accelerate pharmaceutical development. Human trials mark a critical inflection point where AI-designed therapeutics demonstrate both scientific promise and commercial viability for the broader biotech industry. Isomorphic Labs was founded by Demis Hassabis, who serves as CEO of both the spinout and its parent DeepMind. The London-based company raised $600 million in funding earlier this year to advance its AI-driven drug design capabilities, positioning itself as a major player in the rapidly evolving AI pharma sector.
+Anthropic disclosed that competitors conducted industrial-scale campaigns to steal its AI model's capabilities through a technique called distillation, using fraudulent API access to train their own models on frontier model outputs. The security breach involved unauthorized access to one of the world's most powerful AI models, raising urgent questions about who controls AI technology. This incident highlights the critical vulnerabilities in the AI supply chain and the intense competition among AI laboratories that could compromise model security and intellectual property. As AI systems become increasingly powerful, questions about governance, access control, and accountability become essential for maintaining public trust and preventing misuse. The breach occurred through third-party contractors who were given access for model testing purposes, and major AI labs are also investigating a separate incident affecting Mercor, a leading data vendor. Distillation attacks allow competitors to replicate frontier model capabilities by generating training data through API calls at massive scale, effectively learning from the AI's outputs without proper authorization.
 
-rss · Wired · Apr 24, 17:17
+rss · Al Jazeera · Apr 24, 20:48
 
-**Background**: DeepMind, known for its AlphaFold protein structure prediction system that solved one of biology's grand challenges, spun out Isomorphic Labs in February 2021 specifically to apply AI to drug discovery. The company leverages advanced machine learning to design novel molecules, potentially reducing the time and cost of traditional pharmaceutical development. AI-driven drug design uses computational methods to predict molecular behavior and efficacy before laboratory testing.
+**Background**: Distillation attacks represent a growing concern in the AI industry, where companies attempt to reverse-engineer competing models by training on outputs generated through public APIs. AI laboratories frequently employ third-party contractors for various responsibilities including data labeling, model testing, and evaluation, creating potential security gaps. Major AI developers like Anthropic operate under increasing scrutiny regarding safety protocols and governance frameworks as their models approach or exceed human-level capabilities in various domains.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.cnbc.com/2025/04/09/inside-isomorphic-labs-google-deepminds-ai-life-sciences-spinoff.html">Inside Isomorphic Labs, Google DeepMind’s AI life sciences spinoff</a></li>
-<li><a href="https://www.genengnews.com/topics/artificial-intelligence/deepmind-spinout-isomorphic-labs-raises-600m-toward-ai-drug-design/">DeepMind Spinout Isomorphic Labs Raises $600M Toward AI Drug Design</a></li>
-<li><a href="https://www.nature.com/articles/s41591-024-03434-4">Artificial intelligence in drug development | Nature Medicine</a></li>
+<li><a href="https://www.breitbart.com/tech/2026/04/22/ai-security-breach-anthropic-investigates-unauthorized-access-to-powerful-claude-mythos-model/">AI Security Breach : Anthropic Investigates Unauthorized Access to...</a></li>
+<li><a href="https://www.linkedin.com/posts/vinaydeep_detecting-and-preventing-distillation-attacks-activity-7432397674433372160-dnxi">AI Model Security Breach : Distillation Attacks via Public API | LinkedIn</a></li>
+<li><a href="https://corpgov.law.harvard.edu/2025/04/24/strategic-governance-of-ai-a-roadmap-for-the-future/">Strategic Governance of AI: A Roadmap for the Future</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI drug discovery`, `#Isomorphic Labs`, `#DeepMind`, `#clinical trials`, `#healthcare AI`, `#biotech`
+**Discussion**: Security experts and industry observers are alarmed by the scale of the distillation attacks, with some describing AI models' social manipulation capabilities as potentially dangerous as traditional cyber threats. The incident has intensified ongoing debates about the adequacy of current AI governance frameworks and the need for stronger access controls and accountability mechanisms across the AI ecosystem.
+
+**Tags**: `#AI security`, `#AI governance`, `#news`, `#tech regulation`, `#AI breach`
 
 ---
 
 <a id="item-8"></a>
-## [My audio interface has SSH enabled by default](https://hhh.hn/rodecaster-duo-fw/) ⭐️ 6.0/10
+## [Hundreds of University Subdomains Hijacked, Redirected to Porn Sites](https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/) ⭐️ 6.0/10
 
-A user discovered SSH is enabled by default on the Rode Rodecaster Duo audio interface and documented their firmware reverse-engineering process, sparking discussion about consumer device security and firmware transparency.
+Researchers have discovered that hundreds of subdomains belonging to dozens of universities have been hijacked by scammers and are now serving pornographic content. The hijacking exploits poor security housekeeping practices, specifically abandoned DNS configurations and delegated subdomains that were not properly maintained after their associated services expired. This incident highlights a widespread vulnerability in web infrastructure management, as universities are typically trusted institutions whose websites users expect to be safe. The hijacked subdomains not only damage institutional credibility but could also be leveraged for phishing attacks, malware distribution, or other malicious activities targeting students, faculty, and visitors. The hijacking technique exploits dangling CNAME records, where subdomains point to external services (such as cloud platforms or third-party hosting providers) that have since expired or been discontinued. When organizations fail to clean up these DNS records, attackers can claim the abandoned resources and control the subdomain. The Ars Technica report specifically documents how attackers exploited these gaps to redirect university subdomains to adult content sites.
 
-hackernews · hhh · Apr 24, 19:30
+rss · Ars Technica · Apr 24, 19:00
 
-**Tags**: `#security`, `#firmware`, `#iot`, `#reverse-engineering`, `#hardware`
-
----
-
-<a id="item-9"></a>
-## [NASA's Lunar Gateway Modules Reportedly Suffering Corrosion Issues](https://arstechnica.com/space/2026/04/well-this-is-embarrassing-the-lunar-gateways-primary-modules-are-corroded/) ⭐️ 6.0/10
-
-NASA's Lunar Gateway space station primary modules are experiencing corrosion issues, an embarrassing development for the planned lunar outpost. Preliminary findings suggest the problem results from a combination of factors affecting the station's core components. The corrosion issues threaten the Artemis program's timeline and could require costly redesigns or repairs to the Gateway's critical modules. This setback comes at a critical time as NASA works to establish sustainable lunar presence. The corrosion appears to be affecting primary habitation and logistics modules like HALO. NASA is investigating the root causes, with multiple factors being examined as potential contributors to the degradation.
-
-rss · Ars Technica · Apr 24, 14:47
-
-**Background**: The Lunar Gateway is a planned space station in lunar orbit as part of NASA's Artemis program to return humans to the Moon. The station would serve as a staging point for lunar surface missions. HALO (Habitation and Logistics Outpost) is the first habitation module, designed to support astronauts living and working far from Earth.
+**Background**: Subdomain hijacking is a well-documented attack vector in which an attacker gains control over a subdomain by exploiting misconfigured DNS records. This typically occurs when a subdomain is delegated to an external service that has been decommissioned but the DNS record (such as a CNAME or NS record) remains active. Attackers can monitor for these dangling records and register the abandoned third-party service before the legitimate owner notices. The technique has been extensively documented in security tutorials and is particularly effective against organizations that lack automated DNS lifecycle management.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Lunar_Gateway">Lunar Gateway - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Artemis_program">Artemis program - Wikipedia</a></li>
+<li><a href="https://intelligence.checkpoint.com/subdomain-hijacking-the-domains-silent-danger/">Subdomain Hijacking : The Domain 's Silent Danger</a></li>
+<li><a href="https://bolster.ai/blog/subdomain-hijacking-takeover">Subdomain Hijacking & Takeover | Shopify Example | Scanning...</a></li>
+<li><a href="https://www.sectigo.com/blog/what-is-subdomain-hijacking">What is subdomain hijacking ? | Sectigo® Official</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#NASA`, `#Lunar Gateway`, `#space exploration`, `#corrosion`, `#Artemis program`
-
----
-
-<a id="item-10"></a>
-## [Designer Baby Companies Bootstrap Bio and Manhattan Genomics Shut Down](https://www.wired.com/story/designer-baby-companies-are-in-turmoil/) ⭐️ 6.0/10
-
-Bootstrap Bio and Manhattan Genomics, two biotech startups pursuing human embryo editing to prevent serious genetic diseases, have both shut down, marking a significant setback for the designer baby industry. Both companies had been attempting to use CRISPR gene-editing technology to modify human embryos before implantation. The simultaneous shutdown of these two companies signals serious turbulence in the human embryo editing sector and raises questions about the viability of commercial embryo editing ventures. This development also highlights the significant regulatory and ethical hurdles facing the entire industry. Human embryo editing using CRISPR technology has been associated with risks of unintended DNA changes that could potentially cause birth defects, cancer, or other serious health problems in resulting children. The industry has also faced intense scrutiny from bioethicists and regulators concerned about the permanent genetic modifications to the human germline.
-
-rss · Wired · Apr 24, 17:04
-
-**Background**: Designer babies refer to infants whose genetic characteristics have been selected or modified through genetic engineering techniques. CRISPR-Cas9 is the primary gene-editing tool used for such modifications, allowing scientists to make precise changes to DNA sequences. Human embryo editing raises profound ethical questions about modifying the human germline, as these changes can be inherited by future generations. The practice has faced regulatory restrictions in many countries, including the United States, where federal funding for human embryo research has been limited.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/CRISPR_gene_editing">CRISPR gene editing - Wikipedia</a></li>
-<li><a href="https://onezero.medium.com/new-evidence-shows-editing-human-embryos-wreaks-havoc-on-dna-463e12c6c94b">New Evidence Shows Editing Human Embryos Wreaks... | OneZero</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#biotech`, `#gene-editing`, `#bioethics`, `#embryo-research`, `#startup-failure`
-
----
-
-<a id="item-11"></a>
-## [China Shifts Chip Equipment Imports as US Export Controls Bite](https://t.me/quantin_vic/200014) ⭐️ 6.0/10
-
-In 2025, China's semiconductor manufacturing equipment imports from Singapore reached a record $5.7 billion (up 17% year-over-year), while imports from Malaysia surged over 100% to $3.4 billion. Simultaneously, US exports of chip manufacturing tools to China dropped 34% to approximately $2 billion, the lowest level since 2017. This data demonstrates how US export controls are reshaping global semiconductor trade flows, forcing China to diversify supply sources through Southeast Asian intermediaries. The trend has significant implications for the geopolitical tech decoupling between the US and China and the future structure of the global chip supply chain. The Netherlands ($9.9B) and Japan ($8.5B) remain China's largest suppliers of chip manufacturing equipment. From 2020-2025, China's cumulative chip equipment imports from Japan exceeded $42 billion and from the Netherlands reached $35 billion, indicating that while China is reducing US dependency, it still heavily relies on allied nations for advanced equipment.
-
-telegram · quantin_vic · Apr 24, 17:40
-
-**Background**: US export controls on advanced semiconductors began intensifying in 2022 under the Bureau of Industry and Security (BIS), expanding to include semiconductor manufacturing equipment (SME) on the Commerce Control List (CCL). The US also negotiated with Japan and the Netherlands to align their export controls, particularly targeting equipment from ASML (Netherlands) and Tokyo Electron (Japan). Singapore and Malaysia have emerged as potential transshipment points due to their semiconductor manufacturing clusters and logistics infrastructure.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/United_States_New_Export_Controls_on_Advanced_Computing_and_Semiconductors_to_China">United States New Export Controls on Advanced Computing and Semiconductors to China - Wikipedia</a></li>
-<li><a href="https://www.congress.gov/crs-product/R48642">U.S. Export Controls and China: Advanced Semiconductors | Congress.gov | Library of Congress</a></li>
-<li><a href="https://en.wikipedia.org/wiki/United_States_export_controls_on_AI_chips_and_semiconductors">United States export controls on AI chips and semiconductors - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#semiconductor`, `#export_controls`, `#China_trade`, `#chip_manufacturing`, `#geopolitics`
+**Tags**: `#cybersecurity`, `#web-security`, `#dns`, `#subdomain-hijacking`, `#universities`
 
 ---
 
