@@ -2,11 +2,11 @@ name: Horizon Daily News Digest
 
 on:
   schedule:
-    - cron: '0 22 * * *'
-    - cron: '0 0 * * *'
-    - cron: '0 4 * * *'
-    - cron: '0 8 * * *'
-    - cron: '0 12 * * *'
+    - cron: '17 22 * * *'   # morning  → 5:17 sáng VN
+    - cron: '17 0 * * *'    # crypto   → 7:17 sáng VN
+    - cron: '17 4 * * *'    # tech     → 11:17 sáng VN
+    - cron: '17 8 * * *'    # f1       → 3:17 chiều VN
+    - cron: '17 12 * * *'   # evening  → 7:17 tối VN
   workflow_dispatch:
     inputs:
       batch:
@@ -49,17 +49,17 @@ jobs:
             echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
           else
             HOUR_UTC=$(date -u +"%H")
-            HOUR_UTC=$((10#$HOUR_UTC))  # bỏ leading zero, ép thành số
-            
-            if [ $HOUR_UTC -ge 22 ] || [ $HOUR_UTC -le 23 ]; then
+            HOUR_UTC=$((10#$HOUR_UTC))
+
+            if [ $HOUR_UTC -ge 21 ] && [ $HOUR_UTC -le 23 ]; then
               echo "batch=morning" >> $GITHUB_OUTPUT
-            elif [ $HOUR_UTC -ge 0 ] && [ $HOUR_UTC -le 1 ]; then
+            elif [ $HOUR_UTC -ge 0 ] && [ $HOUR_UTC -le 2 ]; then
               echo "batch=crypto" >> $GITHUB_OUTPUT
-            elif [ $HOUR_UTC -ge 4 ] && [ $HOUR_UTC -le 5 ]; then
+            elif [ $HOUR_UTC -ge 4 ] && [ $HOUR_UTC -le 6 ]; then
               echo "batch=tech" >> $GITHUB_OUTPUT
-            elif [ $HOUR_UTC -ge 8 ] && [ $HOUR_UTC -le 9 ]; then
+            elif [ $HOUR_UTC -ge 8 ] && [ $HOUR_UTC -le 10 ]; then
               echo "batch=f1" >> $GITHUB_OUTPUT
-            elif [ $HOUR_UTC -ge 12 ] && [ $HOUR_UTC -le 13 ]; then
+            elif [ $HOUR_UTC -ge 12 ] && [ $HOUR_UTC -le 14 ]; then
               echo "batch=evening" >> $GITHUB_OUTPUT
             else
               echo "No matching batch for UTC hour $HOUR_UTC, skipping."
