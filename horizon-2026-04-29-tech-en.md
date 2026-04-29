@@ -1,610 +1,391 @@
 # Horizon Daily - 2026-04-29
 
-> From 37 items, 29 important content pieces were selected
+> From 24 items, 18 important content pieces were selected
 
 ---
 
-1. [Before GitHub: The Democratization of Version Control](#item-1) ⭐️ 7.0/10
-2. [ChatGPT Ad Strategy Contradicts Altman's Previous Anti-Ad Stance](#item-2) ⭐️ 7.0/10
-3. [Claude Code Regression: Malware Scan Prompts Block Subagent Code Edits](#item-3) ⭐️ 7.0/10
-4. [Developer Wins Fictional Championship to Expose LLM Poisoning Risks](#item-4) ⭐️ 7.0/10
-5. [vLLM to Ollama Migration Achieves 3.8x Faster Latency for Code Tasks](#item-5) ⭐️ 7.0/10
-6. [Anthropic Launches Claude for Creative Work with MCP Integration](#item-6) ⭐️ 6.0/10
-7. [Taylor Swift Files Trademarks to Combat AI Voice Copycats](#item-7) ⭐️ 6.0/10
-8. [Musk Testifies OpenAI Founded to Prevent Terminator Outcome](#item-8) ⭐️ 6.0/10
-9. [Critical Analysis of Solana's Quantum Readiness Announcement](#item-9) ⭐️ 6.0/10
-10. [Claude API Prompt Caching: 90% Cost Reduction Guide](#item-10) ⭐️ 6.0/10
-11. [Handling Blocking Calls in Spring Boot WebFlux](#item-11) ⭐️ 6.0/10
-12. [Redis 8.0 vs Memcached 1.6: 2026 Caching Benchmark for Node.js 24 APIs](#item-12) ⭐️ 6.0/10
-13. [LLM Cost Optimization Through Triager Pattern](#item-13) ⭐️ 5.0/10
-14. [Kompas VC's Physical-World Focus Amid Geopolitical Fragmentation](#item-14) ⭐️ 5.0/10
-15. [OpenAI Instructs Codex Agent to Avoid Goblin Discussions](#item-15) ⭐️ 5.0/10
-16. [Building Reactive SPAs with Symfony 7.4 and Stimulus.js](#item-16) ⭐️ 5.0/10
-17. [AI Investment Shifts from Hype to ROI Focus](#item-17) ⭐️ 5.0/10
-18. [IT Integration Becomes Critical Factor in M&A Megadeals](#item-18) ⭐️ 5.0/10
-19. [7 Tools, 1 Question. Most Failed in Ways I Didn't Expect.](#item-19) ⭐️ 5.0/10
-20. [Why One Model Fails](#item-20) ⭐️ 5.0/10
-21. [Stop Saying 'We're Working on It' — Show Your Product Roadmap](#item-21) ⭐️ 5.0/10
-22. [Tutorial: Building a Categorized Block Editor in Filament v5](#item-22) ⭐️ 5.0/10
-23. [Emacs Plugin Enables Surgical Syntax-Aware Code Deletion](#item-23) ⭐️ 5.0/10
-24. [“Developer loyalty is at zero right now”: Google doesn’t care which AI coding tool you use](#item-24) ⭐️ 5.0/10
-25. [Sniffies Users Worry About 'Straightification' of Gay Hookup App](#item-25) ⭐️ 4.0/10
-26. [Rooftop Solar Could Power 40% of Europe—What's Holding It Back?](#item-26) ⭐️ 4.0/10
-27. [Flutter GoRouter Complete Guide: URL Navigation Tutorial](#item-27) ⭐️ 4.0/10
-28. [Flutter Web Renderer Guide: CanvasKit vs HTML](#item-28) ⭐️ 4.0/10
-29. [Guide: Webapp Scaling Phases from VPS to Kubernetes](#item-29) ⭐️ 4.0/10
+1. [Bugs Rust Won't Catch: TOCTOU and Unix API Pitfalls](#item-1) ⭐️ 7.0/10
+2. [How ChatGPT serves ads](#item-2) ⭐️ 7.0/10
+3. [Malware Scan Prompts Block Claude Agent Code Edits](#item-3) ⭐️ 7.0/10
+4. [23 Steps Behind kubectl run nginx Deep-Dive](#item-4) ⭐️ 7.0/10
+5. [Kubernetes kube-scheduler 13-Stage Scheduling Framework Deep Dive](#item-5) ⭐️ 7.0/10
+6. [Read-Only MCP Server Enables Akamai Fuzzy Property Search](#item-6) ⭐️ 7.0/10
+7. [Cheap Model Triaging Pattern Reduces LLM Costs by 96%](#item-7) ⭐️ 6.0/10
+8. [Building AI Agents with Gemini on Google Cloud](#item-8) ⭐️ 6.0/10
+9. [Alternative GKE Kubeconfig Without gcloud Dependency](#item-9) ⭐️ 6.0/10
+10. [Ingress NGINX Migration Tool Receives Major Update with 119 Annotation Mappings](#item-10) ⭐️ 6.0/10
+11. [Supabase RLS Deep Dive: Multi-tenant Access Control](#item-11) ⭐️ 6.0/10
+12. [At his OpenAI trial, Musk relitigates an old friendship](#item-12) ⭐️ 5.0/10
+13. [OpenAI Codex Agent Restricted from Discussing Goblins, Creatures](#item-13) ⭐️ 5.0/10
+14. [Opinion: Solving the Fake GitHub Stars Problem](#item-14) ⭐️ 5.0/10
+15. [Building Real-Time Anomaly Detection for Cloud Storage Protection](#item-15) ⭐️ 5.0/10
+16. [Start with One Workflow Before Full Manufacturing System Suite](#item-16) ⭐️ 5.0/10
+17. [Kompas VC Invests in Physical World Startups Amid Geopolitical Fragmentation](#item-17) ⭐️ 4.0/10
+18. [GhostFader: Browser-Based Virtual MIDI Fader for CC Data](#item-18) ⭐️ 4.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Before GitHub: The Democratization of Version Control](https://lucumr.pocoo.org/2026/4/28/before-github/) ⭐️ 7.0/10
+## [Bugs Rust Won't Catch: TOCTOU and Unix API Pitfalls](https://corrode.dev/blog/bugs-rust-wont-catch/) ⭐️ 7.0/10
 
-Armin Ronacher published a reflective retrospective on lucumr.pocoo.org examining how GitHub transformed open source hosting by shifting from project-centered to person-centered repository structures, dramatically lowering the barrier for developers to create and share code. GitHub's model made version control feel personal rather than institutional, removing the psychological barrier of needing a "serious" project name and infrastructure before committing code, which encouraged millions of developers to share small, personal projects. The post received 319 points and 92 comments, with the community debating Fossil vs Git tradeoffs—commenters note that while Git has performance advantages for massive codebases like the Linux Kernel, Fossil's integrated wiki, forum, and ticket tracking in a single file remains compelling for individual developers.
+A technical analysis details bugs that Rust's memory safety guarantees don't prevent—specifically TOCTOU races and incorrect Unix API usage—encountered while porting GNU Coreutils to Rust, with critique from veteran Unix developers. Rust developers often assume memory safety eliminates security vulnerabilities, but this analysis reveals critical bug classes that persist regardless of language—particularly relevant for systems programmers working on file operations, security-critical utilities, and porting projects. The analysis identifies that while Rust prevents memory corruption bugs, it doesn't protect against logic errors like TOCTOU races where an attacker manipulates file paths between check and use operations. GNU Coreutils maintainer collinfunk notes that std::fs makes TOCTOU races too easy to write, and community member wahern notes these bugs are 'exceedingly amateur' from long-time Unix developers' perspective.
 
-hackernews · mlex · Apr 28, 21:17
+hackernews · lwhsiao · Apr 29, 02:19
 
-**Background**: Before GitHub, platforms like SourceForge required users to go through formal processes including reserving project names, setting up CVS or SVN repositories, websites, mailing lists, and issue tracking—creating a high barrier to entry. Fossil is a distributed version control system (DVCS) like Git and Mercurial that also includes built-in wiki, forum, and bug tracking features, all versioned together in a single SQLite file. The debate reflects broader tensions between centralized platforms and decentralized alternatives.
+**Background**: TOCTOU (Time-of-Check to Time-of-Use) is a class of race conditions where a program checks a condition (e.g., file permissions) before performing an action on that resource, but the resource's state can change between the check and the use. Rust guarantees memory safety through its ownership and borrowing system, preventing bugs like use-after-free and data races in concurrent code, but it cannot prevent logical errors in sequential code that misuse system APIs. The openat family of syscalls was designed specifically to avoid TOCTOU by keeping directory file descriptors as reference points.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Fossil_(software)">Fossil (software) - Wikipedia</a></li>
-<li><a href="https://www.fossil-scm.org/">Fossil : A Coherent Software Configuration Management System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use">Time - of - check to time - of - use - Wikipedia</a></li>
+<li><a href="https://cwe.mitre.org/data/definitions/367.html">CWE - CWE-367: Time - of - check Time - of - use ( TOCTOU ) Race ...</a></li>
+<li><a href="https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html">Understanding Ownership - The Rust Programming Language</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The discussion reveals genuine nostalgia and technical debate—commenters like wps express disappointment that Fossil lost to Git despite being more suitable for average projects, while others like jpeeler speculate that decentralization may swing back like compute moved to the cloud. Lammy raises an underappreciated concern that GitHub's archival role may have atrophied collective skills for maintaining software commons independently.
+**Discussion**: GNU Coreutils maintainer collinfunk agrees that TOCTOU is too easy with Rust's std::fs and hopes for an openat-like API, while preferring fstat with st_dev/st_ino over path resolution. wahern criticizes the bugs as amateur from the Unix perspective, noting these issues were hashed out decades ago. hombre_fatal defends the authors by noting that production code accumulates hidden lessons over time that aren't always documented, and reaching parity requires understanding all those implicit lessons.
 
-**Tags**: `#version-control`, `#github`, `#open-source-history`, `#fossil-scm`, `#developer-experience`
+**Tags**: `#rust`, `#systems-programming`, `#unix`, `#toctou`, `#bug-analysis`
 
 ---
 
 <a id="item-2"></a>
-## [ChatGPT Ad Strategy Contradicts Altman's Previous Anti-Ad Stance](https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/) ⭐️ 7.0/10
+## [How ChatGPT serves ads](https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/) ⭐️ 7.0/10
 
-OpenAI has launched advertising in ChatGPT's free tier and introduced a new $8/month ad-supported plan, marking a significant shift in the company's monetization strategy just two years after CEO Sam Altman publicly described ads as a 'last resort' for the business model. 这一发展预示着广告可能成为人工智能公司可持续收入模式的潜在行业转变，引发了人们对人工智能回复中植入广告风险的担忧，以及对免费人工智能层级用户体验的更广泛影响。 Currently, ads appear as distinct events separate from main responses, making them relatively easy to block according to community analysis. The ads are explicitly included in the free tier and the new ChatGPT Go plan, which warns users about advertising upon signup. Technical concerns focus on what happens if companies develop methods to inject ads directly into model responses.
+Hacker News discussion analyzing ChatGPT's ad implementation, featuring community debate about OpenAI's shift from avoiding ads, technical concerns about ad injection into AI responses, and comparisons to Google's advertising struggles.
 
 hackernews · lmbbuchodi · Apr 28, 23:54
 
-**Background**: OpenAI has historically relied on subscription revenue from ChatGPT Plus ($20/month) and API access for monetization. CEO Sam Altman previously expressed strong preference against advertising, stating in 2023 that he would only pursue ads if it was the 'only way' to provide access to AI services globally. The company has been under increasing pressure to diversify revenue as AI development costs continue to rise substantially.
-
-**Discussion**: The community reaction highlights a perceived contradiction between Altman's previous anti-ad stance and current implementation, with commenters questioning whether OpenAI is experiencing financial pressure. Some users compare current ads favorably to potential adversarial injection scenarios, while others debate the ethics of advertising in free AI services and whether targeted LLM ads represent an acceptable compromise.
-
-**Tags**: `#openai`, `#advertising`, `#ai-business-models`, `#chatgpt`, `#monetization`
+**Tags**: `#AI monetization`, `#ChatGPT`, `#OpenAI`, `#advertising`, `#tech industry`
 
 ---
 
 <a id="item-3"></a>
-## [Claude Code Regression: Malware Scan Prompts Block Subagent Code Edits](https://github.com/anthropics/claude-code/issues/49363) ⭐️ 7.0/10
+## [Malware Scan Prompts Block Claude Agent Code Edits](https://github.com/anthropics/claude-code/issues/49363) ⭐️ 7.0/10
 
-Claude Code's managed agents have regressed to appending mandatory malware-scanning system prompts to every file read operation, causing subagents to incorrectly refuse legitimate code modifications after confirming files are not malware. This bug wastes tokens and money on failed sessions where agents perform unnecessary analysis before incorrectly quitting. The issue suggests a systemic problem in AI product design: malware safety prompts appended to every read operation create ambiguous instructions that conflict with the agent's core coding functionality, raising concerns about whether such safeguards are thoughtfully designed or hastily implemented. The bug was apparently previously addressed after a Hacker News discussion, suggesting Anthropic has been aware of this issue before. Community members note that OpenCode allows users to customize system prompts and choose less expensive models as a workaround, highlighting that the underlying token consumption economics remain opaque to users.
+A regression bug in Claude Code's managed agents causes subagents to incorrectly interpret malware scanning results as content restrictions, refusing all code editing after confirming files are safe. Every read operation appends a system prompt instructing Claude to scan for malware, which wastes tokens and money before the agent quits anyway. This bug wastes significant token consumption and charges on every affected session, highlighting deeper problems with opaque AI agent economics and prompt engineering trade-offs. It underscores how security-focused instructions can inadvertently break core agent functionality, affecting developer productivity and increasing operational costs. The issue is a regression that was reportedly fixed once before after a Hacker News discussion, suggesting it's a known but recurring problem. The prompt instructs Claude to 'scan if it's malware' on every file read, then the agent incorrectly interprets the scanning logic as prohibiting any code augmentation—even for confirmed-safe files. Users are charged for every session this occurs in.
 
 hackernews · thomashobohm · Apr 28, 23:59
 
-**Background**: Claude Code is Anthropic's command-line coding assistant that leverages Claude AI models to read files, execute code, and make edits. Managed Agents provide a fully managed infrastructure where Claude can autonomously operate as an agent, handling tasks like file reading and code generation. Subagents are specialized agents configured for specific workflow tasks. Claude's API pricing is token-based, meaning each API call, including system prompt insertions, costs money. Claude Managed Agents requires a specific beta API header (managed-agents-2026-04-01) for access.
+**Background**: Claude Code managed agents allow users to build configurable agent harnesses for long-running tasks, with subagents handling specific subtasks. The parent agent delegates work via tools, and subagents execute autonomously. This architecture relies heavily on well-crafted system prompts to guide agent behavior across different tasks like code reading, analysis, and editing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://platform.claude.com/docs/en/managed-agents/overview">Claude Managed Agents overview - Claude API Docs</a></li>
-<li><a href="https://platform.claude.com/docs/en/managed-agents/quickstart">Get started with Claude Managed Agents - Claude API Docs</a></li>
-<li><a href="https://www.anthropic.com/engineering/managed-agents">Scaling Managed Agents: Decoupling the brain from ...</a></li>
+<li><a href="https://claude.com/blog/claude-managed-agents">Claude Managed Agents : get to production 10x faster | Claude</a></li>
+<li><a href="https://code.claude.com/docs/en/sub-agents">Create custom subagents - Claude Code Docs</a></li>
+<li><a href="https://ai-sdk.dev/docs/agents/subagents">Subagents - Agents</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments reveal frustration with the flawed design. One commenter describes the mandatory malware scans on every file read as 'vibe coding' — poorly thought-out implementation. Another identifies the core issue: agent token consumption is opaque, and the token-based revenue model benefits providers more than users. One commenter even references Elon Musk's view that AI should be a tool serving users rather than a moral agent limiting itself. These responses collectively frame this as a symptom of misaligned incentives in AI product development.
+**Discussion**: Comments criticize what users call 'dumb vibe coding' — adding security prompts without careful consideration of their interaction effects. Several commenters highlight the irony of paying for agent sessions that fail to complete tasks. There's discussion about opaque token economics benefiting agent builders more than users, and suggestions to use alternatives like OpenCode that allow custom system prompts and model selection. One commenter references Elon Musk's criticism of AI moral agents nerfing themselves.
 
-**Tags**: `#claude-code`, `#ai-agents`, `#bug-report`, `#token-economics`, `#prompt-engineering`
+**Tags**: `#ai-agents`, `#bug-report`, `#claude-code`, `#prompt-engineering`, `#llm-economics`
 
 ---
 
 <a id="item-4"></a>
-## [Developer Wins Fictional Championship to Expose LLM Poisoning Risks](https://ron.stoner.com/How_I_Won_a_Championship_That_Doesnt_Exist/) ⭐️ 7.0/10
+## [23 Steps Behind kubectl run nginx Deep-Dive](https://dev.to/saiyam1814/what-actually-happens-when-you-run-kubectl-run-nginx-34bh) ⭐️ 7.0/10
 
-A developer demonstrated how easy it is to manipulate LLMs into believing false information by creating a fake championship record for a non-existent '6 Nimmt' tournament. The experiment showed that AI systems can confidently repeat fabricated claims when they appear in easily-accessible web content, prompting important discussions about information integrity vulnerabilities. This proof-of-concept exposes a critical vulnerability in how LLMs process and propagate information from the web. As these models increasingly serve as knowledge sources, the ability to inject false narratives through easily-published content poses significant risks for misinformation, manipulation, and erosion of trust in AI-generated responses. The attacker demonstrated that brand new fictional information is far easier to plant than contradicting established facts—making up a fictional 'Mapupu kingdom' is easier than falsifying real historical events. Research from Anthropic confirms that poisoning attacks require remarkably few samples: just 250 malicious documents can backdoor LLMs ranging from 600M to 13B parameters, regardless of model size.
+A technical article breaks down exactly what happens when executing kubectl run nginx, walking through 23 distinct steps from kubectl command parsing through to container running status, covering authentication, API server processing, scheduling, kubelet operations, and container runtime interactions. This deep-dive addresses a common knowledge gap among Kubernetes users who interact with the cluster daily but don't understand the complex internals happening behind a simple command. Understanding these 23 steps helps DevOps engineers troubleshoot issues, design better architectures, and make informed decisions about cluster configuration. The article covers the full pipeline: TLS 1.3 mutual certificate authentication, RBAC authorization, mutating and validating admission webhooks (including CEL engine since 1.30), Raft consensus writes to etcd, scheduler Filter/Score plugins, kubelet syncPod flow, containerd CRI operations, CNI veth pair creation, OCI runtime spec with overlayfs, runc namespace handling via clone3, and PLEG status polling. Notably, Evented PLEG remains alpha in Kubernetes 1.36.
 
-hackernews · SEJeff · Apr 28, 20:38
+rss · Dev.to · Apr 29, 06:23
 
-**Background**: LLM poisoning attacks involve manipulating training data or inference-time inputs to cause models to behave incorrectly. Prompt injection, another related vulnerability, exploits the fact that LLMs process instructions and data as the same text stream without enforcing security boundaries between them. Split-view data poisoning and frontrunning poisoning are additional techniques that exploit model training dynamics to inject harmful content.
+**Background**: Kubernetes is a container orchestration platform where kubectl is the primary CLI for interacting with clusters. The API server (kube-apiserver) is the central control plane component that handles all requests, while etcd serves as the distributed key-value store maintaining cluster state. Kubelet runs as a node agent on each worker, containerd manages containers via CRI, CNI plugins handle networking, and runc is the OCI-compatible runtime that actually creates containers. Admission webhooks enable custom policy enforcement at API request time.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.anthropic.com/research/small-samples-poison">A small number of samples can poison LLMs of any size</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_injection">Prompt injection - Wikipedia</a></li>
-<li><a href="https://genai.owasp.org/llmrisk/llm04-model-denial-of-service/">LLM04:2025 Data and Model Poisoning - OWASP Gen AI Security Project</a></li>
+<li><a href="https://etcd.io/">etcd</a></li>
+<li><a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/">kubelet | Kubernetes</a></li>
+<li><a href="https://kubebyexample.com/learning-paths/kubernetes-fundamentals/kubernetes-cli-kubectl">Kubernetes CLI with kubectl | Kube by Example</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The discussion revealed nuanced perspectives on this vulnerability. Simon Willison shared his own experiment naming a whale 'Teresa T' through just a blog post, validating the attack vector. Commenter xeeeeeeeeeeenu explained that new fictional information is easier to inject because it doesn't contradict existing training data, suggesting bad actors prefer manufacturing fake stories over distorting real ones. Blobbers drew parallels to astroturfing and SEO manipulation, noting that 'brand' previously served as a trust source before algorithmic ranking replaced editorial oversight.
-
-**Tags**: `#llm-poisoning`, `#misinformation`, `#ai-reliability`, `#information-integrity`, `#prompt-injection`
+**Tags**: `#kubernetes`, `#kubectl`, `#container-orchestration`, `#devops`, `#cloud-native`
 
 ---
 
 <a id="item-5"></a>
-## [vLLM to Ollama Migration Achieves 3.8x Faster Latency for Code Tasks](https://dev.to/johalputt/why-we-stopped-using-vllm-06-for-local-llms-in-favor-of-ollama-05-for-code-tasks-2b86) ⭐️ 7.0/10
+## [Kubernetes kube-scheduler 13-Stage Scheduling Framework Deep Dive](https://dev.to/saiyam1814/what-actually-happens-when-kube-scheduler-picks-a-node-13-stages-inside-kubernetes-3g6o) ⭐️ 7.0/10
 
-A development team migrated 100% of their local LLM workloads from vLLM 0.6 to Ollama 0.5 after 14 months in production, achieving a p99 cold start time reduction from 4.2 seconds to 1.1 seconds, along with 40% lower peak memory usage across 12 developer workstations equipped with NVIDIA RTX 4090 GPUs. This case study challenges the conventional wisdom that vLLM is the gold standard for local inference, demonstrating that lightweight runtimes like Ollama outperform general-purpose inference servers for single-GPU workstations handling code-specific tasks, potentially saving $1.2k per developer annually in hardware upgrade costs. Ollama 0.5 achieves 210ms p99 first-token latency versus vLLM 0.6's 820ms by avoiding tensor parallelism initialization overhead, while using only 14.0GB of VRAM versus 18.2GB for CodeLlama-7b-Instruct, leaving 10GB free for multi-model workflows instead of just 5.8GB on the 24GB RTX 4090.
+A comprehensive technical walkthrough details all 13 stages of the kube-scheduler scheduling framework, from PreEnqueue through Bind, with references to Kubernetes v1.36 source code and real cluster outputs. Understanding these 13 stages is critical for platform engineers and Kubernetes operators who need to debug scheduling failures, optimize cluster resource utilization, and configure scheduling plugins correctly in production environments. The Filter stage runs 14 in-tree plugins where any single Unschedulable verdict disqualifies a node; the Score stage uses 9 plugins with weights where TaintToleration carries weight 3 while most others are weight 2 or 1; ties in NormalizeScore are resolved using Go's rand.Int for deterministic randomness to prevent hot spotting.
 
-rss · Dev.to · Apr 29, 03:38
+rss · Dev.to · Apr 29, 06:23
 
-**Background**: vLLM is an open-source inference server designed for high-throughput distributed deployments with features like tensor parallelism for multi-GPU setups, while Ollama is a lightweight local runtime that focuses on simplicity and runs models directly on local hardware without distributed inference components. The benchmark measured p99 cold start time (process start to first token) and first-token latency across 10 runs of CodeLlama-7b-Instruct with a 128-token code completion prompt, with KV cache overhead measured at 2048-token context windows.
+**Background**: kube-scheduler is a Kubernetes control plane component responsible for assigning pods to worker nodes. The scheduler uses a plugin-based framework where each stage can be extended or customized. When a pod is created without spec.nodeName, the scheduler evaluates candidate nodes through multiple filtering and scoring stages before atomically binding the pod to the winning node via the API server.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://docs.vllm.ai/en/stable/serving/parallelism_scaling/">Parallelism and Scaling - vLLM</a></li>
-<li><a href="https://benchlm.ai/llm-speed">LLM Speed & Latency Comparison — Tokens/sec, TTFT by Provider (2026) | BenchLM.ai</a></li>
+<li><a href="https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/">Kubernetes Scheduler | Kubernetes</a></li>
+<li><a href="https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/">Scheduling Framework | Kubernetes</a></li>
+<li><a href="https://blog.kubesimplify.com/kubectl-run-nginx-inside">What Actually Happens When You Run kubectl run nginx</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The article lists unrelated Hacker News stories (Ghostty leaving GitHub, Before GitHub, etc.) but does not provide actual community comments or discussion specifically about this vLLM to Ollama migration case study.
-
-**Tags**: `#vLLM`, `#Ollama`, `#local LLMs`, `#performance benchmarking`, `#inference optimization`
+**Tags**: `#kubernetes`, `#kube-scheduler`, `#container-orchestration`, `#devops`, `#systems-architecture`
 
 ---
 
 <a id="item-6"></a>
-## [Anthropic Launches Claude for Creative Work with MCP Integration](https://www.anthropic.com/news/claude-for-creative-work) ⭐️ 6.0/10
+## [Read-Only MCP Server Enables Akamai Fuzzy Property Search](https://dev.to/desty2k/i-built-a-read-only-mcp-server-for-akamai-3398) ⭐️ 7.0/10
 
-Anthropic announced Claude for Creative Work, a new initiative enabling Claude AI to serve as an interactive tutor and assistant for complex creative software, with integrations through the Model Context Protocol (MCP) that connect AI to tools like Affinity and Ableton. This announcement signals a major push by Anthropic to position AI as a creative collaborator rather than just a text generator, potentially transforming how artists, designers, and musicians interact with professional software tools. Affinity's implementation exposes thousands of SDK functions via MCP, demonstrating LLMs' capability to handle long-horizon tasks with massive context windows. The feature is available on Pro plans, though specific availability details remain unclear. The Blender controversy highlights community tensions around AI adoption in creative fields.
+A developer built a read-only MCP server for Akamai that provides 16 tools for fuzzy property search, EdgeWorker code browsing, DNS zone queries, and network list inspection. The server preloads all CDN properties into an in-memory index at startup, enabling AI agents to find properties without knowing exact names or IDs. This solves a critical limitation in Akamai's Property Manager API, which lacks fuzzy search and organizes properties only by group and contract. AI agents can now efficiently query Akamai configurations without hitting dead ends, making it valuable for DevOps teams managing large CDN deployments with 200+ properties. The server uses rapidfuzz with WRatio scorer for fuzzy matching, fans out API calls with a semaphore limiting to 10 concurrent requests to respect Akamai's rate limits, and refreshes its index every 5 minutes. EdgeWorker bundles are cached in memory with a 1-hour TTL and max 50 entries, avoiding repeated downloads for follow-up queries.
 
-hackernews · elsewhen · Apr 28, 23:46
+rss · Dev.to · Apr 29, 06:00
 
-**Background**: The Model Context Protocol (MCP) is an open-source standard developed by Anthropic that enables AI assistants to connect to external data sources, tools, and development environments. Creative software integration via MCP allows AI agents to execute actions, save scripts for re-use, and potentially handle complex multi-step creative workflows. The Blender community controversy arose from Blender's announcement of Anthropic funding, with many users expressing concerns about AI being used for computer graphics work.
+**Background**: MCP (Model Context Protocol) is an open-source standard for connecting AI applications to external systems, enabling models like Claude to access tools and data sources through a standardized interface. Akamai EdgeWorkers are serverless JavaScript functions that run on CDN edge nodes, allowing developers to execute custom logic close to end users for personalization and traffic management. This MCP server fills a gap in Akamai's API capabilities by adding fuzzy search and caching layers.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.anthropic.com/news/model-context-protocol">Introducing the Model Context Protocol</a></li>
-<li><a href="https://www.anthropic.com/news/claude-for-creative-work">Claude for Creative Work \ Anthropic</a></li>
 <li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">What is the Model Context Protocol (MCP)? - Model Context Protocol</a></li>
+<li><a href="https://www.akamai.com/products/serverless-computing-edgeworkers">Serverless Computing with Akamai EdgeWorkers | Akamai</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion reveals sharp divisions: developers like dannyw are excited about Affinity's MCP SDK integration, calling it a demonstration of LLMs' ability to handle thousands of functions across long-horizon tasks. Meanwhile, ossa-ma emphasizes that AI cannot replace creative taste or imagination, arguing that more tool access simply accelerates iteration. The Blender controversy feedback shows resistance from creative professionals who feel threatened by AI in their field, with Blender acknowledging active evaluation of the feedback. Skeptics like hmartin remain cautious about the commercial terms.
+**Discussion**: The developer has also written about their philosophy of building only read-only MCP servers, emphasizing that giving AI agents write access to infrastructure without proper guardrails poses security risks. This approach prioritizes safety while still enabling useful AI-assisted workflows for configuration exploration and troubleshooting.
 
-**Tags**: `#LLMs`, `#AI-tools`, `#creative-work`, `#MCP`, `#community-discussion`
+**Tags**: `#mcp`, `#akamai`, `#cdn`, `#devops`, `#ai-agents`
 
 ---
 
 <a id="item-7"></a>
-## [Taylor Swift Files Trademarks to Combat AI Voice Copycats](https://www.theverge.com/ai-artificial-intelligence/919827/taylor-swift-trademarks-ai-copycats) ⭐️ 6.0/10
+## [Cheap Model Triaging Pattern Reduces LLM Costs by 96%](https://www.mendral.com/blog/frontier-model-lower-costs) ⭐️ 6.0/10
 
-Taylor Swift has filed trademark applications seeking to protect her voice, name, and likeness from AI-generated imitations. This legal action marks a significant escalation in celebrity efforts to combat AI copycats through intellectual property law. This high-profile filing could set an important precedent for how celebrities and public figures use trademark law to protect against AI-generated content. If successful, it may establish a model for other celebrities seeking legal remedies against AI voice cloning and digital impersonation. The trademark applications target AI technologies that can generate entirely new content mimicking an artist's voice without copying an existing recording—a gap that traditional copyright law does not cover. Legal experts note that trademark law has historically been used for brand names and logos rather than personal characteristics like voice or likeness, making Swift's approach a novel but uncertain legal strategy.
+A practical implementation guide describes using a cheap LLM (Claude Haiku) as a triager to determine whether issues are already tracked, escalating to the expensive Opus model only when necessary, with the triager pattern reportedly catching 4 out of 5 failures before they reach Opus. This cost optimization pattern demonstrates how organizations can significantly reduce LLM operational costs by implementing intelligent routing—potentially achieving a 25x cost reduction per triager match compared to full Opus investigation—while maintaining reasonable quality for simpler tasks. The triager uses a very specific and narrow prompt to check if an issue is already tracked in the system; only when the triager fails to resolve the query does it escalate to Opus. One commenter noted this pattern is essentially 'intelligent routing' rather than a novel technique, and others warned against biasing investigations by pre-supplying suspected solutions.
 
-rss · The Verge · Apr 28, 20:30
+hackernews · shad42 · Apr 29, 00:57
 
-**Background**: AI voice cloning technology has advanced rapidly, with platforms like VoidMagic, Vidnoz AI, and Fameo offering services that can clone celebrity voices and create realistic audio content in seconds. These tools use neural networks to reconstruct unique acoustic signatures, allowing users to make any celebrity say anything without their consent. This capability has created significant challenges for intellectual property frameworks that were designed before such technologies existed, leaving celebrities without clear legal protections against AI-generated impersonations.
+**Background**: LLM routing architectures involve directing user requests to appropriate model tiers based on task complexity. Claude Opus is Anthropic's most capable flagship model with advanced reasoning for complex tasks, while Claude Haiku is a faster, more cost-effective model suited for simpler operations. The 'intelligent routing' pattern scales because it keeps routing logic clean and decoupled from implementation, allowing cheaper models to handle routine triage before expensive models are invoked for specialized work.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.cnn.com/2026/04/28/business/taylor-swift-trademark-ai-intl">Taylor Swift files trademark applications to protect ... | CNN Business</a></li>
-<li><a href="https://www.linkedin.com/pulse/trademark-traps-ai-era-when-branding-meets-bots-adlilaw-bccqe">Trademark Traps in the AI Era: When Branding Meets Bots</a></li>
+<li><a href="https://www.anthropic.com/claude/opus?hl=en-IN">Claude Opus 4.7 \ Anthropic</a></li>
+<li><a href="https://router.orq.ai/blog/auto-router-intelligent-llm-routing">Intelligent LLM routing : how Auto Router cuts costs... - Orq.ai Router</a></li>
+<li><a href="https://llm-council.dev/adr/ADR-024-unified-routing-architecture/">ADR-024 Unified Routing - llm -council</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Legal professionals and AI ethics observers are closely watching this case as a potential bellwether for intellectual property law in the AI era. Some view Swift's aggressive approach as a necessary adaptation of existing legal tools to new technological realities, while others question whether trademark law—designed primarily for commercial branding purposes—can effectively protect personal identity rights. The outcome could significantly influence how the entertainment industry and individuals respond to the growing threat of AI impersonation.
+**Discussion**: The community strongly criticized the article title as clickbait, with commenters repeatedly summarizing the core insight as 'Let a cheap agent decide if the expensive one is needed.' One commenter noted the pattern mirrors the debugging principle of avoiding bias in investigations, while another proposed creating a generalized 'harness' that could apply this routing logic to Claude Code and other expensive agents using local or cheap cloud models.
 
-**Tags**: `#AI`, `#intellectual-property`, `#legal`, `#celebrity`, `#trademark`
+**Tags**: `#llm-costs`, `#ai-agents`, `#cost-optimization`, `#routing`, `#architecture`
 
 ---
 
 <a id="item-8"></a>
-## [Musk Testifies OpenAI Founded to Prevent Terminator Outcome](https://www.wired.com/story/model-behavior-elon-musk-testifies-at-musk-v-altman-trial/) ⭐️ 6.0/10
+## [Building AI Agents with Gemini on Google Cloud](https://dev.to/avishek_dutta_5c0ca712ef5/my-take-on-building-ai-agents-with-gemini-on-google-cloud-from-next-26-1768) ⭐️ 6.0/10
 
-Elon Musk testified under oath for the first time on Tuesday that OpenAI was founded to prevent existential AI risks he describes as a 'Terminator outcome.' The testimony came during the high-profile Musk v. Altman trial, where the judge also warned both parties to stop using social media to escalate their conflict outside the courtroom. This case could reshape public understanding of OpenAI's original mission and governance structure, potentially influencing how AI labs worldwide approach safety commitments and corporate responsibility. The 'Terminator outcome' framing also reignites debates about AI existential risk in mainstream discourse. This marks the first time Musk has made these claims under oath, distinguishing it from his previous interviews and comments made to biographer Walter Isaacson. Court observers noted Musk appeared 'flat' and 'adrift' during testimony, unlike his performative demeanor in previous legal proceedings.
+Developer Avishek Dutta published a detailed tutorial documenting his journey of building an AI agent using Google's Gemini model on Google Cloud, covering the full process from initial idea to real-world implementation as part of the Google Cloud NEXT '26 Challenge. This practical tutorial provides valuable real-world insights for developers exploring agentic AI implementations, offering hands-on experience combining Gemini's capabilities with Google Cloud infrastructure for building autonomous AI agents that can accomplish goals with minimal supervision. The article is tagged with #devchallenge, #cloudnextchallenge, and #googlecloud, confirming its participation in Google Cloud's developer challenge program. The tutorial focuses on practical implementation rather than theoretical concepts, demonstrating the complete workflow of building a working AI agent.
 
-rss · Wired · Apr 28, 21:35
+rss · Dev.to · Apr 29, 06:31
 
-**Background**: Elon Musk co-founded OpenAI in 2015 alongside Sam Altman and others, positioning it as a nonprofit research lab dedicated to developing artificial general intelligence (AGI) safely. The 'Terminator outcome' refers to scenarios where advanced AI poses existential threats to humanity, a concept discussed by figures including Stephen Hawking. Musk's lawsuit against Altman alleges breach of contract and fiduciary duty, claiming OpenAI's shift toward a commercial, profit-driven entity betrayed its original charitable mission.
+**Background**: Agentic AI refers to AI systems capable of accomplishing specific goals with limited human supervision, representing an evolution beyond generative AI that waits for user prompts to produce single outputs. Google's Gemini is a family of multimodal large language models developed by Google DeepMind, serving as successor to LaMDA and PaLM 2, available in versions including Gemini Pro, Gemini Flash, and newer releases. Google Cloud NEXT is Google's annual conference showcasing cloud computing innovations, with the '26 edition featuring agentic AI as a key theme.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence">Artificial general intelligence - Wikipedia</a></li>
-<li><a href="https://www.longtermwiki.com/wiki/E56">The Case For AI Existential Risk | Longterm Wiki</a></li>
+<li><a href="https://www.ibm.com/think/topics/agentic-ai">What is Agentic AI ? | IBM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gemini_(language_model)">Gemini (language model ) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Court observers noted Musk seemed uncharacteristically subdued during testimony, lacking the 'charm' he deployed in his previous defamation trial. Some observers noted the stark contrast between his typically dynamic public persona and his apparent discomfort on the stand.
-
-**Tags**: `#AI governance`, `#OpenAI`, `#Elon Musk`, `#legal`, `#AI safety`
+**Tags**: `#gemini`, `#google-cloud`, `#ai-agents`, `#agentic-ai`, `#cloud-computing`
 
 ---
 
 <a id="item-9"></a>
-## [Critical Analysis of Solana's Quantum Readiness Announcement](https://hackernoon.com/solanas-quantum-readiness-post-a-deeper-analysis?source=rss) ⭐️ 6.0/10
+## [Alternative GKE Kubeconfig Without gcloud Dependency](https://dev.to/saiyam1814/a-kubeconfig-for-gke-that-doesnt-need-gcloud-5b8m) ⭐️ 6.0/10
 
-A critical analysis published on HackerNoon on April 27, 2026 examines Solana's quantum readiness post, identifying gaps in framing that include softened discussions of implementation maturity, Falcon side-channel hazards, migration mechanics, and competitive positioning relative to Bitcoin and Ethereum. This analysis matters for the broader blockchain security ecosystem because it challenges overly confident quantum readiness claims that could lull developers and users into false security assumptions. As quantum computing threats become more tangible, accurate assessment of cryptographic migration readiness is critical. The analysis acknowledges Solana's engineering progress (two validator clients converging on Falcon) as a real positive signal, but critiques the overall framing for substituting confidence for genuine discovery. It particularly flags Falcon side-channel hazards as an underexplored concern and notes that Solana's position relative to Ethereum's quantum preparedness remains unclear.
+The article explains why standard GKE kubeconfigs generated by `gcloud container clusters get-credentials` fail when gcloud isn't installed, and provides an alternative using a ServiceAccount with bearer token authentication that works without any Google CLI tooling. This is significant for DevOps teams managing GKE clusters across different environments, as it enables authentication in CI/CD pipelines, contractor machines, and VMs without installing the entire gcloud SDK. It simplifies automation workflows and reduces dependency overhead for teams that don't need full GCP tooling. The solution uses four components: a ServiceAccount for identity, a ClusterRoleBinding for permissions, a token the SA can present to the API server, and a portable kubeconfig wrapping the token, cluster endpoint, and CA cert. The API server validates the token directly without needing any Google authentication infrastructure.
 
-rss · Hacker Noon · Apr 28, 20:40
+rss · Dev.to · Apr 29, 06:23
 
-**Background**: Quantum computers pose a theoretical threat to current cryptographic systems by potentially breaking elliptic curve signatures that secure most blockchains. Post-quantum cryptography aims to replace these with quantum-resistant algorithms. NIST selected Falcon as a post-quantum signature standard after a six-year international competition. Side-channel attacks represent a separate implementation vulnerability where information leaks through timing, power consumption, or electromagnetic emissions during cryptographic operations, meaning even theoretically secure algorithms can be compromised in practice.
+**Background**: Standard GKE kubeconfigs generated by gcloud use an exec plugin mechanism (`client.authentication.k8s.io/v1beta1`) that calls `gke-gcloud-auth-plugin` to obtain OAuth tokens on every kubectl call. This causes 'executable not found' errors when gcloud isn't present. The exec plugin approach was introduced in GKE v1.26 as Google standardized its authentication mechanism to use the kubectl credential plugin framework rather than built-in client code. A ServiceAccount token is a signed JWT that the API server can validate directly through its internal authentication webhook, making it a portable, self-contained credential.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Falcon_(signature_scheme)">Falcon (signature scheme) - Wikipedia</a></li>
-<li><a href="https://www.inria.fr/en/nist-algorithm-falcon-post-quantum-cryptographic">NIST Chooses Falcon as Standard for Post- Quantum Cryptographic Signature | Inria</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Side-channel_attack">Side-channel attack - Wikipedia</a></li>
-<li><a href="https://solana.com/validators">Solana</a></li>
+<li><a href="https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke">Kubectl auth changes in GKE v1.26 : gke - gcloud - auth - plugin</a></li>
+<li><a href="https://kubernetes.io/docs/reference/access-authn-authz/authentication/">Authenticating | Kubernetes</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#blockchain-security`, `#quantum-computing`, `#solana`, `#cryptographic-analysis`, `#crypto-infrastructure`
+**Discussion**: The article addresses a common pain point for teams using GKE in environments where installing gcloud is impractical. The solution of using ServiceAccount tokens is well-known in the Kubernetes community, but the step-by-step guide for GKE specifically provides practical value. Note that while the example uses cluster-admin for simplicity, production deployments should follow least-privilege principles with scoped RBAC roles.
+
+**Tags**: `#GKE`, `#Kubernetes`, `#Authentication`, `#Gcloud`, `#Kubeconfig`
 
 ---
 
 <a id="item-10"></a>
-## [Claude API Prompt Caching: 90% Cost Reduction Guide](https://dev.to/thegdsks/prompt-caching-with-the-claude-api-a-practical-guide-14ce) ⭐️ 6.0/10
+## [Ingress NGINX Migration Tool Receives Major Update with 119 Annotation Mappings](https://dev.to/saiyam1814/the-ingress-nginx-migration-just-got-easier-119-annotations-3-targets-impact-ratings-27mj) ⭐️ 6.0/10
 
-A developer published a practical guide demonstrating how to implement Claude API prompt caching, achieving approximately 90% cost reduction on cached tokens by analyzing three months of actual API invoices. This technique addresses a common pain point for developers building chat-style applications: repeatedly paying full price for the same system prompts, tool definitions, and RAG context across requests. The ROI is immediate—the 5-minute TTL pays for itself after just two requests. Cache reads cost 10% of the base input rate; writes cost 1.25x for 5-minute TTL or 2x for 1-hour TTL. Each request supports up to four cache breakpoints, and the cache is a prefix cache where order matters—any token difference causes a cache miss. Minimum cacheable chunks are 1024 tokens for Sonnet/Opus and 2048 tokens for Haiku.
+The Kubernetes ingress migration tool ing-switch received its largest update yet, expanding annotation mappings from 50 to 119, adding Gateway API support with Traefik as the provider, and introducing impact ratings (NONE/LOW/MEDIUM/VARIES) for every annotation to help teams assess migration risk. With ingress-nginx officially archived on March 24, 2026 and reaching end-of-life on March 31, thousands of Kubernetes clusters need urgent migration paths. The tool's 70%+ coverage of 'unsupported' annotations being safe to ignore removes a major blocker, enabling teams to migrate faster with less manual effort. The tool supports three migration targets: Traefik v3 (fastest, 35 direct equivalents), Gateway API with Envoy (39 direct equivalents), and Gateway API with Traefik (combined approach). Annotation support varies significantly — Traefik has 48 partially supported annotations vs Gateway API's 25, making Traefik the lower-friction path for most teams.
 
-rss · Dev.to · Apr 29, 03:55
+rss · Dev.to · Apr 29, 06:23
 
-**Background**: Prompt caching is an opt-in feature that allows API providers to store the encoded state of a prompt prefix server-side. When subsequent requests start with the same exact bytes, they read from cache instead of recomputing tokenization. This is particularly valuable for Retrieval-Augmented Generation (RAG) applications, where external knowledge base content is inserted into prompts, and for applications using tool definitions that remain consistent across requests. The cache TTL (time-to-live) resets on each cache read, keeping conversations warm without re-paying write costs.
+**Background**: Kubernetes Ingress is the standard API for exposing HTTP/S routes to external traffic, with ingress-nginx being one of the most widely deployed ingress controllers. Annotations are metadata attached to Ingress resources that configure NGINX-specific behaviors like SSL termination, rate limiting, authentication, and CORS. The Kubernetes Gateway API is the officially endorsed successor to the Ingress API, offering a more expressive and portable approach to traffic management. Traefik is an open-source edge router that can function as an ingress controller and supports both Ingress API and its own IngressRoute custom resources.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">Retrieval - augmented generation - Wikipedia</a></li>
-<li><a href="https://aws.amazon.com/what-is/retrieval-augmented-generation/">What is RAG ? - Retrieval - Augmented Generation AI Explained - AWS</a></li>
-<li><a href="https://claudelab.net/en/articles/api-sdk/claude-api-prompt-caching-monthly-cost-half-guide">How I Cut My Claude API Bill in Half With Prompt Caching | Claude Lab</a></li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/gateway/">Gateway API | Kubernetes</a></li>
+<li><a href="https://gateway-api.sigs.k8s.io/">Introduction - Kubernetes Gateway API</a></li>
+<li><a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/">Annotations | Kubernetes</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Claude API`, `#Prompt Caching`, `#Cost Optimization`, `#API Development`, `#Anthropic`
+**Discussion**: No discussion or engagement signals were provided in the source. The author noted that the response to their initial ing-switch release was 'incredible' with people appreciating the annotation mapping and visual dashboard, and the Gateway API + Traefik support was the #1 feature request from KubeCon community feedback.
+
+**Tags**: `#kubernetes`, `#ingress-nginx`, `#migration`, `#gateway-api`, `#traefik`, `#devops`
 
 ---
 
 <a id="item-11"></a>
-## [Handling Blocking Calls in Spring Boot WebFlux](https://dev.to/realnamehidden1_61/stop-the-traffic-jam-handling-blocking-calls-in-spring-boot-webflux-4768) ⭐️ 6.0/10
+## [Supabase RLS Deep Dive: Multi-tenant Access Control](https://dev.to/kanta13jp1/supabase-rls-deep-dive-multi-tenant-access-control-11ig) ⭐️ 6.0/10
 
-A comprehensive tutorial demonstrates how to handle blocking calls in non-blocking Spring Boot WebFlux applications using Project Reactor operators, featuring Java 21 code examples with Schedulers.boundedElastic(), subscribeOn(), and publishOn(). Blocking calls on the event loop can bring down an entire reactive application by halting all concurrent requests. Mastering scheduler-based task delegation is essential for building performant reactive systems capable of handling thousands of simultaneous connections. The tutorial uses Schedulers.boundedElastic() specifically designed for wrapping blocking code, simulating legacy JDBC calls with Thread.sleep() and demonstrating how Mono.fromCallable() combined with subscribeOn() shifts execution to a dedicated thread pool, keeping the event loop responsive.
+A technical tutorial demonstrating how to implement multi-tenant access control in Supabase using Row Level Security (RLS) policies, featuring SQL examples for enabling RLS on tables, creating SELECT/INSERT policies based on auth.uid(), and setting up organization-based access through junction tables like organizations and organization_members. RLS enables database-level permission enforcement, eliminating the need for explicit permission checks in application code and reducing security vulnerabilities. This pattern is essential for multi-tenant SaaS architectures where strict data isolation between tenants is critical for security, compliance, and trust. The tutorial demonstrates using the USING clause for SELECT policies and WITH CHECK clause for INSERT policies, with auth.uid() providing the authenticated user's ID. The organization_members table uses a composite primary key (org_id, user_id) with ON DELETE CASCADE for referential integrity, and a CHECK constraint limiting role values to 'owner', 'admin', or 'member'.
 
-rss · Dev.to · Apr 29, 03:53
+rss · Dev.to · Apr 29, 06:09
 
-**Background**: Spring Boot WebFlux is a non-blocking, event-loop-based web framework designed for high concurrency with minimal thread usage. Project Reactor is a fourth-generation reactive library implementing the Reactive Streams specification, providing Mono for single-value and Flux for multi-value streams. Schedulers in Project Reactor manage thread execution contexts, with boundedElastic() specifically created to handle blocking operations by providing a scalable elastic thread pool.
+**Background**: Supabase is an open-source Firebase alternative built around PostgreSQL, offering authentication, real-time subscriptions, and database capabilities. Row Level Security (RLS) is a PostgreSQL feature that applies access control filters at the database layer, automatically narrowing or rejecting data access based on policies before query results are returned. Multi-tenant SaaS architectures share a single application instance and database across multiple customers (tenants), requiring robust data isolation mechanisms to prevent cross-tenant data leakage.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://dzone.com/articles/spring-webflux-publishon-vs-subscribeon">Spring WebFlux : publishOn vs subscribeOn</a></li>
-<li><a href="https://www.javaguides.net/2023/04/project-reactor-java-tutorial.html">Project Reactor Java Tutorial</a></li>
-<li><a href="https://www.geeksforgeeks.org/advance-java/event-loop-in-spring-webflux/">Event loop in Spring WebFlux - GeeksforGeeks</a></li>
+<li><a href="https://www.postgresql.org/docs/current/ddl-rowsecurity.html">PostgreSQL: Documentation: 18: 5.9. Row Security Policies</a></li>
+<li><a href="https://satoricyber.com/postgres-security/postgres-row-level-security/">PostgreSQL Row Level Security (RLS): Basics and Examples</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-sql/database/saas-tenancy-app-design-patterns?view=azuresql">Multitenant SaaS Patterns - Azure SQL Database | Microsoft Learn</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#spring-boot`, `#webflux`, `#reactive-programming`, `#project-reactor`, `#java`
+**Tags**: `#supabase`, `#database-security`, `#row-level-security`, `#multi-tenant`, `#saas-architecture`, `#postgresql`
 
 ---
 
 <a id="item-12"></a>
-## [Redis 8.0 vs Memcached 1.6: 2026 Caching Benchmark for Node.js 24 APIs](https://dev.to/johalputt/redis-80-vs-memcached-16-2026-caching-comparison-for-high-traffic-nodejs-24-apis-2o3o) ⭐️ 6.0/10
+## [At his OpenAI trial, Musk relitigates an old friendship](https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/) ⭐️ 5.0/10
 
-A comprehensive 3-month benchmark across 12 production-like environments comparing Redis 8.0.2 and Memcached 1.6.22 for high-traffic Node.js 24 APIs shows Redis delivers 37% higher throughput for complex workloads, while Memcached reduces operational costs by 28% for simple key-value use cases. For Node.js developers serving 50k+ requests per second, choosing the wrong caching layer can cause a 42% latency spike, directly impacting user experience and infrastructure costs. This benchmark provides data-backed guidance for selecting between feature-rich Redis and cost-optimized Memcached. On identical 16-core ARM64 instances (AWS t4g.2xlarge), Redis 8.0 achieves 142k ops/sec versus Memcached's 118k ops/sec for 1KB values, but Memcached delivers better p99 latency (1.8ms vs 2.1ms) at lower cost ($312 vs $487 monthly per 10k RPM). Redis 8.0 supports 8 data types plus modules like RedisJSON and RediSearch, while Memcached is limited to strings only.
+Elon Musk testifies under oath about his relationship with OpenAI and Sam Altman in a legal proceeding, repeating claims he previously made in interviews and Walter Isaacson's biography.
 
-rss · Dev.to · Apr 29, 03:37
+rss · TechCrunch · Apr 29, 00:40
 
-**Background**: Redis and Memcached are both in-memory key-value stores used as caching layers, but they serve different needs. Redis is a feature-rich data structure server supporting strings, hashes, lists, sets, sorted sets, streams, JSON, and vectors with native persistence (RDB/AOF) and clustering. Memcached is a simpler, distributed memory caching system optimized purely for key-value string storage with no persistence. Node.js applications typically use client libraries like ioredis (12k weekly downloads) for Redis or the official memcached package (4.2k weekly downloads) to interact with these caching systems.
-
-**Tags**: `#nodejs`, `#redis`, `#memcached`, `#caching`, `#performance-benchmark`
+**Tags**: `#OpenAI`, `#Elon Musk`, `#Legal/Trials`, `#AI Governance`, `#Tech Industry Drama`
 
 ---
 
 <a id="item-13"></a>
-## [LLM Cost Optimization Through Triager Pattern](https://www.mendral.com/blog/frontier-model-lower-costs) ⭐️ 5.0/10
+## [OpenAI Codex Agent Restricted from Discussing Goblins, Creatures](https://www.wired.com/story/openai-really-wants-codex-to-shut-up-about-goblins/) ⭐️ 5.0/10
 
-A practical triager pattern has been implemented where a cheap Haiku agent with a narrow, specific task determines whether an issue is already tracked; if not, it escalates to the expensive Opus model for full investigation. This pattern can reduce costs significantly since the triager match costs approximately 25 times less than a full investigation, with reports of 4 out of 5 failures never reaching the expensive Opus model. The triager operates with very specific and narrow instructions—for example, checking if an issue is already tracked—and only escalates when necessary, enabling selective use of premium models based on actual need.
-
-hackernews · shad42 · Apr 29, 00:57
-
-**Background**: Anthropic's Claude family includes three tiers: Opus (premium, most expensive), Sonnet (mid-tier), and Haiku (budget-friendly, fastest). The triager pattern leverages this tiered model architecture, using Haiku as a cost-effective filter before invoking Opus for complex tasks that truly require its advanced capabilities.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://dev.to/dr_hernani_costa/claude-ai-models-2025-opus-vs-sonnet-vs-haiku-guide-24mn">Claude AI Models 2025: Opus vs Sonnet vs Haiku ... - DEV Community</a></li>
-<li><a href="https://blog.getbind.co/claude-3-5-haiku-comparison-with-claude-3-opus-gpt-4o-and-4o-mini/">Claude 3.5 Haiku : Comparison with Claude 3 Opus , GPT 4o and...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Hacker News community criticized the original article as clickbait with a misleading title, though the core concept was widely appreciated. Several users summarized the pattern as 'let a cheap agent decide if the expensive one is needed.' One user expressed intent to self-host models like Qwen 3.6B 27B for similar triager purposes, while another proposed building a 'harness' using Claude Code with local models as the filtering layer.
-
-**Tags**: `#LLM`, `#cost-optimization`, `#AI-agents`, `#architecture`, `#routing-pattern`
-
----
-
-<a id="item-14"></a>
-## [Kompas VC's Physical-World Focus Amid Geopolitical Fragmentation](https://techcrunch.com/2026/04/28/how-one-venture-firm-is-navigating-an-increasingly-fragmented-world/) ⭐️ 5.0/10
-
-TechCrunch has profiled Kompas VC, a Danish venture capital firm managing €300 million across two fund generations, detailing how the firm navigates an increasingly fragmented geopolitical landscape by focusing on physical-world startups in manufacturing and the built environment. This profile highlights how geopolitical tensions and trade uncertainties are reshaping venture capital strategies, pushing some investors toward tangible, resilient sectors rather than purely digital plays. The approach reflects a broader trend where capital allocation is increasingly conditioned by alignment, governance structures, and systemic risk considerations. Kompas VC, founded in 2021 and headquartered in Hørsholm, Denmark, positions itself as a European leader in funding breakthrough technologies for manufacturing and built environments. The firm specifically targets solutions addressing emissions reduction, productivity, and resilience challenges.
-
-rss · TechCrunch · Apr 29, 03:00
-
-**Background**: Geopolitical fragmentation refers to the increasing division between nations based on political alliances, trade policies, and technological standards. Research by Aiyar et al. (2024) indicates that geopolitical distance, measured by UN voting patterns, significantly shapes foreign direct investment flows. As capital allocation becomes less politically neutral and more conditioned by systemic risk considerations, venture firms are adapting their strategies to navigate this complex landscape.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.kompas.vc/about-us">KOMPAS VC - About us</a></li>
-<li><a href="https://gbfinancemag.com/geopolitical-fragmentation-and-friendshoring/">Geopolitical fragmentation and friendshoring - Global Business...</a></li>
-<li><a href="https://www.linkedin.com/pulse/end-neutral-capital-geopolitical-fragmentation-global-kusumadinata-gzcpc">The End of Neutral Capital : Geopolitical Fragmentation and the...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#venture-capital`, `#startups`, `#geopolitics`, `#investment-strategy`, `#business`
-
----
-
-<a id="item-15"></a>
-## [OpenAI Instructs Codex Agent to Avoid Goblin Discussions](https://www.wired.com/story/openai-really-wants-codex-to-shut-up-about-goblins/) ⭐️ 5.0/10
-
-OpenAI has included specific instructions in their Codex coding agent to avoid discussing fictional creatures such as goblins, gremlins, trolls, and ogres unless absolutely and unambiguously relevant to the task. This revelation highlights the meticulous level of detail AI companies now employ when crafting behavioral instructions for their agents, potentially to prevent unexpected or irrelevant outputs during coding tasks. It also hints at broader alignment concerns about how AI models might engage with fictional or fantastical topics. The list includes creatures ranging from goblins and gremlins to raccoons and pigeons, suggesting that OpenAI anticipates scenarios where such topics might arise during software development conversations. The instructions represent one of the more granular examples of prompt engineering visible in a major AI product.
+OpenAI's internal instructions for their Codex coding agent explicitly prohibit discussions of goblins, gremlins, raccoons, trolls, ogres, pigeons, and other fantasy creatures unless absolutely and unambiguously relevant to the task. This glimpse into OpenAI's operational guidelines reveals how AI companies manage agent behavior in production environments, highlighting the granular level of content control needed when deploying AI systems at scale. The specific creature restrictions suggest that code examples or documentation involving these creatures appear frequently enough to warrant explicit warnings, reflecting common programming education and game development contexts where such references are prevalent.
 
 rss · Wired · Apr 28, 23:45
 
-**Background**: OpenAI Codex is a large language model designed to translate natural-language prompts into source code, functioning as an AI coding partner. The Codex app serves as a command center for agentic coding, with built-in worktrees and cloud environments that allow agents to work in parallel across projects. Such agents require careful instruction design to maintain focus on technical tasks.
+**Background**: OpenAI Codex is an AI agent suite designed to automate software engineering tasks, including planning, feature building, refactoring, code reviews, and releases. AI agents like Codex operate based on system prompts and behavioral instructions that guide their responses. These guardrails control what topics the AI can discuss and how it should handle various inputs during coding tasks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(language_model)">OpenAI Codex (language model) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex">OpenAI Codex - Wikipedia</a></li>
 <li><a href="https://openai.com/codex/">Codex | AI Coding Partner from OpenAI | OpenAI</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#OpenAI`, `#AI Agents`, `#AI Safety`, `#Codex`, `#LLM Instructions`
+**Tags**: `#AI`, `#OpenAI`, `#coding agents`, `#AI safety`, `#software development`
+
+---
+
+<a id="item-14"></a>
+## [Opinion: Solving the Fake GitHub Stars Problem](https://dev.to/dcsocialclick/can-we-solve-fake-github-stars-bbg) ⭐️ 5.0/10
+
+An opinion piece on dev.to identifies how GitHub stars have become a gaming target similar to fake reviews, arguing that technical fixes alone cannot solve the deeper trust signal problem. When trust signals on developer platforms become corrupted, every downstream decision weakens, potentially leading developers to choose poorly maintained or low-quality projects based on inflated popularity metrics. The article proposes that the deeper solution involves redesigning the trust model to include contribution history, dependency relationships, peer endorsements, and outcome-based signals instead of relying on a single public count.
+
+rss · Dev.to · Apr 29, 06:07
+
+**Background**: GitHub stars serve as a visible reputation signal that affects project visibility and perceived credibility on the platform. Like other monetizable metrics, once stars became influential, they became targets for manipulation through purchased stars, bot inflation, and coordinated boosts. This mirrors the fake review problem seen in e-commerce platforms where reputation signals eventually attract bad actors seeking to profit from the system's influence.
+
+**Tags**: `#github`, `#fake-metrics`, `#developer-ecosystem`, `#reputation-systems`, `#open-source`
+
+---
+
+<a id="item-15"></a>
+## [Building Real-Time Anomaly Detection for Cloud Storage Protection](https://dev.to/chinonsoviv/how-i-built-a-real-time-anomaly-detection-engine-for-cloud-storage-2m1f) ⭐️ 5.0/10
+
+A developer documented how they built a real-time anomaly detection engine using Python's deque collections to implement a sliding window mechanism for monitoring traffic and protecting a Nextcloud instance from DDoS attacks. This approach bridges DevSecOps practices with practical security automation, showing how simple Python tools combined with proper design can provide real-time protection without relying on static thresholds alone. The system uses a 60-second sliding window maintained by Python's deque, which provides O(1) performance for append and pop operations from both ends, allowing efficient real-time request tracking without scanning historical logs.
+
+rss · Dev.to · Apr 29, 06:00
+
+**Background**: Sliding window anomaly detection is a common technique that monitors data within a moving time range to identify unusual patterns. Python's deque (double-ended queue) is specifically designed for fast append and pop operations, making it ideal for real-time data handling. Nextcloud is an open-source self-hosted cloud storage platform, and DDoS attacks target servers by overwhelming them with traffic requests. This project was created as part of the HNG DevSecOps learning program.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.mdpi.com/2073-4441/13/13/1862">Anomaly Detection Using a Sliding Window Technique and Data Imputation with Machine Learning for Hydrological Time Series</a></li>
+<li><a href="https://docs.python.org/3/library/collections.html">collections — Container datatypes</a></li>
+<li><a href="https://nextcloud.com/">Nextcloud - Open source content collaboration platform</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#devsecops`, `#anomaly-detection`, `#python`, `#security-automation`, `#cloud-monitoring`
 
 ---
 
 <a id="item-16"></a>
-## [Building Reactive SPAs with Symfony 7.4 and Stimulus.js](https://hackernoon.com/building-a-reactive-spa-by-using-php-twig-and-javascript-via-stimulus-part-one?source=rss) ⭐️ 5.0/10
+## [Start with One Workflow Before Full Manufacturing System Suite](https://dev.to/shadow_dragon_e6019e67350/for-manufacturing-systems-i-start-with-one-workflow-before-i-touch-the-full-suite-4k65) ⭐️ 5.0/10
 
-A two-part tutorial series on Hackernoon demonstrates building a collaborative Kanban board using Symfony 7.4, with Stimulus.js handling reactive frontend interactions and WebSocket-like real-time syncing across browsers. This tutorial bridges traditional PHP server-side rendering with modern reactive JavaScript patterns, offering PHP developers a practical path to build interactive single-page applications without abandoning their existing workflow. The tutorial uses Stimulus.js controllers connected via data attributes to handle drag-and-drop interactions, while maintaining Twig templates as the primary HTML source. Real-time syncing is achieved without a full SPA framework, keeping the application lightweight.
+A software consultant shares their methodology for manufacturing system implementation, advising teams to identify and validate a single, bounded workflow before attempting to build comprehensive dashboards, order tracking, and ERP integrations in phase one. This approach addresses a common failure pattern in manufacturing software projects where multiple modules become equally prioritized, resulting in systems with many screens and reports but no reliably operational workflows for daily use. The consultant emphasizes that management dashboards should 'observe a workflow, not replace one,' arguing that dashboards only reveal inconsistencies in underlying data quality, which requires proven workflows to resolve first.
 
-rss · Hacker Noon · Apr 28, 21:41
+rss · Dev.to · Apr 29, 06:00
 
-**Background**: Stimulus.js is a modest JavaScript framework created by Basecamp that augments existing HTML rather than replacing it entirely. Unlike modern SPA frameworks that render HTML from JSON, Stimulus.js works by binding controllers to DOM elements through data attributes, making it ideal for enhancing server-rendered pages. Symfony 7.4 is the latest Long-Term Support version of the popular PHP framework, and Kanban boards have become a common tutorial subject for demonstrating interactive drag-and-drop interfaces.
+**Background**: Manufacturing systems typically require integration with ERP (Enterprise Resource Planning) platforms that connect core business data including production, inventory, and finance. Manufacturing workflow patterns vary by operational requirements, including discrete, process, batch, and assembly line approaches. ERP integration connects disparate software applications across an organization into a unified platform, which is complex when underlying data definitions and update responsibilities are not clearly established first.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://stimulus.hotwired.dev/">Stimulus : A modest JavaScript framework for the HTML you already...</a></li>
-<li><a href="https://medium.com/@rodloboz/an-introduction-to-stimulus-js-617cbe1f6360">An Introduction to Stimulus . js | by Rui Freitas | Medium</a></li>
+<li><a href="https://www.netsuite.com/portal/resource/articles/erp/manufacturing-erp-implementation.shtml">Manufacturing ERP Implementation: A Complete Guide | NetSuite</a></li>
+<li><a href="https://www.ibm.com/think/topics/erp-integration">What Is ERP Integration? | IBM</a></li>
+<li><a href="https://www.zoho.com/creator/decode/manufacturing-workflow-process">A complete guide to manufacturing workflow processes | Decode - A publication by Zoho Creator</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#php`, `#symfony`, `#stimulus.js`, `#javascript`, `#tutorial`, `#spa`
+**Tags**: `#manufacturing software`, `#systems design`, `#project methodology`, `#software implementation`, `#workflow design`
 
 ---
 
 <a id="item-17"></a>
-## [AI Investment Shifts from Hype to ROI Focus](https://hackernoon.com/ai-investment-hits-a-reality-check-as-investor-risk-appetite-declines?source=rss) ⭐️ 5.0/10
+## [Kompas VC Invests in Physical World Startups Amid Geopolitical Fragmentation](https://techcrunch.com/2026/04/28/how-one-venture-firm-is-navigating-an-increasingly-fragmented-world/) ⭐️ 4.0/10
 
-Enterprise AI investment is transitioning from hype-driven spending to disciplined, ROI-focused strategies. Companies are implementing governance frameworks, scrutinizing AI project performance more closely, and shutting down underperforming initiatives. This shift signals that AI adoption is maturing from experimental hype into sustainable business practice. For enterprises, this means AI budgets will face stronger justification requirements, potentially reshaping vendor relationships and technology deployment priorities. The article emphasizes that AI adoption is not declining—it is becoming more accountable and measured. Organizations are moving beyond proof-of-concept enthusiasm to demand concrete business value from their AI investments.
+Kompas VC has adopted a new investment strategy focused on startups addressing physical world challenges, rather than pursuing traditional software-centric investments. This approach comes as geopolitical turmoil has made conventional venture investing increasingly difficult. This shift reflects a broader trend where venture capital firms are reassessing their investment thesis in response to geopolitical instability. Startups in physical world sectors may offer more resilient investment opportunities in an era of increasing global fragmentation. The firm is deliberately avoiding software-centric sectors and instead targeting tangible solutions for real-world problems. This strategic pivot is specifically designed to navigate challenges posed by geopolitical tensions affecting global markets.
 
-rss · Hacker Noon · Apr 28, 20:44
+rss · TechCrunch · Apr 29, 03:00
 
-**Background**: The AI investment landscape has followed a familiar technology hype cycle pattern, where initial enthusiasm often gives way to practical evaluation. ROI (Return on Investment) represents the financial return generated relative to the cost of an investment. Governance frameworks in AI typically include ethics guidelines, compliance requirements, performance monitoring, and risk management protocols to ensure responsible deployment.
+**Background**: Venture capital has historically favored software startups due to their scalability and lower capital requirements. However, recent geopolitical shifts have created uncertainty in technology supply chains and cross-border investments. Physical world startups focusing on manufacturing, agriculture, and infrastructure often require more capital but may be less vulnerable to digital-age geopolitical risks.
 
-**Tags**: `#AI Investment`, `#Enterprise AI`, `#ROI Analysis`, `#Tech Industry Trends`, `#AI Governance`
+**Tags**: `#venture-capital`, `#startups`, `#geopolitics`, `#investment-strategy`, `#tech-industry`
 
 ---
 
 <a id="item-18"></a>
-## [IT Integration Becomes Critical Factor in M&A Megadeals](https://hackernoon.com/why-2026s-megadeals-are-colliding-with-a-hidden-it-crisis?source=rss) ⭐️ 5.0/10
+## [GhostFader: Browser-Based Virtual MIDI Fader for CC Data](https://dev.to/manontherun/ghostfader-app-2gn1) ⭐️ 4.0/10
 
-A Hackernoon analysis argues that as megadeals increase in value and complexity, IT integration—particularly tech stack compatibility and communication systems—has become essential to M&A success and ROI realization. The article advocates for treating IT due diligence as mandatory rather than optional. When acquisitions fail to align their technology infrastructure, operational disruptions and delayed ROI can result, potentially destroying value instead of creating it. Business and IT leaders must collaborate earlier in the deal process to identify and mitigate technical risks before they become costly problems. The article identifies mismatched tech stacks and communication system failures as primary integration challenges in megadeals. A tech stack refers to the complete set of software subsystems—including operating systems, databases, middleware, and applications—needed to support a platform or application.
+GhostFader is a new browser-based application that allows musicians to send MIDI CC (Continuous Controller) data like Modulation (CC1) or Expression (CC11) to their DAW or any connected MIDI device using the WebMIDI API. This tool provides a free, accessible solution for home studio musicians who need a virtual fader to overdub CC movements onto pre-recorded MIDI parts, eliminating the need to purchase additional hardware controllers. The app leverages the WebMIDI API to send Control Change messages directly from the browser to connected MIDI devices. The recommended workflow is to first pre-record the MIDI notes and then overdub the virtual fader movements on top. The project is open-source and available on GitHub.
 
-rss · Hacker Noon · Apr 28, 20:30
+rss · Dev.to · Apr 29, 06:26
 
-**Background**: Mergers and acquisitions (M&A) involve combining two or more companies, often requiring significant integration of different business systems, cultures, and technologies. Tech stack compatibility is critical because incompatible software subsystems can prevent seamless data flow, customer service continuity, and operational efficiency. IT due diligence is the process of evaluating a target company's technology infrastructure, code quality, security posture, and integration challenges before completing an acquisition.
+**Background**: MIDI CC (Continuous Controller) messages are a standard type of MIDI message used to control parameters on MIDI-enabled devices such as synthesizers. Common CC messages include Modulation (CC1) and Expression (CC11), which add expressiveness to musical performances. The WebMIDI API is a W3C standard specification that enables web browsers to communicate with MIDI devices, allowing web applications to send and receive MIDI messages without requiring additional software or plugins.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Tech_stack">Tech stack</a></li>
-<li><a href="https://meronyemane.medium.com/what-is-a-tech-stack-f034ea93ce8a">What Is a Tech Stack ?. 2 minute tip | by Meron Yemane | Medium</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API">Web MIDI API - MDN Web Docs - Mozilla</a></li>
+<li><a href="https://anotherproducer.com/online-tools-for-musicians/midi-cc-list/">MIDI CC List (Continuous Controllers) | Another Producer</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#mergers-and-acquisitions`, `#IT-integration`, `#enterprise-technology`, `#due-diligence`, `#corporate-strategy`
-
----
-
-<a id="item-19"></a>
-## [7 Tools, 1 Question. Most Failed in Ways I Didn't Expect.](https://dev.to/melody_cai/7-tools-1-question-most-failed-in-ways-i-didnt-expect-4dhp) ⭐️ 5.0/10
-
-Author benchmarks 7 AI image tools and discovers that 5 out of 7 silently cap output at 720p resolution without warnings, revealing widespread 'resolution gating' practices in the industry.
-
-rss · Dev.to · Apr 29, 03:53
-
-**Tags**: `#ai-tools`, `#image-generation`, `#benchmarking`, `#digital-art`, `#product-comparison`
-
----
-
-<a id="item-20"></a>
-## [Why One Model Fails](https://dev.to/nebuladata/why-one-model-fails-3nf8) ⭐️ 5.0/10
-
-Discusses the common mistake of relying on a single 'best' model in AI systems and explains why this approach fails as projects scale.
-
-rss · Dev.to · Apr 29, 03:50
-
-**Tags**: `#AI Systems`, `#Machine Learning`, `#Model Selection`, `#System Design`, `#LLM Architecture`
-
----
-
-<a id="item-21"></a>
-## [Stop Saying 'We're Working on It' — Show Your Product Roadmap](https://dev.to/slarda_8140e179ef5ab42369/stop-saying-were-working-on-it-show-your-product-roadmap-instead-59g2) ⭐️ 5.0/10
-
-An opinion piece argues that small dev teams should replace vague 'we're working on it' responses with transparent, publicly visible product roadmaps, citing a tool called Suggix as a practical implementation example. For small teams with limited resources, repetitive user inquiries about feature status consume significant focus time while failing to build trust or reduce churn. A visible roadmap shifts the problem from communication to visibility. The article identifies four hidden costs of vague responses: repetitive low-leverage communication, fragmented product management across multiple tools, misalignment between development priorities and user needs, and eroding user trust. The proposed solution involves using a single system that serves both internal task management and external user communication.
-
-rss · Dev.to · Apr 29, 03:47
-
-**Background**: Product roadmaps typically outline planned features, timelines, and development priorities. In small teams, internal roadmaps often exist only in task management tools like Jira or Linear, while external communication relies on ad-hoc responses via email, chat, or social media. This creates a translation layer between internal state and user-facing updates, leading to drift and inconsistency over time.
-
-**Tags**: `#product-management`, `#roadmap`, `#user-communication`, `#developer-tools`, `#product-development`
-
----
-
-<a id="item-22"></a>
-## [Tutorial: Building a Categorized Block Editor in Filament v5](https://dev.to/tallcms/how-to-turn-filament-v5s-rich-editor-into-a-full-block-editor-3g5g) ⭐️ 5.0/10
-
-A comprehensive tutorial explains how to extend Filament v5's Tiptap-powered RichEditor into a fully-featured block editor using the RichContentCustomBlock base class, adding search and categorization capabilities across three architectural layers. For projects managing 15+ block types, the default flat block list becomes unwieldy, causing editors to scroll through a disorganized menu. This tutorial provides production-ready patterns for organizing blocks by categories like Content, Media, Social Proof, and Forms, directly improving CMS editor experience without forking Filament core. The three-layer approach includes: (1) extending the RichEditor component with a custom Blade view for the block panel UI, (2) implementing a reflection-based auto-discovery service that allows package, app, and plugin blocks to override each other by unique ID, and (3) using composable traits like HasBlockMetadata and HasStylingOptions to share form schemas across block types, eliminating code duplication.
-
-rss · Dev.to · Apr 29, 03:43
-
-**Background**: Filament is a popular Laravel admin panel package that provides form components, tables, and widgets out of the box. Version 5 upgraded its RichEditor to use Tiptap, a headless rich text editor framework built on ProseMirror, which enables native extensibility through extensions. The RichContentCustomBlock base class allows developers to define structured, configurable content blocks with their own modal forms and preview/render methods that integrate inline within prose content rather than as separate Builder fields.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://tiptap.dev/">Tiptap - Dev Toolkit Editor Suite</a></li>
-<li><a href="https://tallcms.com/blog/extend-filament-v5-rich-editor-block-editor">Extend Filament v5's Rich Editor Into a Block Editor</a></li>
-<li><a href="https://filamentphp.com/docs/4.x/forms/rich-editor">Rich editor - Filament</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Filament`, `#Laravel`, `#Tiptap`, `#PHP`, `#Admin Panel`
-
----
-
-<a id="item-23"></a>
-## [Emacs Plugin Enables Surgical Syntax-Aware Code Deletion](https://dev.to/lcmd007/stop-backspacing-like-a-typist-my-surgical-syntax-deletion-tool-for-emacs-57o4) ⭐️ 5.0/10
-
-An Emacs power user developed a custom plugin called "delete-block" that enables syntax-aware code deletion. The plugin provides two functions (`delete-block-forward` and `delete-block-backward`) that leverage Emacs' internal syntax tables to perform precise, subword-aware text removal at logical syntax boundaries. This tool addresses a long-standing workflow pain point for Emacs developers who need deterministic code deletion. By operating at the syntax level rather than whitespace or generic word boundaries, it provides immediate productivity gains for developers working with complex codebases like EAF. The plugin works by directly leveraging Emacs' `skip-syntax-forward` and `skip-syntax-backward` functions for low-latency syntax-aware movement. It combines subword awareness (recognizing CamelCase components like "Foo", "Bar", "Example" as distinct entities) with syntax boundary intelligence that respects operators, delimiters, and symbol boundaries.
-
-rss · Dev.to · Apr 29, 03:40
-
-**Background**: Emacs provides syntax tables that specify the syntactic role of each character in a buffer, defining syntax classes like word, symbol, and punctuation. The `subword-mode` already enables CamelCase navigation by treating subwords as separate units, while `skip-syntax-forward` and `skip-syntax-backward` move point across characters based on their syntax classes. The delete-block plugin combines these capabilities into a focused deletion tool, addressing the gap between navigation and deletion features.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Syntax-Tables.html">Syntax Tables (GNU Emacs Lisp Reference Manual)</a></li>
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/ccmode/Subword-Movement.html">Subword Movement (CC Mode Manual)</a></li>
-<li><a href="https://emacsdocs.org/docs/elisp/Motion-and-Syntax">35.5 Motion and Syntax | Emacs Docs</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The author explicitly invites readers to share other "high-frequency" editing actions they consider broken or inefficient, and welcomes pull requests on GitHub. No comments are visible on the article at this time, making community reception unclear.
-
-**Tags**: `#emacs`, `#text-editing`, `#developer-tools`, `#elisp`, `#productivity`
-
----
-
-<a id="item-24"></a>
-## [“Developer loyalty is at zero right now”: Google doesn’t care which AI coding tool you use](https://thenewstack.io/google-doesnt-care/) ⭐️ 5.0/10
-
-Google Cloud's Richard Seroter states that developer loyalty is currently at zero, indicating Google doesn't prioritize which AI coding tool developers choose.
-
-rss · The New Stack · Apr 28, 20:29
-
-**Tags**: `#AI coding tools`, `#developer tools`, `#Google Cloud`, `#developer ecosystem`, `#AI market`
-
----
-
-<a id="item-25"></a>
-## [Sniffies Users Worry About 'Straightification' of Gay Hookup App](https://www.wired.com/story/sniffies-users-worry-about-straightification-gay-cruising-app/) ⭐️ 4.0/10
-
-Match Group, the parent company of Tinder and Hinge, has invested $100 million in Sniffies, a queer cruising app. This substantial investment has sparked concerns among existing users about potential changes to the app's culture and community identity. This investment represents a significant moment for LGBTQ+ dating apps, as mainstream tech companies increasingly target queer community spaces for growth. It raises broader questions about corporate influence on platforms that serve as vital social outlets for marginalized communities. Sniffies distinguishes itself with location-based features that allow users to view activity "heat maps" of physical areas. Match Group's acquisition strategy typically focuses on bringing additional resources and scalability to niche platforms while maintaining their core user bases.
-
-rss · Wired · Apr 28, 20:25
-
-**Background**: Match Group operates the world's largest portfolio of dating applications, including flagship brands like Tinder and Hinge. Queer cruising apps like Sniffies serve a specific segment of the LGBTQ+ community by facilitating anonymous, location-aware connections. The tension between maintaining authentic community spaces and pursuing mainstream growth has been a recurring challenge in LGBTQ+ digital platforms.
-
-**Discussion**: Longtime Sniffies users have taken to social media to express their concerns, using the term "straightification" to describe their fear that the platform will become homogenized to attract broader audiences. Some users worry that Match Group's resources will be used to transform the app into another general dating platform, diluting its unique identity. Others argue that investment could improve safety features and app stability without fundamentally changing its character.
-
-**Tags**: `#dating-apps`, `#tech-industry`, `#lgbtq+`, `#acquisition`, `#social-media`
-
----
-
-<a id="item-26"></a>
-## [Rooftop Solar Could Power 40% of Europe—What's Holding It Back?](https://hackernoon.com/rooftop-solar-could-power-40percent-of-europeso-whats-holding-it-back?source=rss) ⭐️ 4.0/10
-
-This article reports that rooftop solar in Europe has theoretically reached the capacity to meet 40% of regional energy needs, yet widespread adoption is being held back by bureaucratic permitting delays, grid integration constraints, and policy barriers rather than economic factors. This shift from cost to execution as the primary barrier signals a maturation of solar technology, yet exposes infrastructural and regulatory bottlenecks that could significantly delay Europe's renewable energy transition despite increasingly favorable economics. The key barriers are systemic rather than technical: complex permitting processes that vary across jurisdictions, grid operators struggling to manage bidirectional electricity flow from millions of distributed solar installations, and coordination gaps between prosumers and utility companies. Smart grid technologies are cited as essential for integrating distributed solar capacity effectively.
-
-rss · Hacker Noon · Apr 28, 20:39
-
-**Background**: Rooftop solar photovoltaic (PV) panels convert sunlight directly into electricity for residential or commercial buildings. While installation costs have decreased dramatically over the past decade, the electricity grid was historically designed for centralized power generation, creating challenges when millions of small producers feed power back into the system. Grid integration requires careful planning and advanced smart grid technologies to prevent instability as variable renewable energy sources become more prevalent.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://theme.gatech.edu/index.php/hg/news/2026/04/17/researchers-survey-challenges-integrating-wind-and-solar-power-grids">Researchers Survey the Challenges of Integrating Wind and Solar ...</a></li>
-<li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0320016">Advancing sustainability in urban transportation: A solar - powered ...</a></li>
-<li><a href="https://static1.squarespace.com/static/5d722128964ed90001b97d6c/t/5ea1638e2e915871033ad0c0/1587635103518/White+Paper+Grid+Constraints+and+Solar+Growth+DW.pdf">Microsoft Word - 200421 DW White Paper on Solar r3 dw markup.docx</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#renewable-energy`, `#solar-power`, `#energy-policy`, `#europe`, `#infrastructure`
-
----
-
-<a id="item-27"></a>
-## [Flutter GoRouter Complete Guide: URL Navigation Tutorial](https://dev.to/kanta13jp1/flutter-gorouter-complete-guide-full-control-over-navigation-20-i15) ⭐️ 4.0/10
-
-A comprehensive tutorial on dev.to introduces Flutter's officially recommended GoRouter package, demonstrating basic setup, URL-based navigation with path parameters, and authentication guard implementation for Navigation 2.0. GoRouter has become essential for Flutter developers building apps that require proper deep linking and URL-based navigation. This tutorial provides beginners with a practical foundation for implementing complex routing patterns used in production applications. The guide covers go_router version ^13.0.0 and demonstrates two primary navigation methods: 'push' for maintaining back stack and 'go' for replacing navigation history. It also shows path parameter extraction using state.pathParameters for dynamic routing.
-
-rss · Dev.to · Apr 29, 03:48
-
-**Background**: GoRouter is built on Flutter's Navigation 2.0 API, which shifted from an imperative routing model to a declarative one. Unlike Navigator 1.0 which relied on widget push/pop operations, Navigation 2.0 uses route information parsing and app state matching to determine pages. GoRouter abstracts this complexity, supporting nested navigation, route guards, and deep links while maintaining compatibility across mobile and web platforms.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://medium.com/@umairsyedahmed282/flutter-gorouter-navigation-deep-linking-guards-nested-routes-7bad9f1fd79e">Flutter GoRouter Navigation: Deep Linking, Guards & Nested Routes</a></li>
-<li><a href="https://codewithandrea.com/articles/flutter-bottom-navigation-bar-nested-routes-gorouter/">Flutter Bottom Navigation Bar with Stateful Nested Routes using...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#flutter`, `#gorouter`, `#mobile-development`, `#navigation`, `#routing`
-
----
-
-<a id="item-28"></a>
-## [Flutter Web Renderer Guide: CanvasKit vs HTML](https://dev.to/kanta13jp1/flutter-web-rendering-complete-guide-canvaskit-vs-html-renderer-3jbe) ⭐️ 4.0/10
-
-A developer published a complete guide comparing HTML and CanvasKit renderers in Flutter Web, covering bundle size, initial load time, visual fidelity, and recommended use cases for each renderer. Understanding the trade-offs between renderers helps Flutter developers make informed decisions when targeting web platforms, as the choice impacts both performance and user experience. Text-heavy apps benefit from the lightweight HTML renderer, while graphics-intensive applications require CanvasKit's pixel-perfect fidelity. The HTML renderer uses HTML/CSS/Canvas 2D APIs with approximately 1MB bundle size, while CanvasKit uses Skia compiled to WebAssembly with about 4MB bundle size. Build commands include --web-renderer html, --web-renderer canvaskit, and --web-renderer auto (which defaults to HTML for mobile and CanvasKit for desktop).
-
-rss · Dev.to · Apr 29, 03:44
-
-**Background**: Flutter Web supports two rendering backends: HTML and CanvasKit. Skia is the open-source 2D graphics library that powers the CanvasKit renderer; Google acquired Skia Inc. in 2005 and released it as open-source in 2008. The renderer choice affects bundle size, load performance, and visual consistency with native Flutter applications across platforms.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Skia_Graphics_Engine">Skia Graphics Engine</a></li>
-<li><a href="https://skia.org/">Skia</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#flutter`, `#web-development`, `#rendering`, `#canvaskit`, `#performance-optimization`
-
----
-
-<a id="item-29"></a>
-## [Guide: Webapp Scaling Phases from VPS to Kubernetes](https://dev.to/venelouis/a-jornada-natural-de-um-webapp-5d37) ⭐️ 4.0/10
-
-A Portuguese-language technical guide outlines the natural scaling journey of a webapp, covering four phases from simple VPS (0-50k users/month) to Kubernetes-based cloud infrastructure (1M+ users/month), with approximate costs and specific service recommendations like Azure App Service fixed pricing. This practical guide provides concrete thresholds and cost estimates that help developers plan infrastructure investments, while highlighting Azure's unusual fixed pricing model that doesn't scale with traffic—potentially saving small teams significant money. The guide includes performance benchmarks showing a Hetzner CX23 (2 vCPU/4GB) can handle 50-150 concurrent users (~100k/month) with OPcache enabled, while warning signs of VPS strain include CPU above 80%, response times over 2 seconds, and frequent 502/504 errors. Azure App Service B1 charges a fixed $13/month regardless of whether you serve 10 or 10,000 daily users.
-
-rss · Dev.to · Apr 29, 03:42
-
-**Background**: Container orchestration automates the deployment, scaling, and management of containerized applications across multiple servers. Docker Swarm is Docker's native orchestration tool, while Kubernetes (K8s) has become the industry standard for large-scale deployments. Major cloud providers offer managed Kubernetes services: AWS EKS, Azure AKS, and Google GKE all handle control plane management, though they differ in pricing models and integration with other cloud services.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.devopschat.co/articles/aks-vs-eks-vs-gke-managed-kubernetes-services-compared">AKS vs EKS vs GKE : Managed Kubernetes services compared</a></li>
-<li><a href="https://www.redhat.com/en/topics/containers/what-is-container-orchestration">What is container orchestration ?</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#web-development`, `#scalability`, `#devops`, `#infrastructure`, `#azure`
+**Tags**: `#webmidi`, `#midi`, `#music-production`, `#browser-tools`, `#web-audio`
 
 ---
 
