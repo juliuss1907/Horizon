@@ -1,131 +1,128 @@
 # Horizon Daily - 2026-05-10
 
-> From 27 items, 18 important content pieces were selected
+> From 25 items, 16 important content pieces were selected
 
 ---
 
-1. [Local privilege escalation via execve()](#item-1) ⭐️ 8.0/10
-2. [Bulletproofing LLM Structured Output in Python: Healing Retries, Cost Caps, and Drift Detection (Runnable Code)](#item-2) ⭐️ 8.0/10
-3. [Show HN: Rust but Lisp](#item-3) ⭐️ 7.0/10
-4. [France moves to break encrypted messaging](#item-4) ⭐️ 7.0/10
-5. [https://www.galaxy.com/insights/research/stablecoins-genius-act-bank-deposit-fli](#item-5) ⭐️ 7.0/10
-6. [Show HN: Building a web server in assembly to give my life (a lack of) meaning](#item-6) ⭐️ 6.0/10
-7. [The release checks I want before I trust a JavaScript repo in 2026](#item-7) ⭐️ 6.0/10
-8. [CDP Bridge MCP —— a bridge service that connects MCP clients to real browser sessions](#item-8) ⭐️ 6.0/10
-9. [Voice AI in India is hard. Wispr Flow is betting on it anyway.](#item-9) ⭐️ 5.0/10
-10. [How Heuristics Make Search Algorithms Smarter](#item-10) ⭐️ 5.0/10
-11. [☁️ Terraform vs Pulumi: Which to choose for IaC in 2024?](#item-11) ⭐️ 5.0/10
-12. [So you’ve heard these AI terms and nodded along; let’s fix that](#item-12) ⭐️ 4.0/10
-13. [Fintech startup Parker files for bankruptcy](#item-13) ⭐️ 4.0/10
-14. [Internet Architecture](#item-14) ⭐️ 4.0/10
-15. [Stop just chatting with AI: Build real skills in GenAI and Prompt Engineering](#item-15) ⭐️ 4.0/10
-16. [How Graph Structure Makes AI Search Possible](#item-16) ⭐️ 4.0/10
-17. [Inside FuriosaAI: The AI Chip Pioneer the West Hasn't Noticed](#item-17) ⭐️ 4.0/10
-18. [Map and Set in JavaScript](#item-18) ⭐️ 4.0/10
+1. [Show HN: Building a web server in assembly to give my life (a lack of) meaning](#item-1) ⭐️ 7.0/10
+2. [The Accidental C2 - Exploring Dev Tunnels for Remote Access](#item-2) ⭐️ 7.0/10
+3. [TON <> Telegram seems interesting again - Telegram takes over TON foundation to ](#item-3) ⭐️ 7.0/10
+4. [Wireshark dissector for a proprietary DVRIP/Sofia application layer protocol found on Xiongmai-based IP cameras.](#item-4) ⭐️ 6.0/10
+5. [https://www.galaxy.com/insights/research/stablecoins-genius-act-bank-deposit-fli](#item-5) ⭐️ 6.0/10
+6. [Gemini API File Search is now multimodal](#item-6) ⭐️ 5.0/10
+7. [Voice AI in India is hard. Wispr Flow is betting on it anyway.](#item-7) ⭐️ 5.0/10
+8. [Why not Lannguage Specific SLMs as coding agents](#item-8) ⭐️ 5.0/10
+9. [Mastering Power Query in Power BI: A Complete Data Transformation Guide](#item-9) ⭐️ 5.0/10
+10. [AI Isn't Taking Your Job. It's Taking Your Busywork.](#item-10) ⭐️ 5.0/10
+11. [A small Vite plugin for moving heavy JSX attributes into comments](#item-11) ⭐️ 4.0/10
+12. [Why I Stopped Using Random Online JSON Formatters (And Why You Should Too)](#item-12) ⭐️ 4.0/10
+13. [Kenapa Chatbot WhatsApp Bisa Jadi Aset Serius untuk Bisnis Kamu](#item-13) ⭐️ 4.0/10
+14. [The Backend Concepts Nobody Explains Properly](#item-14) ⭐️ 4.0/10
+15. [How I Built a Solo Ad Factory With AI Automation](#item-15) ⭐️ 4.0/10
+16. [The One Question Google, Meta, and Amazon All Ask and Why Your Answer Is Probably Wrong for All Three](#item-16) ⭐️ 4.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Local privilege escalation via execve()](https://www.freebsd.org/security/advisories/FreeBSD-SA-26:13.exec.asc) ⭐️ 8.0/10
+## [Show HN: Building a web server in assembly to give my life (a lack of) meaning](https://github.com/imtomt/ymawky) ⭐️ 7.0/10
 
-A critical local privilege escalation vulnerability (CVE-2026-7270) has been discovered in FreeBSD's execve() system call implementation. The bug stems from a C operator precedence error where `args->endp - args->begin_argv + consume` evaluates left-to-right instead of the intended `args->endp - (args->begin_argv + consume)`, causing memory corruption that can be exploited for root access. This vulnerability affects local users on FreeBSD systems and can escalate privileges to root, making it critical for server and desktop environments. The bug highlights how subtle operator precedence mistakes in low-level C code can create exploitable security flaws, and the availability of AI-generated working exploits increases the urgency for patching. The bug was patched in FreeBSD 15.0R-p7 (April 28th). The correct fix adds parentheses: `args->endp - (args->begin_argv + consume)`. Security researchers from Calif (Thai Duong's firm) have published an AI-generated working exploit along with a detailed walkthrough on their blog and GitHub repository.
+A developer named imtomt has created 'ymawky,' a complete static file web server for macOS written entirely in ARM64 assembly language. The project implements full HTTP/1.1 protocol support including GET, PUT, DELETE, HEAD, and OPTIONS requests, along with Range header support for video streaming, percent-encoded URL decoding, directory listing, custom error pages, and mitigations against slowloris-style attacks. This project represents an impressive demonstration of deep low-level programming expertise in an era where AI code generation tools are becoming increasingly prevalent. It has sparked meaningful community discussion about programming craftsmanship, the value of building things from first principles, and the evolving role of human developers as LLMs become more capable. The implementation includes complete HTTP protocol compliance with RFC 7233 byte range serving support, strict docroot enforcement to prevent directory traversal attacks, and timeout-based mitigations against slowloris attacks which keep connections open with minimal headers. The code is organized with a detailed writeup available at the project documentation site.
 
-hackernews · Deeg9rie9usi · May 9, 20:31
+hackernews · imtomt · May 10, 03:01
 
-**Background**: The execve() system call transforms the calling process into a new process by executing a specified program file. In C, subtraction and addition have the same precedence and are evaluated left-to-right, which means `a - b + c` is interpreted as `(a - b) + c`, not `a - (b + c)`. This precedence behavior is a common source of security-critical bugs, especially in low-level system code involving pointer arithmetic and memory operations.
+**Background**: ARM64 assembly is the low-level machine code instruction set for ARM-based processors, including Apple's M-series chips used in modern Macs. Writing a web server in assembly requires implementing the TCP/IP stack, HTTP protocol parsing, file system operations, and memory management entirely from scratch—all typically handled by higher-level languages. A slowloris attack is a denial-of-service technique that keeps connections open by sending partial HTTP requests with slow byte transmissions, exhausting server resources. Range requests allow clients to request specific byte ranges of a resource, enabling video streaming and resumable downloads.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.cppreference.com/w/c/language/operator_precedence.html">C Operator Precedence - cppreference.com</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Slowloris_(cyber_attack)">Slowloris (cyber attack) - Wikipedia</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Range_requests">HTTP range requests - HTTP | MDN</a></li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc7233">RFC 7233 - Hypertext Transfer Protocol ( HTTP /1.1): Range Requests</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community members are discussing code safety practices, with Groxx suggesting banning mixed-operator precedence expressions entirely to prevent similar bugs. Cryptbe from Calif shares their AI-generated exploit and detailed write-up, while tptacek notes that Calif (Thai Duong's new firm) is producing significant security research. Commenter 0xbadcafebee criticizes C code patterns that combine arithmetic operations in dangerous function call arguments without explicit bounds checks.
+**Discussion**: The Hacker News comments reveal a bittersweet reflection on programming craftsmanship in the AI era. Several commenters expressed nostalgia for the time when elite skills like assembly programming were highly valued, with one noting LLMs could now generate such code 'in seconds.' Others shared their own challenging projects—like building a WebAssembly software renderer—as meaningful personal challenges against 'vibe coded' AI-generated solutions. The overall sentiment appreciates the achievement while mourning a perceived shift in how the industry rewards deep technical mastery.
 
-**Tags**: `#security`, `#vulnerability`, `#freebsd`, `#c-programming`, `#privilege-escalation`
+**Tags**: `#assembly`, `#arm64`, `#web-server`, `#low-level-programming`, `#hackernews`
 
 ---
 
 <a id="item-2"></a>
-## [Bulletproofing LLM Structured Output in Python: Healing Retries, Cost Caps, and Drift Detection (Runnable Code)](https://dev.to/velsof/bulletproofing-llm-structured-output-in-python-healing-retries-cost-caps-and-drift-detection-c89) ⭐️ 8.0/10
+## [The Accidental C2 - Exploring Dev Tunnels for Remote Access](https://dev.to/mark0_617b45cda9782a/the-accidental-c2-exploring-dev-tunnels-for-remote-access-bbp) ⭐️ 7.0/10
 
-A production engineer published battle-tested Python patterns for making LLM structured output reliable, addressing six failure modes that JSON mode alone cannot prevent: silent truncation, hallucinated keys, type coercion, semantic drift, refusals returning JSON, and schema-version desync. The toolkit includes a strict validator, healing retry loop, cost-bounded fallback chain, and drift detector, all wrapped in a FastAPI-ready service architecture. JSON mode validation is insufficient for production LLM systems—a single incident resulted in 4,200 records silently failing over a weekend. The patterns in this toolkit provide production-grade reliability with cost controls and observability, making them essential for engineers deploying structured output systems where downstream billing or data pipelines depend on correct output. The toolkit is built around Pydantic 2.7.4 models with built-in versioning, using tenacity 8.3.0 for retry logic, prometheus-client 0.20.0 for metrics, and supports both OpenAI and Anthropic providers. The healing retry loop specifically feeds validation errors back to the model rather than performing blind retries. Cost caps prevent runaway token consumption from bad prompts, and the drift detector tracks parse compliance and field-distribution shifts over time to catch semantic drift before it causes production incidents.
+Security researcher deconstructed Visual Studio Code Dev Tunnels protocol and released Ouroboros, a Rust-based tool that enables red teams to establish covert C2 channels using legitimate Microsoft infrastructure, bypassing traditional detection methods. This research weaponizes a widely-used developer feature for offensive operations, making it extremely difficult to distinguish malicious traffic from legitimate development activity, and provides red teams with a novel technique that exploits Entra ID authentication features to maintain persistent access. The research covers multiple attack vectors including persistence via compromised hosts, lateral movement through credential extraction from VS Code's internal databases, and initial access via Device Code Phishing, specifically leveraging FOCI and Nested App Authentication (BroCI) to mint access tokens for Dev Tunnels.
 
-rss · Dev.to · May 10, 03:45
+rss · Dev.to · May 10, 06:20
 
-**Background**: LLM structured output refers to generating JSON or other structured data that conforms to a specific schema, rather than freeform text. JSON mode in API providers helps ensure the output is valid JSON, but does not guarantee the JSON matches the intended schema or contains semantically correct values. Silent failures occur when the model returns parseable but incorrect JSON—for example, truncating arrays mid-output or returning field names that don't match the schema. In production systems where downstream processes consume this data, these silent failures can corrupt databases or cause billing errors without immediately triggering exceptions.
+**Background**: Visual Studio Code Dev Tunnels is a feature that allows developers to expose local servers over the internet through Microsoft's relay infrastructure. C2 (Command and Control) refers to the infrastructure red teams use to communicate with compromised systems during assessments. FOCI (Family of Client IDs) is a Microsoft Entra ID feature where first-party apps share a common refresh token, enabling token minting across related applications. Device code flow is an OAuth 2.0 authentication method designed for devices with limited input capabilities.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.pedroalonso.net/blog/llm-json-processor-zod-claude/">Building a Self- Healing LLM JSON Processor with Zod... - Pedro Alonso</a></li>
-<li><a href="https://www.verdic.dev/blog/semantic-drift-detection-vector-embeddings">Semantic Drift Detection : Using Vector Embeddings for LLM Validation</a></li>
-<li><a href="https://gemilab.net/en/articles/gemini-api/gemini-api-pydantic-structured-output-type-safe-production">Type-Safe Structured Output with Gemini API and Pydantic...</a></li>
+<li><a href="https://payatu.com/blog/microsofts-family-of-client-ids-foci-convenience-vs-compromise/">Microsoft’s Family of Client IDs (FOCI): Convenience vs. Compromise - Payatu</a></li>
+<li><a href="https://www.wiz.io/blog/recent-oauth-attacks-detection-strategies">3 Recent OAuth TTPs + How to Detect Them with Entra ID... | Wiz Blog</a></li>
+<li><a href="https://github.com/secureworks/family-of-client-ids-research">GitHub - secureworks/family-of-client-ids-research: Research into Undocumented Behavior of Azure AD Refresh Tokens · GitHub</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The broader LLM engineering community has converged on similar self-healing patterns, with frameworks like Zod and Pydantic-based validation becoming standard for production deployments. Semantic drift detection using vector embeddings and cosine similarity is gaining traction as teams realize that JSON-valid output can still contain semantically incorrect values. The consensus is that production LLM systems require multiple layers of validation, retry logic, and observability beyond what providers offer out of the box.
-
-**Tags**: `#llm`, `#structured-output`, `#python`, `#production-reliability`, `#fastapi`, `#json`
+**Tags**: `#red-team`, `#c2-infrastructure`, `#dev-tunnels`, `#protocol-analysis`, `#entra-id-security`
 
 ---
 
 <a id="item-3"></a>
-## [Show HN: Rust but Lisp](https://github.com/ThatXliner/rust-but-lisp) ⭐️ 7.0/10
+## [TON <> Telegram seems interesting again - Telegram takes over TON foundation to ](https://telegram.org/blog/ai-bot-revolution-11-new-features) ⭐️ 7.0/10
 
-A developer has released "rust-but-lisp," a Show HN project that allows writing Rust code using Lisp s-expression syntax while preserving Rust's ownership system, borrow checker, and memory safety guarantees. This project bridges two distinct programming paradigms: Lisp's elegant homoiconic syntax and Rust's compile-time memory safety. It could appeal to developers who appreciate Lisp's syntax but need Rust's guarantees for systems programming or performance-critical applications. The project claims to cover all Rust syntax through s-expression notation, though community commenters note the absence of examples for complex features like lifetime annotations and turbofish syntax (::<Type>). Key concerns raised include unclear error message rendering, lack of rust-analyzer LSP integration, and whether the project constitutes a true Lisp dialect versus merely a syntax transformation.
+Telegram has assumed direct control of the TON Foundation to develop The Open Network (TON) blockchain, with transaction fees reduced by 6x to under $0.005, and CEO Pavel Durov publicly endorsing the project as a major investor. This represents a major strategic reversal for Telegram, which had previously distanced itself from TON after regulatory pressure. With Telegram's 900M+ user base, direct integration could bring blockchain technology to mainstream audiences and enable AI agent functionalities within the messaging ecosystem. The 6x fee reduction makes micro-transactions economically viable on the TON network. The planned AI agent integration appears designed to enable automated tasks and services within Telegram's platform, leveraging the blockchain for trust and coordination.
 
-hackernews · thatxliner · May 9, 21:46
+telegram · ahboyashreads · May 10, 05:59
 
-**Background**: S-expressions (sexprs) are a notation for nested list data structures invented for and popularized by Lisp, where code itself is represented as data. Rust's ownership model is a unique compile-time memory management system that enforces rules like each value having a single owner and preventing dangling pointers without requiring garbage collection. The combination attempts to leverage Rust's safety guarantees while providing Lisp's uniform syntax for both code and data.
+**Background**: TON (The Open Network) is a layer-1 blockchain originally developed by Nikolai Durov, co-founder of Telegram, with the aim of integrating cryptocurrency functionality directly into the messaging app. After the SEC challenged Telegram's Gram token sale in 2020, the project was spun off to independent developers and the community. The blockchain uses Toncoin (TON) as its native cryptocurrency to facilitate transactions and power its decentralized app ecosystem.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/S-expression">S - expression - Wikipedia</a></li>
-<li><a href="https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html">Understanding Ownership - The Rust Programming Language</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TON_(blockchain)">TON (blockchain) - Wikipedia</a></li>
+<li><a href="https://www.theblock.co/learn/298587/what-is-the-open-network-a-beginners-guide-to-ton">What is The Open Network? A beginner's guide to the TON blockchain - The Block | The Block</a></li>
+<li><a href="https://docs.ton.org/v3/concepts/dive-into-ton/introduction">Introduction | The Open Network - TON Docs</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community feedback reveals skepticism about practical utility. Commenters question whether error messages can properly highlight issues in s-expression source code and whether rust-analyzer integration is possible. One commenter notes the project maintains Rust semantics without new Lisp features, which preserves Rust's performance advantages. Another points out the lack of complex Rust feature demonstrations like lifetime annotations and turbofish syntax, while a third notes it appears more like syntactic translation than a true Lisp dialect.
+**Discussion**: The crypto community appears cautiously optimistic about Telegram's return to direct TON development. While Pavel Durov's personal bullish endorsements add credibility, some remain wary given the previous regulatory troubles. The fee reduction and AI agent integration features are being viewed as positive steps toward broader adoption.
 
-**Tags**: `#rust`, `#lisp`, `#programming-languages`, `#syntax`, `#compiler`
+**Tags**: `#TON`, `#Telegram`, `#blockchain`, `#AI agents`, `#crypto`
 
 ---
 
 <a id="item-4"></a>
-## [France moves to break encrypted messaging](https://reclaimthenet.org/france-moves-to-break-encrypted-messaging) ⭐️ 7.0/10
+## [Wireshark dissector for a proprietary DVRIP/Sofia application layer protocol found on Xiongmai-based IP cameras.](https://dev.to/kostasereksonas/wireshark-dissector-for-a-proprietary-dvripsofia-application-layer-protocol-found-on-61b) ⭐️ 6.0/10
 
-France is advancing legislation that would require tech companies to break end-to-end encryption in messaging apps, enabling government access to private communications. This legislation could set a precedent for other countries to demand backdoors in encrypted services, fundamentally undermining the privacy guarantees that billions of users rely on worldwide. Community discussion highlighted that the original article incorrectly grouped Telegram with Signal and WhatsApp, noting that Telegram does not use end-to-end encryption by default, unlike Signal and WhatsApp which do.
+Security researcher Kostas Ereksonas released a Wireshark dissector written in Lua for decoding the proprietary DVRIP/Sofia application layer protocol found in Xiongmai-based IP cameras. This tool enables network security researchers and IoT analysts to inspect and analyze proprietary protocol traffic from Xiongmai cameras, which is critical for vulnerability research and security auditing of IoT devices in surveillance ecosystems. The dissector is written in Lua and runs on Wireshark's plugin architecture. Xiongmai's DVRIP/Sofia protocol uses a 20-bit message header, which differs from Dahua's implementation that uses a 32-bit header length in its DVRIP protocol.
 
-hackernews · Cider9986 · May 9, 22:14
+rss · Dev.to · May 10, 06:18
 
-**Background**: End-to-end encryption (E2EE) uses asymmetric cryptography where messages are encrypted with a recipient's public key and can only be decrypted with their private key, ensuring that only the communicating parties can read the messages. Encryption backdoors are methods that allow authorized parties (like governments) to bypass normal encryption to access communications, but security experts warn they create vulnerabilities that could be exploited by malicious actors. The debate over encryption backdoors has persisted for decades, with law enforcement arguing for access to combat crime while privacy advocates warn of systemic risks.
+**Background**: Wireshark is a widely-used open-source network protocol analyzer that supports custom dissectors written in Lua through its plugin API. Xiongmai Technology is a Chinese manufacturer specializing in IP camera modules and security surveillance equipment. The DVRIP protocol (also known as Sofia protocol) is a proprietary application-layer protocol used for device discovery, authentication, and video streaming in Xiongmai-based cameras. Unlike open standards, proprietary protocols often lack public documentation, making custom dissectors valuable for security research.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.internetsociety.org/blog/2025/05/what-is-an-encryption-backdoor/">What Is an Encryption Backdoor? - Internet Society</a></li>
-<li><a href="https://www.techtarget.com/searchsecurity/definition/end-to-end-encryption-E2EE">What is End - to - End Encryption (E2EE) and How Does it Work ?</a></li>
-<li><a href="https://www.upgrad.com/blog/what-is-end-to-end-encryption-and-how-it-works/">What is End - to - End Encryption ? How It Works , and... | upGrad blog</a></li>
+<li><a href="https://dev.to/kostasereksonas/dvripsofia-protocol-dissector-for-wireshark-written-in-lua-2mhb">DVRIP /Sofia Protocol Dissector for Wireshark... - DEV Community</a></li>
+<li><a href="https://github.com/topics/dvrip">dvrip · GitHub Topics · GitHub</a></li>
+<li><a href="https://infosecwriteups.com/writing-a-wireshark-protocol-dissector-in-lua-eb216d97427f">DVRIP /Sofia Protocol Dissector for Wireshark... | InfoSec Write-ups</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community members expressed frustration with the ongoing encryption debate, with one commenter noting that only major disasters would convince policymakers of the dangers of weakening encryption. Several commenters made technical corrections about Telegram's encryption model, clarifying it lacks default end-to-end encryption unlike Signal. Some responses used humor to highlight the absurdity of the situation, while others referenced similar government surveillance approaches in other countries.
-
-**Tags**: `#encryption`, `#privacy`, `#surveillance`, `#policy`, `#France`
+**Tags**: `#networking`, `#wireshark`, `#lua`, `#iot-security`, `#protocol-analysis`
 
 ---
 
 <a id="item-5"></a>
-## [https://www.galaxy.com/insights/research/stablecoins-genius-act-bank-deposit-fli](https://www.galaxy.com/insights/research/stablecoins-genius-act-bank-deposit-flight-us-dollar-dominance) ⭐️ 7.0/10
+## [https://www.galaxy.com/insights/research/stablecoins-genius-act-bank-deposit-fli](https://www.galaxy.com/insights/research/stablecoins-genius-act-bank-deposit-flight-us-dollar-dominance) ⭐️ 6.0/10
 
-Galaxy Research published an analysis examining how stablecoin regulation under the GENIUS Act of 2025 could affect traditional bank deposits and the US dollar's dominance in the digital asset ecosystem. The GENIUS Act, signed into law on July 18, 2025, represents the first comprehensive federal regulatory framework for payment stablecoins in the United States, potentially reshaping how digital currencies interact with the traditional banking system and affect monetary policy. The legislation establishes requirements for reserve backing, audit obligations, and consumer protections for stablecoin issuers. Galaxy's analysis specifically explores whether stablecoin growth could trigger a 'flight' of deposits away from traditional banks toward stablecoin platforms, and how this might impact USD dominance in crypto markets.
+Galaxy Research has published an analysis examining how the GENIUS Act stablecoin legislation could reshape bank deposit dynamics and affect US dollar dominance in the digital asset ecosystem. The legislation could trigger significant capital reallocation from traditional bank deposits into stablecoin instruments, potentially reshaping the competitive landscape between banks and stablecoin issuers while reinforcing dollar hegemony in digital finance. The GENIUS Act establishes a regulatory framework specifically for payment stablecoins, requiring reserve backing and operational restrictions that could influence how banks compete with digital asset platforms for consumer deposits.
 
 telegram · ahboyashreads · May 10, 03:00
 
-**Background**: Stablecoins are cryptocurrencies designed to maintain a stable value by being pegged to traditional currencies, typically the US dollar. The GENIUS Act (Guiding and Establishing National Innovation for U.S. Stablecoins of 2025) was introduced by Senator Bill Hagerty as a bipartisan effort to create regulatory clarity for the rapidly growing stablecoin market. Galaxy Research is a respected cryptocurrency research firm affiliated with Galaxy Digital Holdings, known for its in-depth analysis of digital asset markets and policy impacts.
+**Background**: The GENIUS Act (Guiding and Establishing National Innovation for US Stablecoins Act) was introduced by Senator Bill Hagerty in May 2025 as a bipartisan effort and signed into law by President Trump in July 2025. Stablecoins are cryptocurrencies designed to maintain a fixed value, typically pegged to the US dollar, and must hold reserve assets equal to their circulating supply. This legislation represents the most significant US stablecoin regulation to date, potentially affecting trillions in potential capital flows.
 
 <details><summary>References</summary>
 <ul>
@@ -136,248 +133,218 @@ telegram · ahboyashreads · May 10, 03:00
 </ul>
 </details>
 
-**Tags**: `#stablecoins`, `#crypto-regulation`, `#GENIUS-Act`, `#US-dollar-dominance`, `#banking`
+**Tags**: `#stablecoins`, `#genius-act`, `#crypto-regulation`, `#dollar-dominance`, `#banking`
 
 ---
 
 <a id="item-6"></a>
-## [Show HN: Building a web server in assembly to give my life (a lack of) meaning](https://github.com/imtomt/ymawky) ⭐️ 6.0/10
+## [Gemini API File Search is now multimodal](https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/) ⭐️ 5.0/10
 
-Developer created a production-featured static file web server for macOS entirely in ARM64 assembly, implementing GET, PUT, DELETE, HEAD, OPTIONS methods with Range headers, percent-encoding, directory listing, and slowloris mitigations.
+Google has expanded Gemini API's file search to support multimodal inputs for retrieval augmented generation (RAG), enabling developers to process diverse file types including text, images, and other media within AI applications. This update significantly enhances RAG workflows by allowing developers to leverage information from multiple file formats, improving the quality and relevance of AI-generated responses. It expands the types of data that can be incorporated into generative AI pipelines. The multimodal file search can handle diverse content types beyond plain text, enabling more comprehensive information retrieval. This represents an incremental but useful improvement for developers building sophisticated AI applications that require processing multiple data formats.
 
-hackernews · imtomt · May 10, 03:01
+hackernews · gmays · May 10, 03:22
 
-**Tags**: `#arm64`, `#assembly`, `#web-server`, `#low-level-programming`, `#hackernews`
+**Background**: Retrieval Augmented Generation (RAG) is an AI technique that improves large language model outputs by incorporating information retrieved from external authoritative knowledge bases before generating responses. Multimodal AI systems can process and integrate information from multiple data types such as text, images, audio, and video. Gemini is Google DeepMind's family of foundation models designed for various AI tasks.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.ibm.com/think/topics/multimodal-ai">What is Multimodal AI? | IBM</a></li>
+<li><a href="https://cloud.google.com/use-cases/multimodal-ai">Multimodal AI | Google Cloud</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community feedback is limited and largely negative. One user expressed frustration with AI Studio's basic search functionality, noting that users can only search conversation titles and cannot search content within conversations, plus Ctrl+F no longer works reliably after an interface update. Another user provided only a generic positive comment without technical substance.
+
+**Tags**: `#google`, `#gemini`, `#multimodal-ai`, `#rag`, `#api`, `#developer-tools`
 
 ---
 
 <a id="item-7"></a>
-## [The release checks I want before I trust a JavaScript repo in 2026](https://dev.to/tatelyman/the-release-checks-i-want-before-i-trust-a-javascript-repo-in-2026-4jgl) ⭐️ 6.0/10
+## [Voice AI in India is hard. Wispr Flow is betting on it anyway.](https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/) ⭐️ 5.0/10
 
-A developer published a practical release-readiness checklist for JavaScript and TypeScript projects, focusing on overlooked 'boring edges' like install instructions, CI workflows, package metadata, and secret handling that commonly cause production failures. Many repos appear finished right before release but fail on 'boring edges' that weren't exciting to address during development. This checklist provides actionable guidance for developers to catch real-world failures before public launch, improving project reliability and user trust. The checklist recommends npm pack --dry-run to catch missing files, wrong files config, and stale build output. It emphasizes verifying that CI runs the same commands documented in README, and using OIDC/trusted publishing over long-lived npm tokens for security. MCP servers need extra metadata validation across package.json, server.json, and registry metadata.
+Wispr Flow, a Bay Area-headquartered AI voice input startup, reports that India has become its fastest-growing market following the launch of its Hinglish language support. The company achieved a $700M valuation and continues to expand despite voice AI products remaining early and fragmented in the South Asian nation. 增长表明在多语言市场对语音AI有强烈需求，用户会在印地语和英语等语言之间自然切换。如果Wispr Flow在Hinglish上取得成功，它可以为全球其他代码转换地区建立可复制的语音AI采用模式。 Hinglish is a code-switching language where speakers fluidly mix Hindi and English mid-conversation, requiring specialized automatic speech recognition (ASR) systems. Technical challenges include data scarcity for training, complex grammatical structures, and the need to rework three layers of AI architecture for multilingual support.
 
-rss · Dev.to · May 10, 04:06
+rss · TechCrunch · May 10, 02:00
 
-**Background**: Release readiness refers to the comprehensive checks ensuring a project works beyond the original developer's machine. In JavaScript/TypeScript ecosystems, common pitfalls include broken install paths, CI configurations that differ from documentation, incomplete package.json metadata, and accidental secret exposure. These 'boring edges' are often invisible during development but cause immediate failures when other developers try to use the project.
+**Background**: Voice AI products face significant challenges in multilingual markets like India, where diversity of languages, accents, and speaking patterns complicates development. Code-switching speech recognition is particularly difficult due to limited high-quality labeled data and grammatical complexity. The voice AI market in India remains fragmented, with products still in early stages of adoption among mainstream users.
 
-**Tags**: `#javascript`, `#typescript`, `#devops`, `#release-readiness`, `#best-practices`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/">Voice AI in India is hard. Wispr Flow is betting on it... | TechCrunch</a></li>
+<li><a href="https://tringtring.ai/blog/specialized-applications/multilingual-voice-ai-challenges-and-best-practices/">Multilingual Voice AI : Challenges and Best Practices - TringTring. AI</a></li>
+<li><a href="https://www.clsp.jhu.edu/multilingual-and-code-switching/">Multilingual and Code - Switching Speech Recognition - Center for...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#voice-ai`, `#india-tech`, `#startup`, `#localization`, `#product-growth`
 
 ---
 
 <a id="item-8"></a>
-## [CDP Bridge MCP —— a bridge service that connects MCP clients to real browser sessions](https://dev.to/lala_par_c28d6b5df2765c7a/cdp-bridge-mcp-a-bridge-service-that-connects-mcp-clients-to-real-browser-sessions-52h8) ⭐️ 6.0/10
+## [Why not Lannguage Specific SLMs as coding agents](https://dev.to/mainak55512/why-not-lannguage-specific-slms-as-coding-agents-n79) ⭐️ 5.0/10
 
-CDP Bridge MCP is a new bridge service that connects Model Context Protocol (MCP) clients to real Chromium browser sessions, enabling AI agents to access already-open tabs with existing login states, cookies, and page context. This solves a critical pain point for AI agents interacting with account-based websites—rather than needing to re-authenticate or use stateless HTTP fetching, the model can directly reuse the browser's authenticated state to perform tasks like reading analytics, scraping content, or executing web actions. The service exposes tools including browser_get_tabs, browser_scan, browser_execute_js, and browser_switch_tab, and uses a companion Chromium extension on the client side rather than requiring complex Playwright scripts or debug port configuration. The browser_scan tool specifically simplifies HTML by filtering scripts, styles, and invisible elements to reduce token waste.
+An author on dev.to argues for building language-specific small language models (SLMs) for coding assistance that can run locally offline, proposing example models like PyroLM (Python), WebLM (JS/TS), and RustLM that would be dramatically smaller yet more expert in their single target language than general-purpose alternatives. This proposal addresses critical accessibility and privacy concerns in AI-assisted coding by arguing that focused, language-specific models can democratize access to coding tools while ensuring privacy through local processing, potentially running efficiently even on low-end hardware like phones. The proposed models range from 200M to 600M parameters, with suggested RAM requirements of 512MB to 2GB, making them suitable for resource-constrained environments; however, the article acknowledges that real-world projects mix multiple languages, creating a fundamental challenge to pure language-specific specialization.
 
-rss · Dev.to · May 10, 03:44
+rss · Dev.to · May 10, 06:28
 
-**Background**: MCP (Model Context Protocol) is an open-source standard developed by Anthropic for connecting AI assistants to external systems like content repositories and business tools. CDP (Chrome DevTools Protocol) is a remote debugging API that allows developers to communicate with and control a running Chrome browser, inspect its state, and collect debugging information. Unlike Playwright MCP which focuses on launching dedicated automation browsers, CDP Bridge MCP targets interactive tasks on the user's current browser session.
+**Background**: Small language models (SLMs) are compact AI models designed to operate efficiently on resource-constrained devices, typically containing millions to tens of millions of parameters compared to hundreds of billions in large language models; specialized AI models can outperform general models in their target domain due to focused training data, and the trend toward smaller, specialized models reflects a 'fit for purpose' approach prioritizing accuracy, efficiency, privacy, and cost-effectiveness over raw capability.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.anthropic.com/news/model-context-protocol">Introducing the Model Context Protocol</a></li>
-<li><a href="https://chromedevtools.github.io/devtools-protocol/">Chrome DevTools Protocol</a></li>
-<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">What is the Model Context Protocol (MCP)? - Model Context Protocol</a></li>
+<li><a href="https://www.ibm.com/think/topics/small-language-models">What are Small Language Models (SLM)? | IBM</a></li>
+<li><a href="https://onereach.ai/blog/small-specialized-language-models-vs-llms/">Why Specialized SLMs are Outperforming General-Purpose LLMs?</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#MCP`, `#browser-automation`, `#AI-agents`, `#CDP`, `#web-scraping`
+**Tags**: `#local-ai`, `#small-language-models`, `#coding-assistants`, `#privacy`, `#accessibility`
 
 ---
 
 <a id="item-9"></a>
-## [Voice AI in India is hard. Wispr Flow is betting on it anyway.](https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/) ⭐️ 5.0/10
+## [Mastering Power Query in Power BI: A Complete Data Transformation Guide](https://dev.to/sims__/mastering-power-query-in-power-bia-complete-data-transformation-guide-5gjd) ⭐️ 5.0/10
 
-Wispr Flow announced accelerated growth in India following its Hinglish language support rollout for voice AI products. The startup continues to face challenges typical of voice AI products in the Indian market despite this positive momentum. This development highlights the untapped potential of India's voice AI market, where the widespread use of Hinglish (code-switching between Hindi and English) creates unique technical barriers for speech recognition systems. Companies that can successfully navigate these linguistic challenges may gain significant competitive advantage in one of the world's largest digital markets. The core technical challenge involves handling code-switching, where speakers freely alternate between Hindi and English within sentences or between utterances. This requires speech recognition systems to be trained on diverse bilingual data rather than treating Hindi and English as separate language models.
+A comprehensive tutorial published on dev.to demonstrates essential Power Query data transformation techniques using the CodeSphere Hub dataset, which contains 163,000+ sales transactions spanning 2015–2020 and a messy hotel bookings CSV with null values and inconsistencies. This guide addresses a critical bottleneck in Power BI development: data preparation. Since clean data is a prerequisite for effective dashboards and DAX calculations, mastering Power Query's transformation capabilities directly impacts the quality and maintainability of business intelligence solutions. The tutorial covers Power Query Editor's core interface areas including the Query Panel, Data Preview, Applied Steps, and Formula Bar. It emphasizes three built-in data profiling views—Column Quality, Column Distribution, and Column Profile—that surface data quality issues before cleaning begins. The M code behind each transformation step is visible in the Formula Bar.
 
-rss · TechCrunch · May 10, 02:00
+rss · Dev.to · May 10, 06:16
 
-**Background**: Voice AI technology enables computers to process spoken language through automatic speech recognition (ASR), natural language processing (NLP), and text-to-speech capabilities. Hinglish is a macaronic hybrid language that blends colloquial Hindi and English, commonly spoken by millions in urban India. Speech recognition systems typically convert spoken words into text using voice and acoustic models, making linguistic diversity a significant technical hurdle for deployment in multilingual markets.
+**Background**: Power Query is a data transformation and preparation engine developed by Microsoft, integrated into both Excel and Power BI. It provides a graphical interface for connecting to various data sources and a Power Query Editor for applying transformations such as removing columns, changing data types, or merging tables. DAX (Data Analysis Expressions) is a separate formula language used for creating calculations after data has been loaded into the Power BI data model. The guide demonstrates how Power Query handles the foundational data cleaning work that precedes DAX-based analysis.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.ibm.com/think/topics/ai-voice">What is AI Voice? | IBM</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Hinglish">Hinglish - Wikipedia</a></li>
-<li><a href="https://medium.com/@speechai/how-does-speech-recognition-technology-work-4bcd2ef76e55">How Does Speech Recognition Technology Work ? | Medium</a></li>
+<li><a href="https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query">What Is Power Query? - Power Query | Microsoft Learn</a></li>
+<li><a href="https://support.microsoft.com/en-us/office/about-power-query-in-excel-7104fbee-9e62-4cb9-a02e-5bfb1a6c536a">About Power Query in Excel - Microsoft Support</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#voice-ai`, `#india-tech`, `#hinglish`, `#speech-recognition`, `#saas`
+**Tags**: `#Power BI`, `#Power Query`, `#Data Transformation`, `#Business Intelligence`, `#Data Cleaning`
 
 ---
 
 <a id="item-10"></a>
-## [How Heuristics Make Search Algorithms Smarter](https://dev.to/zeromathai/how-heuristics-make-search-algorithms-smarter-36oj) ⭐️ 5.0/10
+## [AI Isn't Taking Your Job. It's Taking Your Busywork.](https://dev.to/forgeflows/ai-isnt-taking-your-job-its-taking-your-busywork-19ce) ⭐️ 5.0/10
 
-This tutorial explains how heuristic functions enable search algorithms like A* to estimate distances to goals and prioritize promising paths over exhaustive exploration. Heuristics transform search algorithms by turning exhaustive exploration into intelligent, goal-directed behavior, making them practical for large state spaces in AI and pathfinding applications. The article compares blind search, greedy search, and A*, explaining how f(n) = g(n) + h(n) balances actual path cost with estimated remaining distance, and discusses heuristic admissibility and distance metrics like Manhattan and Euclidean.
+An article argues that AI threatens administrative busywork tasks rather than creative or strategic jobs in agency workflows, referencing McKinsey research that automation is more likely to augment work by eliminating repetitive tasks rather than replacing workers entirely. This perspective offers a practical framework for agencies deciding where to deploy AI—focusing on tasks with clear input-output structures and high tolerance for iteration while keeping humans in the loop where client context and strategic judgment matter. It reframes AI adoption from threat to operational efficiency. The author proposes evaluating automation candidates using two axes: how much a task varies week to week, and how much it requires client-specific knowledge. Practical examples include using Perplexity's API or n8n's web-scraping node to automate competitive research data gathering, leaving synthesis to human strategists who spend twenty minutes on judgment instead of two hours on data collection.
 
-rss · Dev.to · May 10, 04:06
+rss · Dev.to · May 10, 06:04
 
-**Background**: Heuristic functions estimate the cost to reach a goal without perfect knowledge of the optimal path. A* combines path cost g(n) with heuristic estimate h(n) to efficiently find shortest paths. Developed in 1968 by Hart, Nilsson, and Raphael at Stanford, it extends Dijkstra's algorithm with heuristic guidance and guarantees optimal solutions when heuristics are admissible (never overestimate true cost).
+**Background**: McKinsey's research on the future of work found that automation and AI are more likely to augment work by eliminating repetitive tasks rather than replacing workers entirely. Large language models excel at pattern recognition and text manipulation tasks with clear input-output structures, but struggle with client-specific contexts that require accumulated institutional knowledge and judgment about specific business needs.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search algorithm</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Heuristic_(computer_science)">Heuristic ( computer science ) - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#algorithms`, `#search-algorithms`, `#A*-search`, `#artificial-intelligence`, `#heuristics`
+**Tags**: `#AI impact on work`, `#automation`, `#workplace productivity`, `#agency workflows`, `#AI tools`
 
 ---
 
 <a id="item-11"></a>
-## [☁️ Terraform vs Pulumi: Which to choose for IaC in 2024?](https://dev.to/ptp2308/terraform-vs-pulumi-which-to-choose-for-iac-in-2024-1c7l) ⭐️ 5.0/10
+## [A small Vite plugin for moving heavy JSX attributes into comments](https://dev.to/vo9312/a-small-vite-plugin-for-moving-heavy-jsx-attributes-into-comments-21dn) ⭐️ 4.0/10
 
-A 2024 comparison article evaluates Terraform (HCL-based) and Pulumi (general programming language-based) for Infrastructure as Code, covering language expressiveness, state management, tooling, testing, CI/CD integration, ecosystem, and policy-as-code capabilities with code examples. For DevOps teams and cloud engineers selecting IaC tools, understanding the trade-offs between HCL's structural predictability and Pulumi's code expressiveness directly impacts team productivity, testing options, and long-term maintainability of infrastructure code. While Terraform and Pulumi ultimately invoke identical provider binaries (e.g., terraform-provider-aws) and make the same AWS API calls, Pulumi's approach enables standard programming constructs like loops, functions, and type annotations, whereas Terraform restricts logic to count, for_each, and dynamic blocks within HCL's expression syntax.
+A Vite plugin that transforms long JSX class attributes into comments above elements for improved code readability.
 
-rss · Dev.to · May 10, 03:43
+rss · Dev.to · May 10, 06:21
 
-**Background**: Infrastructure as Code (IaC) is a DevOps practice that manages IT infrastructure through configuration files rather than manual processes, providing consistency and version control. Terraform, developed by HashiCorp, uses HashiCorp Configuration Language (HCL), a declarative, non-Turing-complete DSL that enforces separation between configuration and logic. Pulumi, founded in 2017 and publicly launched in 2019, takes a different approach by allowing users to define infrastructure using familiar general-purpose programming languages like Python, TypeScript, Go, and C#.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://developer.hashicorp.com/terraform/language/syntax/configuration">Syntax - Configuration Language | Terraform | HashiCorp Developer</a></li>
-<li><a href="https://github.com/pulumi/pulumi">GitHub - pulumi / pulumi : Pulumi - Infrastructure as Code in any...</a></li>
-<li><a href="https://developer.hashicorp.com/sentinel/docs/concepts/policy-as-code">Policy as Code | Sentinel | HashiCorp Developer</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#terraform`, `#pulumi`, `#infrastructure-as-code`, `#devops`, `#cloud-infrastructure`
+**Tags**: `#vite`, `#jsx`, `#developer-tools`, `#code-quality`, `#tailwind-css`
 
 ---
 
 <a id="item-12"></a>
-## [So you’ve heard these AI terms and nodded along; let’s fix that](https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/) ⭐️ 4.0/10
+## [Why I Stopped Using Random Online JSON Formatters (And Why You Should Too)](https://dev.to/rahulthummar/why-i-stopped-using-random-online-json-formatters-and-why-you-should-too-bea) ⭐️ 4.0/10
 
-TechCrunch published a beginner-friendly glossary explaining common AI terms like hallucinations, large language models (LLMs), and other fundamental concepts for general audiences without technical backgrounds. As AI adoption accelerates, clear terminology helps bridge the knowledge gap between technical experts and everyday users, reducing misunderstanding and enabling informed decision-making about AI tools and services. The glossary covers foundational concepts including machine learning, deep learning, NLP, and hallucinations. While useful for AI beginners, the content is primarily entry-level and offers limited new insights for those already following the AI space.
+A developer published an article warning that popular online JSON formatters operate on server-side models, potentially exposing sensitive data (API keys, JWTs, user emails) to remote servers that may log, store, or use the data for training purposes. The author promotes their own tool, CodeUtils, as a privacy-first 100% client-side alternative that processes all data directly in the browser. For professional developers handling production data, using server-side JSON tools for debugging represents an unacceptable security risk that could lead to API key leaks, credential compromise, or GDPR violations. This article highlights the growing need for privacy-respecting developer tools as data protection regulations tighten globally. CodeUtils leverages Web Crypto API for local JWT signature verification (HS256/RS256), Canvas API for image compression, and high-performance JavaScript engines for parsing large JSON payloads. The tool suite includes 30+ utilities such as JSON Diff Viewer, JSON to TypeScript converter, and Mind Map Generator. The author notes that once the browser tab is closed, all client-side processed data is permanently erased from RAM.
 
-rss · TechCrunch · May 9, 21:45
+rss · Dev.to · May 10, 06:17
 
-**Background**: AI hallucination refers to outputs generated by LLMs that contain false or misleading information presented confidently as fact. LLMs are large deep neural networks trained on vast amounts of text data, enabling them to understand context and generate human-like responses. The rapid proliferation of AI terminology has created confusion among non-technical audiences trying to understand and evaluate AI capabilities.
+**Background**: JSON (JavaScript Object Notation) is a lightweight data-interchange format widely used for transmitting structured data between servers and web applications. JWT (JSON Web Tokens) are compact, URL-safe tokens used for authentication that often contain sensitive user information. Client-side processing means computations happen entirely in the user's browser, while server-side processing sends data to remote servers controlled by third parties. In server-side scenarios, data may be logged in access logs, stored in databases, or even anonymized and used to train machine learning models. When developers paste production debugging data into random online formatters, they may unknowingly expose secrets to untrusted parties.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">Hallucination (artificial intelligence) - Wikipedia</a></li>
-<li><a href="https://www.ibm.com/think/topics/ai-hallucinations">What Are AI Hallucinations ? | IBM</a></li>
-<li><a href="https://cloud.google.com/ai/llms">Large Language Models (LLMs) with Google AI | Google Cloud</a></li>
+<li><a href="https://stackoverflow.com/questions/162159/javascript-client-side-vs-server-side-validation">security - JavaScript: client - side vs . server - side ... - Stack Overflow</a></li>
+<li><a href="https://frontend.turing.edu/lessons/module-1/json-and-localstorage.html">JSON and localStorage - Front-End Engineering Curriculum - Turing...</a></li>
+<li><a href="https://fragmatic.io/blog/how-ai-enhances-data-anonymization">How AI Enhances Data Anonyymization | Fragmatic | Fragmatic</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI glossary`, `#AI education`, `#machine learning basics`, `#introductory content`, `#TechCrunch`
+**Tags**: `#security`, `#privacy`, `#developer-tools`, `#data-protection`, `#best-practices`
 
 ---
 
 <a id="item-13"></a>
-## [Fintech startup Parker files for bankruptcy](https://techcrunch.com/2026/05/09/fintech-startup-parker-files-for-bankruptcy/) ⭐️ 4.0/10
+## [Kenapa Chatbot WhatsApp Bisa Jadi Aset Serius untuk Bisnis Kamu](https://dev.to/biggoodman/kenapa-chatbot-whatsapp-bisa-jadi-aset-serius-untuk-bisnis-kamu-3idm) ⭐️ 4.0/10
 
-Parker, a startup offering corporate credit cards and banking services, has filed for bankruptcy and shut down operations. The company, which had previously secured significant funding, has now ceased all business activities. Parker's collapse demonstrates the ongoing challenges in the corporate fintech sector, where startups must navigate strict banking regulations while competing against established financial institutions. Such failures can impact thousands of businesses that relied on Parker's services for expense management and corporate banking needs. Parker was a well-funded startup operating in the corporate credit card and banking services space. The company has officially filed for bankruptcy, signaling a complete operational shutdown. Limited additional details about the specific reasons for the bankruptcy or timeline are currently available.
+An Indonesian article explains how WhatsApp chatbots automate customer service for online businesses, using a case study of an online store handling ~500 monthly transactions, demonstrating how proper chatbot implementation handles 60-70% of repetitive inquiries automatically. With WhatsApp's 98% open rate compared to email's 20-25%, and over 100 million Indonesian users, businesses can achieve 43% conversion rates on payment reminders through chatbots—effectively turning messaging into infrastructure rather than just a communication channel. Advanced WhatsApp chatbots employ NLP layers for intent detection and real-time database queries rather than simple keyword matching, connected via webhook-driven architectures. Platforms like Getnadi.id abstract Meta's API complexity while preserving conversation context during human handoffs, enabling seamless transitions from automated to human agents.
 
-rss · TechCrunch · May 9, 20:32
+rss · Dev.to · May 10, 06:14
 
-**Background**: Corporate fintech startups like Parker operate in a highly regulated space that requires compliance with banking laws, anti-money laundering regulations, and consumer protection rules. The corporate credit card market is dominated by established players such as American Express, Brex, and Divvy. Startups entering this market need substantial capital for product development, regulatory compliance, and customer acquisition, making profitability difficult to achieve quickly.
+**Background**: The WhatsApp Business Platform provides APIs and webhook infrastructure for businesses to build automated messaging solutions. Unlike basic auto-reply templates, proper chatbots use natural language processing to understand user intent and execute business logic dynamically. In Indonesia, WhatsApp serves as the primary customer communication channel with over 100 million active users, making chatbot integration a practical automation strategy for e-commerce operations.
 
-**Tags**: `#fintech`, `#startup`, `#bankruptcy`, `#corporate banking`, `#business news`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://whatsappbusiness.com/products/business-platform/">WhatsApp Business Platform | Business messaging APIs</a></li>
+<li><a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/overview">WhatsApp Business Platform - Meta for Developers</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#whatsapp`, `#chatbots`, `#business-automation`, `#customer-service`, `#indonesia`
 
 ---
 
 <a id="item-14"></a>
-## [Internet Architecture](https://dev.to/hirave_palak/internet-architecture-5bka) ⭐️ 4.0/10
+## [The Backend Concepts Nobody Explains Properly](https://dev.to/mehta0007/the-backend-concepts-nobody-explains-properly-2lid) ⭐️ 4.0/10
 
-This article provides a beginner-friendly explanation of Peer-to-Peer (P2P) architecture, illustrating how devices can communicate directly without centralized servers using a photo-sharing example among three friends, and compares it briefly with traditional client-server models. Understanding P2P architecture is fundamental to grasping how modern decentralized applications function, particularly for file-sharing networks like BitTorrent, blockchain systems, and distributed computing platforms that eliminate single points of failure. The article notes that P2P networks can be fully decentralized or partially centralized (where servers perform tasks but don't host data), with BitTorrent highlighted as a prominent example where seeders allow multiple simultaneous download sources. Key advantages include scalability through added nodes, resilience when nodes go offline, and distributed costs, while disadvantages include management complexity, potential reliability issues when many peers leave, and security vulnerabilities at each node.
+A dev.to blog post titled 'The Backend Concepts Nobody Explains Properly' offers a conversational introduction to four fundamental backend concepts: idempotency, the N+1 query problem, database transactions with ACID properties, and caching with cache invalidation challenges. Backend developers frequently encounter these concepts in meetings and code reviews but often lack deep understanding of their practical implications. This beginner-friendly guide addresses real-world scenarios like duplicate payment charges, slow database queries, and distributed system reliability that impact production systems daily. The article explains idempotency keys as a solution to retry-induced duplicate operations (referencing Stripe's implementation), eager loading with ORMs as a fix for N+1 queries, and emphasizes practical tools like Django Debug Toolbar and Laravel Debugbar. The content appears to be cut off mid-section on caching.
 
-rss · Dev.to · May 10, 04:09
+rss · Dev.to · May 10, 06:09
 
-**Background**: P2P networks implement virtual overlay networks on top of the physical network topology, where data is still exchanged over TCP/IP but nodes in the overlay form a subset of physical network nodes. This architectural model first emerged in the late 1970s, where each node in the network shares an equal workload and all nodes must individually stop working for the network to cease functioning. This contrasts with client-server architecture where centralized servers host data and applications while clients connect to access services.
+**Background**: Idempotency is a critical property in distributed systems where network failures can cause requests to be retried multiple times. Eventual consistency is a consistency model used by distributed databases like Cassandra and MongoDB, contrasting with ACID transactions used in traditional relational databases. The N+1 query problem is a common performance issue that occurs when ORMs generate separate queries for related objects instead of using efficient JOIN operations.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Peer-to-peer">Peer - to - peer - Wikipedia</a></li>
-<li><a href="https://www.geeksforgeeks.org/computer-networks/what-is-p2p-peer-to-peer-process/">What is P2P ( Peer - to - Peer Process)? - GeeksforGeeks</a></li>
+<li><a href="https://aloknecessary.github.io/blogs/idempotency-distributed-systems/">Idempotency in Distributed Systems: Design Patterns Beyond 'Retry Safely' | Alok</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Eventual_consistency">Eventual consistency - Wikipedia</a></li>
+<li><a href="https://www.ufried.com/blog/eventual_consistency_2/">A note about eventual consistency - Part 2</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#networking`, `#peer-to-peer`, `#distributed-systems`, `#internet-architecture`, `#basics`
+**Tags**: `#backend-development`, `#idempotency`, `#software-engineering`, `#beginner-friendly`, `#system-design`
 
 ---
 
 <a id="item-15"></a>
-## [Stop just chatting with AI: Build real skills in GenAI and Prompt Engineering](https://dev.to/keerthana_696356/stop-just-chatting-with-ai-build-real-skills-in-genai-and-prompt-engineering-5bio) ⭐️ 4.0/10
+## [How I Built a Solo Ad Factory With AI Automation](https://dev.to/forgeflows/how-i-built-a-solo-ad-factory-with-ai-automation-34dj) ⭐️ 4.0/10
 
-A Dev.to guide introduces beginners to different AI model types (discriminative vs generative), explains what generative AI means, and provides prompt engineering basics along with free learning resources. As AI tools proliferate, understanding the distinction between model types and mastering prompt engineering becomes essential for developers, students, and tech-curious learners to stay competitive in 2026. The guide covers discriminative models (classification tasks), generative models (content creation), and foundation models/LLMs, while listing resources from Google Skills, Coursera, and YouTube. It emphasizes that prompt engineering is increasingly regarded as a business capability across industries.
+A bootstrapped DTC brand owner built a four-stage automated pipeline using n8n to scrape competitor ads, generate counter-positioning scripts with a reasoning LLM, produce UGC videos via API, and optimize campaigns based on performance data. Solo operators can compress iteration cycles by automating routine creative tasks, competing with larger teams without agency overhead or extended timelines. The pipeline chains four n8n modules: competitor scraping (Sunday HTTP requests), script generation (reasoning LLM), video production handoff (API to UGC tool), and campaign optimization (Monday performance pull). Each stage is testable in isolation.
 
-rss · Dev.to · May 10, 04:07
+rss · Dev.to · May 10, 06:04
 
-**Background**: Prompt engineering is the process of structuring natural language inputs to produce specified outputs from generative AI models. It includes techniques such as few-shot prompting, chain-of-thought prompting, and role assignment. During the 2020s AI boom, prompt engineering became regarded as a business capability across corporations, with employees hired to create prompts that increase productivity. Foundation models are huge models trained on massive datasets that can be adapted for many tasks including chatbots, coding assistants, search, and agents.
+**Background**: DTC brands sell directly to consumers through digital channels, competing on iteration speed. n8n is an open-source workflow automation platform. Reasoning LLMs are AI models that show their work. UGC video tools create authentic-looking presenter videos for short-form ads.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_engineering">Prompt engineering</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#prompt-engineering`, `#generative-ai`, `#ai-education`, `#beginners-guide`, `#llm`
+**Tags**: `#AI automation`, `#marketing`, `#workflow optimization`, `#advertising`, `#productivity`
 
 ---
 
 <a id="item-16"></a>
-## [How Graph Structure Makes AI Search Possible](https://dev.to/zeromathai/how-graph-structure-makes-ai-search-possible-565m) ⭐️ 4.0/10
+## [The One Question Google, Meta, and Amazon All Ask and Why Your Answer Is Probably Wrong for All Three](https://dev.to/social_interviewbee/the-one-question-google-meta-and-amazon-all-ask-and-why-your-answer-is-probably-wrong-for-all-13il) ⭐️ 4.0/10
 
-An introductory article explains how AI problems are transformed into graph structures—states as nodes, relationships as edges, moves as paths, and goals as target nodes—enabling systematic search algorithms like BFS, DFS, and A* to operate on previously abstract problems. This transformation from abstract problems to graph representations is significant because it provides a concrete, computable framework for applying search algorithms. By representing problems as graphs, developers can leverage well-established algorithms to solve optimization and pathfinding challenges across various domains. The article details the distinction between BFS using a queue (FIFO) for level-by-level exploration versus DFS using a stack (LIFO) for deep path following. A* search combines heuristic guidance with graph traversal, achieving better performance than uninformed searches by prioritizing promising routes.
+An article on Dev.to explains that Google, Meta, and Amazon all ask the behavioral interview question "Tell me about a time you failed," but each company evaluates candidates based on different signals tied to their distinct corporate cultures. For tech job seekers targeting top companies, understanding these differences can be the difference between a successful interview and a rejection. The article highlights that even well-practiced STAR method answers may miss the mark if candidates don't align their responses with each company's specific cultural values. The article suggests Google prioritizes intellectual humility and systems-level thinking, while Meta emphasizes rapid recovery and action orientation. Most candidates err by focusing on the solution rather than the shift in thinking (Google) or spending too much time on background details (Meta). The content appears to be incomplete, cutting off mid-sentence when discussing the Meta example.
 
-rss · Dev.to · May 10, 04:05
+rss · Dev.to · May 10, 06:04
 
-**Background**: Graph theory provides the mathematical foundation for representing relationships between entities as nodes connected by edges. AI search algorithms operate on these graph structures to find solutions: BFS explores uniformly expanding frontiers, DFS plunges deeply along single paths, and A* uses estimated distances to goal nodes to guide exploration more efficiently. Directed graphs represent asymmetric relationships where movement or dependency has direction, while DAGs (Directed Acyclic Graphs) enforce ordering constraints making them useful for task scheduling.
+**Background**: Behavioral interviews commonly use the STAR method (Situation, Task, Action, Result) to structure candidate responses to scenario-based questions. MAANG is an acronym representing five major tech companies: Meta (formerly Facebook), Amazon, Apple, Netflix, and Google, known for their competitive hiring processes and distinct corporate cultures. Each MAANG company has developed unique cultural values that influence their interview evaluation criteria.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* search algorithm</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Situation,_task,_action,_result">Situation, task, action, result - Wikipedia</a></li>
+<li><a href="https://futurense.com/blog/maang-companies">MAANG Companies Explained | Top Tech Giants 2025</a></li>
+<li><a href="https://futurense.com/uni-blog/maang-companies-who-are-these-tech-giants">MAANG Companies Explained: Who Are These Tech Giants?</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#graph-theory`, `#ai-search`, `#algorithms`, `#introductory`, `#problem-solving`
-
----
-
-<a id="item-17"></a>
-## [Inside FuriosaAI: The AI Chip Pioneer the West Hasn't Noticed](https://dev.to/koreaplus-lifes/inside-furiosaai-the-ai-chip-pioneer-the-west-hasnt-noticed-43ce) ⭐️ 4.0/10
-
-FuriosaAI, a Korean company, has been developing custom AI accelerator chips specifically optimized for inference workloads, targeting superior performance per watt efficiency compared to general-purpose GPUs. As AI inference costs increasingly drive operating expenses, custom silicon solutions like FuriosaAI's chips could enable more cost-effective and scalable AI deployment for data centers and edge devices. This represents a fundamental shift in how intelligent applications are powered. FuriosaAI's chips feature specialized compute units for parallel neural network execution, optimized memory subsystems to minimize data transfer bottlenecks, and efficient dataflow architecture. However, this article lacks specific benchmarks, product names, or technical specifications that would enable meaningful comparison with competitors.
-
-rss · Dev.to · May 10, 03:47
-
-**Background**: AI inference differs from training: inference runs predictions continuously across high-volume requests, making it a resource-intensive operation where every watt and millisecond impacts costs. General-purpose GPUs carry overhead from their training-centric design, leading to underutilization for inference tasks. Custom AI accelerators are purpose-built for specific mathematical operations like matrix multiplications and convolutions, offering better efficiency for deployment scenarios.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://udit.co/blog/microsoft-maia-200-inference-chip-nvidia-alternative">Microsoft Maia 200: the inference chip built to challenge N</a></li>
-<li><a href="https://pureai.com/articles/2026/01/27/microsoft-intros-maria-chip.aspx">Microsoft Unveils Maia 200 Inference Chip as Hyperscalers... -- Pure AI</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI hardware`, `#FuriosaAI`, `#Korean tech`, `#inference optimization`, `#silicon`
-
----
-
-<a id="item-18"></a>
-## [Map and Set in JavaScript](https://dev.to/pratham69/map-and-set-in-javascript-2la6) ⭐️ 4.0/10
-
-A Dev.to tutorial explains JavaScript's Map and Set data structures, introduced in ES6 (2015), demonstrating how Map allows any value as keys (including objects and functions) while Set automatically prevents duplicates in collections. Understanding Map and Set fills gaps that objects and arrays cannot address, particularly when developers need object-type keys or duplicate-free collections. These ES6 features provide cleaner, more purpose-built solutions for specific data management scenarios. Map provides methods like .set(), .get(), .has(), and .delete() for key-value operations, with iteration via .entries(), .keys(), and .values(). Regular objects convert all keys to strings, while Map preserves original key types, enabling complex key structures.
-
-rss · Dev.to · May 10, 03:37
-
-**Background**: JavaScript developers traditionally relied on objects (key-value pairs) and arrays (ordered lists) for data storage. ES6 (ECMAScript 2015) introduced Map and Set to address limitations: regular objects cannot use non-string keys, and arrays lack built-in duplicate prevention. Map maintains insertion order and provides better performance for frequent additions and deletions.
-
-**Tags**: `#javascript`, `#tutorial`, `#data-structures`, `#es6`, `#web-development`
+**Tags**: `#interview-preparation`, `#behavioral-interviews`, `#tech-careers`, `#amazon`, `#google`
 
 ---
 
